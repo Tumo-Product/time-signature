@@ -1,0 +1,7 @@
+#Header {
+    transition: 0.5s;
+    color: #DBDBDB;
+    font-family: FedraBook;
+    font-size: 30px;
+    pointer-events: none;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="23px" viewBox="0 0 21 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>921E8352-7820-491E-AD6C-6AFBB4B5EDEF</title>
+    <defs>
+        <linearGradient x1="118.02684%" y1="107.382972%" x2="-1.42108547e-12%" y2="10.2008227%" id="linearGradient-1">
+            <stop stop-color="#2B7076" offset="0%"></stop>
+            <stop stop-color="#68BF6A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M21.4961389,13.1473213 C21.6511702,13.2359106 21.7796538,13.3643942 21.8682431,13.5194255 L28.1450635,24.5038611 C28.4190734,24.9833785 28.2524767,25.5942332 27.7729593,25.8682431 C27.6218616,25.9545847 27.4508473,26 27.2768203,26 L14.7231797,26 C14.1708949,26 13.7231797,25.5522847 13.7231797,25 C13.7231797,24.8259731 13.768595,24.6549588 13.8549365,24.5038611 L20.1317569,13.5194255 C20.4057668,13.0399081 21.0166215,12.8733113 21.4961389,13.1473213 Z M20.999,16.031 L16.446,24 L25.553,24 L20.999,16.031 Z" id="path-2"></path>
+        <filter x="-41.2%" y="-46.2%" width="182.5%" height="192.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.247058824   0 0 0 0 0.545098039   0 0 0 0 0.447058824  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Time-Signature" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-page-" transform="translate(-43.000000, -624.000000)" fill-rule="nonzero">
+            <g id="Group-5-Copy" transform="translate(33.000000, 616.000000)">
+                <g id="Triangle-Copy" transform="translate(21.000086, 19.507697) rotate(-270.000000) translate(-21.000086, -19.507697) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

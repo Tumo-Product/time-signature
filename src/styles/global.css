@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    background-color: #25292D;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.button {
+    box-shadow: -1px -1px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playback {
+    height: 38px;
+    width: 38px;
+}
+
+.playback img {
+    margin-left: 2px;
+}
+
+.startTip {
+    transition: 0.5s;
+    
+    color: #6E7174;
+    font-size: 13px;
+    font-family: FedraBook;
+    pointer-events: none;
+}
