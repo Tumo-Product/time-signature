@@ -2,8 +2,11 @@ export const timeout = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-export const getSVG = async (path) => {
+export const getSVG = async (path, className) => {
 	let svg = await $.ajax({url: path}, true);
+	if (className !== undefined) {
+		svg.documentElement.classList.add(className);
+	}
 	svg = new XMLSerializer().serializeToString(svg.documentElement);
 	return svg;
 }

@@ -20,28 +20,19 @@
     align-items: center;
 }
 
-.circle {
-    border-radius: 100%;
-}
-
 .button {
+    border-radius: 100%;
     box-shadow: -1px -1px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;
-    background-color: transparent;
+    background-color: #25292D;
     border: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
 
-.playback {
-    height: 38px;
     width: 38px;
-}
-
-.playback img {
-    margin-left: 2px;
+    height: 38px;
 }
 
 .startTip {

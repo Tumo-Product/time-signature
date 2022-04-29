@@ -1,21 +1,26 @@
 import StartButton from "./components/StartButton.js";
 import Headphones from "./components/Headphones.js";
 import Header from "./components/Header.js";
+import Rails from "./components/Rails.js";
+import Lives from "./components/Lives.js";
+import NextButton from "./components/NextButton.js";
 
 const view = {
     start: {
-        elements: [Headphones, Header, StartButton],
-
         build: async () => {
-            $(".container").append(await Headphones.build());
-            $(".container").append(await Header.build());
-            $(".container").append(await StartButton.build());
+            $(".container").append([ await Headphones.build(), Header.build(), await StartButton.build() ]);
         },
 
-        begin: async () => {
-            for (const element of view.start.elements) {
-                await element.hide();
-            }
+        hide: async () => {
+                    Headphones.hide();
+                    Header.hide();
+            await   StartButton.hide();
+        },
+    },
+
+    timeline: {
+        build: async (difficulty, signature) => {
+            $(".container").append([ await Rails.build(), await Lives.build(), await NextButton.build() ]);
         }
     }
 }

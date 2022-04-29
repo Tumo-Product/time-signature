@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="22px" viewBox="0 0 19 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9860D74F-236D-4010-8542-5C31253FA3FD</title>
+    <defs>
+        <linearGradient x1="50%" y1="8.14626144e-12%" x2="50%" y2="107.568875%" id="linearGradient-2">
+            <stop stop-color="#3FA6A4" offset="0%"></stop>
+            <stop stop-color="#8BF7FB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1,0 C1.51283584,0 1.93550716,0.38604019 1.99327227,0.883378875 L2,1 L2,13 C2,13.5522847 1.55228475,14 1,14 C0.487164161,14 0.0644928393,13.6139598 0.00672773133,13.1166211 L0,13 L0,1 C0,0.44771525 0.44771525,0 1,0 Z M9,0 C9.51283584,0 9.93550716,0.38604019 9.99327227,0.883378875 L10,1 L10,13 C10,13.5522847 9.55228475,14 9,14 C8.48716416,14 8.06449284,13.6139598 8.00672773,13.1166211 L8,13 L8,1 C8,0.44771525 8.44771525,0 9,0 Z" id="Pause"></path>
+        <filter x="-60.0%" y="-42.9%" width="220.0%" height="185.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.247058824   0 0 0 0 0.650980392   0 0 0 0 0.643137255  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Time-Signature" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-page-" transform="translate(-201.000000, -624.000000)">
+            <g id="Group-10" transform="translate(191.000000, 616.000000)">
+                <g id="Combined-Shape" transform="translate(14.500000, 12.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#Pause"></use>
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#Pause"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

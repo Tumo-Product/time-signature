@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="42px" viewBox="0 0 19 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2A57FF07-0312-433D-8DA7-5696DCADFEA5</title>
+    <defs>
+        <linearGradient x1="100%" y1="32.590075%" x2="2.84217094e-12%" y2="32.590075%" id="NextButtonGradient">
+            <stop stop-color="#2B7076" offset="0%"></stop>
+            <stop stop-color="#68BF6A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M25.6678749,-1.14405605 L25.7894685,-1.08225343 L31.8292398,2.40839585 C32.3083507,2.68529511 32.5348165,3.23149793 32.4279118,3.7451959 C32.5259253,4.21642728 32.3437149,4.71472405 31.943493,5.00774978 L31.8292398,5.08225343 L25.7894685,8.57290271 C25.1917565,8.91834678 24.4271774,8.71384317 24.0817333,8.1161311 C23.7593188,7.55826651 23.9159699,6.85504217 24.4242517,6.4828995 L24.5385049,6.40839585 L27.221,4.857 L12.4577187,4.85579612 C11.7673628,4.85568035 11.2079284,4.29594245 11.2079284,3.60558652 C11.2079284,2.91523059 11.767782,2.35568038 12.458138,2.35579615 L26.745,2.357 L24.5385049,1.08225343 C23.9407928,0.736809356 23.7362892,-0.0277697609 24.0817333,-0.625481826 C24.3826535,-1.14615545 25.0016278,-1.3684489 25.5512918,-1.18875298 L25.6678749,-1.14405605 Z M5,2.35579613 C5.69035594,2.35579613 6.25,2.9154402 6.25,3.60579613 C6.25,4.25300482 5.75812534,4.78533003 5.12780524,4.84934252 L5,4.85579613 L0,4.85579613 C-0.690355937,4.85579613 -1.25,4.29615207 -1.25,3.60579613 C-1.25,2.95858744 -0.758125336,2.42626223 -0.127805239,2.36224974 L0,2.35579613 L5,2.35579613 Z" id="path-10"></path>
+        <filter x="-16.8%" y="-70.1%" width="133.7%" height="240.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-23.2%" y="-96.8%" width="146.5%" height="293.6%" filterUnits="objectBoundingBox" id="NextButtonFilter">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.226670015   0 0 0 0 0.822715428   0 0 0 0 0.45786393  0 0 0 0.235216688 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Time-Signature" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-page-" transform="translate(-93.000000, -706.000000)">
+            <g id="Combined-Shape" transform="translate(102.641104, 727.100304) rotate(-270.000000) translate(-102.641104, -727.100304) translate(87.039225, 723.354979)" filter="url(#filter-6)">
+                <use fill="black" fill-opacity="1" filter="url(#NextButtonFilter)" xlink:href="#path-10"></use>
+                <use fill="url(#NextButtonGradient)" fill-rule="evenodd" xlink:href="#path-10"></use>
+            </g>
+        </g>
+    </g>
+</svg>

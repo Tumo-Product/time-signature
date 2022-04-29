@@ -1,0 +1,30 @@
+.task {
+    z-index: 1;
+    background-color: #25292D;
+    width: 846px;
+    height: 128px;
+    border-radius: 7px;
+    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.taskContainer {
+    position: absolute;
+    height: 105px;
+    width: 794px;
+    margin-left: 9px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.subContainer {
+    width: 782px;
+    position: absolute;
+    display: flex;
+    height: 105px;
+}

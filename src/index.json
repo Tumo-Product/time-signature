@@ -1,0 +1,14 @@
+{
+    "tasks": [
+        {
+            "name": "easy",
+            "tracks": [
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/4_4-4.wav",
+                    "upperSignature": 4,
+                    "lowerSignature": 4
+                }
+            ]
+        }
+    ]
+}

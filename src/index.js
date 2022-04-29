@@ -14,7 +14,6 @@ const onLoad = async () => {
     pluginAPI.setHeight(HEIGHT);
     await pluginAPI.initialize();
     role = getRole();
-    console.log(role);
 
     switch (role) {
         case "viewer":

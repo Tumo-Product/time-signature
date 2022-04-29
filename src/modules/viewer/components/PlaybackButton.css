@@ -1,0 +1,22 @@
+.playback {
+    position: absolute;
+    left: -13px;
+    z-index: 1;
+}
+
+.playback svg {
+    position: absolute;
+    transition: 0.4s;
+}
+
+.playback .pauseIcon {
+    opacity: 0;
+}
+
+.paused .pauseIcon {
+    opacity: 1;
+}
+
+.paused .playIcon {
+    opacity: 0;
+}

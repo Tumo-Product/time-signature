@@ -1,5 +1,5 @@
 import "./StartButton.css";
-import "src/assets/StartButton.svg";
+import PlayIcon from "./icons/PlayIcon";
 
 import StartTip from "./tips/StartTip.js";
 import { begin } from "./../main.js";
@@ -7,17 +7,17 @@ import { timeout, getSVG } from "../../tools.js";
 
 const StartButton = {
     build: async () => {
-        let icon = await getSVG("StartButton.svg");
+        let icon = await PlayIcon.get();
 
         let element = 
         $(/* html */ `
-        <div id="StartButton" class="button circle playback">
+        <div id="StartButton" class="button">
             ${icon}
         </div>
         ${StartTip.getTemplate()}
         `);
 
-        StartButton.events.bind(element.first());
+        StartButton.events.bind(element);
         return element;
     },
 

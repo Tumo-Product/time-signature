@@ -1,0 +1,26 @@
+#Rails {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 900px;
+    height: 600px;
+    gap: 678px;
+    animation: showRails 0.5s ease-out;
+}
+
+@keyframes showRails {
+    from {
+        gap: 900px;
+    }
+
+    to {
+        gap: 678px;
+    }
+}
+
+.rail {
+    width: 27px;
+    height: 600px;
+    box-shadow: -2px -2px 2px 0 rgba(67,67,69,0.5), 1px 1px 2px 0 #171C21;
+}
