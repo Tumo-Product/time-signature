@@ -26,6 +26,10 @@ const StatusIndicator = {
 
                 element.attr("class", "statusIndicator");
                 element.addClass(state);
+            },
+
+            turnOff: () => {
+                element.attr("class", "statusIndicator");
             }
         }
 

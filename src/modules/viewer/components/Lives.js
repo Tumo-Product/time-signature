@@ -1,3 +1,4 @@
+import TaskManager from "../managers/TaskManager.js";
 import "./Lives.css";
 import RadioButtons from "./RadioButtons.js";
 
@@ -12,7 +13,7 @@ const Lives = {
         Lives._count = value;
 
         if (Lives._count === 0) {
-            console.log("game over");
+            TaskManager.nextTrack();
         }
     },
 
@@ -28,6 +29,14 @@ const Lives = {
         }
 
         return template;
+    },
+
+    reset: () => {
+        Lives._count = 3;
+        
+        for (let button of Lives.buttons) {
+            button.changeColor("Red");
+        }
     }
 }
 

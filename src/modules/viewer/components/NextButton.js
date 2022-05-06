@@ -2,21 +2,24 @@ import "./NextButton.css";
 import "src/assets/NextButton.svg";
 import { getSVG } from "src/modules/tools.js";
 import UI, { activateComponent, deactivateComponent, getProperties } from "src/modules/common.js";
+import TaskManager from "../managers/TaskManager.js";
 
 const NextButton = {
     build: async () => {
         let icon = await getSVG("NextButton.svg");
 
-        let template = 
+        let element = 
         $(/* html */ `
         <div id="NextButton" class="button">
             ${icon}
         </div>
         `);
         
-        getProperties(NextButton, template);
-        NextButton.deactivate(template);
-        return template;
+        getProperties(NextButton, element);
+        NextButton.deactivate(element);
+
+        element.click(TaskManager.nextTask);
+        return element;
     },
 
     deactivate: (element) => {

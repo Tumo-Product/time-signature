@@ -1,11 +1,12 @@
 import PlaybackButton from "./PlaybackButton.js";
 import AudioManager from "../managers/AudioManager.js";
 import "./ProgressBar.css";
+import TaskManager from "../managers/TaskManager.js";
 
 export const PROGRESS_WIDTH = 782;
 
 const ProgressBar = {
-    build: async (index) => {
+    build: async (index, divider) => {
         let playbackButton = await PlaybackButton.build();
 
         let element =
@@ -25,7 +26,8 @@ const ProgressBar = {
         const progressBar = {
             element: element,
             playbackButton: playbackButton,
-            audio: AudioManager.tracks[index],
+            audio: AudioManager.tracks[TaskManager.current],
+            divider: divider,
 
             pause: () => {
                 playbackButton.pause();
@@ -33,6 +35,7 @@ const ProgressBar = {
             },
 
             play: () => {
+                progressBar.audio = AudioManager.tracks[TaskManager.current];
                 playbackButton.play();
                 progressBar.update();
             },
@@ -52,8 +55,16 @@ const ProgressBar = {
             },
 
             update: () => {
-                let width = PROGRESS_WIDTH * (progressBar.audio.currentTime / progressBar.audio.duration);
-                $(".progress").css("width", `${width}px`);
+                let currTime = progressBar.audio.currentTime;
+                let duration = progressBar.audio.duration / progressBar.divider;
+
+                if (currTime >= duration) {
+                    currTime -= duration;
+                }
+
+                let width = PROGRESS_WIDTH * (currTime / duration);
+                
+                element.find(".progress").css("width", `${width}px`);
                 progressBar.animationId = requestAnimationFrame(progressBar.update);
 
                 let beats = progressBar.beats;
@@ -68,6 +79,13 @@ const ProgressBar = {
                         sid.changeState("off");
                     }
                 }
+            },
+
+            reset: (beats, divider) => {
+                progressBar.audio = AudioManager.tracks[TaskManager.current];
+                element.find(".progress").css("width", 0);
+                progressBar.beats = beats;
+                progressBar.divider = divider;
             }
         }
 

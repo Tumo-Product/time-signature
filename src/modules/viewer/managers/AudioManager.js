@@ -1,6 +1,7 @@
 const AudioManager = {
     ctx: new AudioContext(),
     tracks: [],
+    currTrack: 0,
 
     setSource: (index, source) => {
         let audio = new Audio(source);
