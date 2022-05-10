@@ -17,8 +17,8 @@ const DigitalNumber = {
         [0, 1, 2, 3, 5, 6]
     ],
 
-    build: async () => {
-        let icon = await getSVG("DigitalNumber.svg");
+    build: async (className) => {
+        let icon = await getSVG("DigitalNumber.svg", className);
 
         let element =
         $(/* html */`
@@ -49,7 +49,7 @@ const DigitalNumber = {
                 }
             }
         }
-
+        
         return num;
     }
 }

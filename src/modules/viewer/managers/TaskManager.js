@@ -3,6 +3,7 @@ import data from "src/index.json";
 import AudioManager from "./AudioManager.js";
 import Lives from "../components/Lives.js";
 import NextButton from "../components/NextButton.js";
+import view from "../view.js";
 
 const TaskManager = {
     current: -1,
@@ -10,6 +11,7 @@ const TaskManager = {
     currTrack: 0,
 
     nextTask: async () => {
+        view.mainSignature.turnOff();
         NextButton.deactivate();
         let task = TaskManager.tasks[TaskManager.current];
         TaskManager.currTrack = 0;
@@ -30,9 +32,11 @@ const TaskManager = {
         
         Lives.reset();
         $(".container").append(taskObj.element);
+        return taskObj;
     },
 
     nextTrack: () => {
+        view.mainSignature.turnOff();
         NextButton.deactivate();
         let currTask = data.tasks[TaskManager.current];
         let track;
@@ -50,7 +54,7 @@ const TaskManager = {
         Lives.reset();
         AudioManager.tracks[TaskManager.current].pause();
         AudioManager.setSource(TaskManager.current, track.url);
-        task.reset(track.upperSignature, track.bars);
+        task.reset(track.upperSignature, task.lowerSignature, track.bars);
     }
 }
 

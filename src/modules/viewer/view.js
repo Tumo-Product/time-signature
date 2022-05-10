@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import Rails from "./components/Rails.js";
 import Lives from "./components/Lives.js";
 import NextButton from "./components/NextButton.js";
+import Signature from "./components/Signature.js";
 
 const view = {
     start: {
@@ -19,8 +20,14 @@ const view = {
     },
 
     timeline: {
-        build: async (difficulty, signature) => {
+        build: async () => {
             $(".container").append([ await Rails.build(), await Lives.build(), await NextButton.build() ]);
+        },
+
+        buildSignature: async () => {
+            let signature = await Signature.build();
+            $(".container").append(signature.element);
+            view.mainSignature = signature;
         }
     }
 }

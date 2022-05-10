@@ -8,5 +8,6 @@ export const onLoad = async () => {
 export const begin = async () => {
     await view.start.hide();
     await view.timeline.build("easy", 4);
+    await view.timeline.buildSignature();
     TaskManager.nextTask();
 }

@@ -4,6 +4,8 @@ import Beat from "./Beat.js";
 import ProgressBar, { PROGRESS_WIDTH } from "./ProgressBar.js";
 import Lives from "./Lives.js";
 import NextButton from "./NextButton.js";
+import Signature from "./Signature.js";
+import view from "../view.js";
 
 const MAX_BEATS = 16;
 
@@ -59,15 +61,17 @@ const Tasks = {
 
                             if(task.correctCount === beatsCount) {
                                 NextButton.activate();
+                                view.mainSignature.set(task.upperSignature, task.lowerSignature);
                             }
                         }
                     });
                 }
             },
 
-            reset: async (signature, bars) => {
+            reset: async (signature, lowerSignature, bars) => {
                 progressBar.pause();
                 task.upperSignature = signature;
+                task.lowerSignature = lowerSignature;
                 task.correctCount = 1;
 
                 beatsCount = Math.floor(MAX_BEATS / signature);

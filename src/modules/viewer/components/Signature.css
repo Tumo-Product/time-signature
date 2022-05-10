@@ -1,0 +1,27 @@
+.signature {
+    position: absolute;
+    top: 157px;
+    width: 91px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.signature svg {
+    position: absolute;
+}
+
+.bar {
+    top: -3.5px;
+}
+
+.upper {
+    left: -3.5px;
+    top: -4px;
+}
+
+.lower {
+    right: -3.5px;
+    top: -4px;
+}
