@@ -28,6 +28,10 @@ const Signature = {
                 upperElement.turnOff();
                 lowerElement.turnOff();
                 bar.disable();
+            },
+
+            hide: () => {
+                element.remove();
             }
         }
 

@@ -26,16 +26,26 @@ const ProgressBar = {
         const progressBar = {
             element: element,
             playbackButton: playbackButton,
-            audio: AudioManager.tracks[TaskManager.current],
+            audio: AudioManager.tracks[index],
             divider: divider,
+            playing: false,
 
             pause: () => {
+                progressBar.playing = false;
                 playbackButton.pause();
                 cancelAnimationFrame(progressBar.animationId);
             },
 
             play: () => {
-                progressBar.audio = AudioManager.tracks[TaskManager.current];
+                for (let [i, task] of TaskManager.tasks.entries()) {
+                    if (task.progressBar.playing) {
+                        AudioManager.tracks[i].pause();
+                        task.progressBar.pause();
+                    }
+                }
+
+                progressBar.playing = true;
+                progressBar.audio = AudioManager.tracks[index];
                 playbackButton.play();
                 progressBar.update();
             },

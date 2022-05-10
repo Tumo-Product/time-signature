@@ -4,6 +4,7 @@ import AudioManager from "./AudioManager.js";
 import Lives from "../components/Lives.js";
 import NextButton from "../components/NextButton.js";
 import view from "../view.js";
+import { timeout } from "src/modules/tools.js";
 
 const TaskManager = {
     current: -1,
@@ -23,6 +24,23 @@ const TaskManager = {
         }
 
         TaskManager.current++;
+
+        if (TaskManager.current === data.tasks.length) {
+            view.timeline.hide();
+            
+            for (let task of TaskManager.tasks) {
+                task.addSignature();
+            }
+
+            await timeout(500);
+
+            for (let task of data.tasks.reverse()) {
+                $(`#${task.name}`).addClass(`${task.name}FinalPosition`);
+                await timeout(300);
+            }
+            return;
+        }
+
         let currTask = data.tasks[TaskManager.current];
         let track = currTask.tracks[TaskManager.currTrack];
 

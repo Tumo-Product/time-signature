@@ -5,6 +5,7 @@ import Rails from "./components/Rails.js";
 import Lives from "./components/Lives.js";
 import NextButton from "./components/NextButton.js";
 import Signature from "./components/Signature.js";
+import { timeout } from "src/modules/tools.js";
 
 const view = {
     start: {
@@ -28,6 +29,25 @@ const view = {
             let signature = await Signature.build();
             $(".container").append(signature.element);
             view.mainSignature = signature;
+        },
+
+        hide: async () => {
+            Lives.hide();
+            NextButton.hide();
+            view.mainSignature.hide();
+        }
+    },
+
+    final: {
+        setup: async (tasks) => {
+            await timeout(1000);
+            console.log(tasks);
+
+            for (let task of tasks.reverse()) {
+                task.addSignature();
+                $(`#${task.name}`).addClass(`${task.name}FinalPosition`);
+                await timeout(300);
+            }
         }
     }
 }

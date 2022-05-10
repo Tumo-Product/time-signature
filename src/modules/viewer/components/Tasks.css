@@ -1,3 +1,17 @@
+.taskContainer {
+    width: 846px;
+    height: 128px;
+
+    position: absolute;
+    top: 267px;
+
+    animation: centerTransition 0.5s ease;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+}
+
 .task {
     z-index: 1;
     background-color: #25292D;
@@ -10,11 +24,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 267px;
-
-    animation: centerTransition 0.5s ease;
 }
-
 
 @keyframes centerTransition {
     from {
@@ -26,7 +36,7 @@
     }
 }
 
-.taskContainer {
+.taskContents {
     position: absolute;
     height: 105px;
     width: 794px;
@@ -43,7 +53,7 @@
     height: 105px;
 }
 
-.task.offScreen {
+.taskContainer.offScreen {
     animation: offScreenTransition 0.5s ease;
     top: -140px;
 }
@@ -56,4 +66,34 @@
     to {
         top: -140px;
     }
+}
+
+.taskContainer.easyFinalPosition {
+    top: 63px;
+}
+
+.taskContainer.mediumFinalPosition {
+    top: 254px;
+}
+
+.taskContainer.hardFinalPosition {
+    top: 445px;
+}
+
+.taskContainer .signatureContainer {
+    position: absolute;
+    height: 43px;
+    width: 102px;
+    box-shadow: -1px -1px 2px 0 rgba(67,67,69,0.5), 2px 2px 2px 0 #171C21;
+    top: -43px;
+    background-color: #25292D;
+
+    border-radius: 7px 7px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.taskContainer .signature {
+    transform: scale(0.64835);
+    top: 2px;
 }

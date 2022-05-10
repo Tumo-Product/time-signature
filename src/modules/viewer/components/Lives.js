@@ -1,3 +1,4 @@
+import UI from "src/modules/common.js";
 import TaskManager from "../managers/TaskManager.js";
 import "./Lives.css";
 import RadioButtons from "./RadioButtons.js";
@@ -24,6 +25,7 @@ const Lives = {
         for (let i = 0; i < Lives.count; i++) {
             let button = await RadioButtons.build();
             template.append(button.element);
+            UI.disable(button.element);
             button.changeColor("Red");
             Lives.buttons.push(button);
         }
@@ -37,6 +39,10 @@ const Lives = {
         for (let button of Lives.buttons) {
             button.changeColor("Red");
         }
+    },
+
+    hide: () => {
+        $("#Lives").remove();
     }
 }
 

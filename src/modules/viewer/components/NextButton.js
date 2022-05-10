@@ -22,12 +22,16 @@ const NextButton = {
         return element;
     },
 
-    deactivate: (element) => {
-        deactivateComponent(element !== undefined ? element : $("#NextButton"), true);
+    deactivate: () => {
+        deactivateComponent($("#NextButton"), true);
     },
 
-    activate: (element) => {
-        activateComponent  (NextButton, element !== undefined ? element : $("#NextButton"), true);
+    activate: () => {
+        activateComponent  (NextButton, $("#NextButton"), true);
+    },
+
+    hide: () => {
+        $("#NextButton").remove();
     }
 }
 

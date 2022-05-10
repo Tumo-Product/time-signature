@@ -4,8 +4,9 @@ import Beat from "./Beat.js";
 import ProgressBar, { PROGRESS_WIDTH } from "./ProgressBar.js";
 import Lives from "./Lives.js";
 import NextButton from "./NextButton.js";
-import Signature from "./Signature.js";
 import view from "../view.js";
+import UI from "src/modules/common.js";
+import Signature from "./Signature.js";
 
 const MAX_BEATS = 16;
 
@@ -18,14 +19,16 @@ const Tasks = {
         let progressBar = await ProgressBar.build(index, progressDivider);
         let element =
         $(/* html */ `
-        <div id="${id}" class="task">
-            <div class="taskContainer">
-                <div class="subContainer" style="gap: ${PROGRESS_WIDTH/beatsLength}px"></div>
+        <div id="${id}" class="taskContainer">
+            <div class="task">
+                <div class="taskContents">
+                    <div class="subContainer" style="gap: ${PROGRESS_WIDTH/beatsLength}px"></div>
+                </div>
             </div>
         </div>
         `);
 
-        element.find(".taskContainer").prepend(progressBar.element);
+        element.find(".taskContents").prepend(progressBar.element);
         
         let beats = [];
         for (let i = 0; i < beatsLength; i++) {
@@ -60,6 +63,7 @@ const Tasks = {
                             task.correctCount++;
 
                             if(task.correctCount === beatsCount) {
+                                for (let beat of beats) { UI.disable(beat.element) }
                                 NextButton.activate();
                                 view.mainSignature.set(task.upperSignature, task.lowerSignature);
                             }
@@ -107,6 +111,14 @@ const Tasks = {
 
             goOffScreen: () => {
                 element.addClass("offScreen");
+            },
+
+            addSignature: async () => {
+                let signature = await Signature.build();
+                let signatureContainer = $(/* html */ `<div class="signatureContainer"></div>`);
+                signature.set(task.upperSignature, task.lowerSignature);
+                signatureContainer.append(signature.element);
+                element.append(signatureContainer);
             }
         };
 
