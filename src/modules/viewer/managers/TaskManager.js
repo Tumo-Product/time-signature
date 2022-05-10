@@ -25,7 +25,7 @@ const TaskManager = {
         let track = currTask.tracks[TaskManager.currTrack];
 
         AudioManager.setSource(TaskManager.current, track.url);
-        let taskObj = await Tasks.build(TaskManager.current, currTask.name, track.upperSignature, track.bars);
+        let taskObj = await Tasks.build(TaskManager.current, currTask.name, track.upperSignature, track.lowerSignature, track.bars);
         TaskManager.tasks.push(taskObj);
         
         Lives.reset();

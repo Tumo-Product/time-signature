@@ -8,9 +8,9 @@ import NextButton from "./NextButton.js";
 const MAX_BEATS = 16;
 
 const Tasks = {
-    build: async (index, id, signature, bars) => {
-        let beatsCount = Math.floor(MAX_BEATS / signature);
-        let beatsLength = signature * beatsCount;
+    build: async (index, id, upperSignature, lowerSignature, bars) => {
+        let beatsCount = Math.floor(MAX_BEATS / upperSignature);
+        let beatsLength = upperSignature * beatsCount;
         let progressDivider = bars / beatsCount;
         
         let progressBar = await ProgressBar.build(index, progressDivider);
@@ -36,7 +36,9 @@ const Tasks = {
             progressBar: progressBar,
             beats: beats,
             correctCount: 1,
-            signature,
+
+            upperSignature: upperSignature,
+            lowerSignature: lowerSignature,
 
             bindEvents: () => {
                 for (let i = 0; i < beats.length; i++) {
@@ -47,7 +49,7 @@ const Tasks = {
                             }
                         }
 
-                        let correct = i % task.signature === 0;
+                        let correct = i % task.upperSignature === 0;
                         task.beats[i].changeState(correct ? "correct" : "wrong");
 
                         if (!correct) {
@@ -65,7 +67,7 @@ const Tasks = {
 
             reset: async (signature, bars) => {
                 progressBar.pause();
-                task.signature = signature;
+                task.upperSignature = signature;
                 task.correctCount = 1;
 
                 beatsCount = Math.floor(MAX_BEATS / signature);
