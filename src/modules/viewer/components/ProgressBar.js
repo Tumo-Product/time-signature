@@ -57,9 +57,10 @@ const ProgressBar = {
             update: () => {
                 let currTime = progressBar.audio.currentTime;
                 let duration = progressBar.audio.duration / progressBar.divider;
+                let nthLap = Math.floor(currTime / duration);
 
                 if (currTime >= duration) {
-                    currTime -= duration;
+                    currTime -= duration * nthLap;
                 }
 
                 let width = PROGRESS_WIDTH * (currTime / duration);
