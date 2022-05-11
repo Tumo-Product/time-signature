@@ -50,7 +50,7 @@ const Tasks = {
                     task.beats[i].button.element.click(() => {
                         for (let beat of beats) {
                             if (beat.state === "wrong") {
-                                beat.button.turnOff();
+                                beat.button.turnOff(true);
                             }
                         }
 
@@ -99,7 +99,7 @@ const Tasks = {
                 }
 
                 for (let beat of task.beats) {
-                    beat.button.turnOff();
+                    beat.button.turnOff(true);
                     beat.statusIndicator.turnOff();
                 }
 

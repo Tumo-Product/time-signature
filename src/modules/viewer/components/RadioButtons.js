@@ -17,14 +17,16 @@ const RadioButtons = {
             state: "Green",
 
             changeColor: (color) => {
+                element.addClass("disabled");
                 radioButton.state = color;
                 UI.setFill  (element.find("svg"), `url(#${color}OvalGradient)`);
                 UI.setFilter(element.find("svg"), `url(#${color}OvalFilter)`);
             },
 
-            turnOff: () => {
+            turnOff: (enable) => {
                 radioButton.state = "Off";
                 deactivateComponent(element);
+                if (enable) element.removeClass("disabled");
             },
         }
 

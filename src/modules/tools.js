@@ -2,13 +2,21 @@ export const timeout = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-export const getSVG = async (path, className) => {
+export const getSVG = async (path, className, hashId) => {
 	let svg = await $.ajax({url: path}, true);
 	if (className !== undefined) {
 		svg.documentElement.classList.add(className);
 	}
-	svg = new XMLSerializer().serializeToString(svg.documentElement);
-	return svg;
+
+	let string = new XMLSerializer().serializeToString(svg.documentElement);
+
+	if (hashId !== undefined) {
+		let newId = `${hashId}_${(Math.random() + 1).toString(36).substring(7)}`;
+		string = string.replaceAll(hashId, newId);
+		return { asset: string, id: newId };
+	}
+
+	return string;
 }
 
 export const shuffle = (array) => {

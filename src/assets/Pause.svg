@@ -7,7 +7,7 @@
             <stop stop-color="#8BF7FB" offset="100%"></stop>
         </linearGradient>
         <path d="M1,0 C1.51283584,0 1.93550716,0.38604019 1.99327227,0.883378875 L2,1 L2,13 C2,13.5522847 1.55228475,14 1,14 C0.487164161,14 0.0644928393,13.6139598 0.00672773133,13.1166211 L0,13 L0,1 C0,0.44771525 0.44771525,0 1,0 Z M9,0 C9.51283584,0 9.93550716,0.38604019 9.99327227,0.883378875 L10,1 L10,13 C10,13.5522847 9.55228475,14 9,14 C8.48716416,14 8.06449284,13.6139598 8.00672773,13.1166211 L8,13 L8,1 C8,0.44771525 8.44771525,0 9,0 Z" id="Pause"></path>
-        <filter x="-60.0%" y="-42.9%" width="220.0%" height="185.7%" filterUnits="objectBoundingBox" id="filter-4">
+        <filter x="-60.0%" y="-42.9%" width="220.0%" height="185.7%" filterUnits="objectBoundingBox" id="BlueFilter">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
@@ -18,7 +18,7 @@
         <g id="Main-page-" transform="translate(-201.000000, -624.000000)">
             <g id="Group-10" transform="translate(191.000000, 616.000000)">
                 <g id="Combined-Shape" transform="translate(14.500000, 12.000000)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#Pause"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#BlueFilter)" xlink:href="#Pause"></use>
                     <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#Pause"></use>
                 </g>
             </g>

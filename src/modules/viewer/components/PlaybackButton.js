@@ -5,9 +5,12 @@ import "./PlaybackButton.css";
 
 const PlaybackButton = {
     build: async () => {
-        let playIcon = $(await PlayIcon.get());
-        let pauseIcon = await getSVG("Pause.svg", "pauseIcon");
-
+        let play = await PlayIcon.get(true);
+        let playIcon = $(play.asset);
+        
+        let pause = await getSVG("Pause.svg", "pauseIcon", "BlueFilter");
+        let pauseIcon = pause.asset;
+        
         let element =
         $(/* html */ `
         <div class="button playback">
@@ -18,13 +21,13 @@ const PlaybackButton = {
         PlayIcon.changeColor(playIcon, "Blue");
         element.append(playIcon);
 
-        let playbackButton = {
+        let btn = {
             element: element,
             play    : () => { element.addClass("paused"); },
             pause   : () => { element.removeClass("paused"); }
         }
 
-        return playbackButton;
+        return btn;
     }
 }
 

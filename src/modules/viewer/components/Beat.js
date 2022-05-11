@@ -19,7 +19,7 @@ const Beat = {
         let statusIndicator = await StatusIndicator.build();
         element.append(button.element);
         element.append(statusIndicator.element);
-        button.turnOff();
+        button.turnOff(true);
 
         let beat = {
             element: element,

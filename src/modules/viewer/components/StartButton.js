@@ -5,38 +5,41 @@ import StartTip from "./tips/StartTip.js";
 import { begin } from "./../main.js";
 import { timeout, getSVG } from "../../tools.js";
 
+let btn;
+
 const StartButton = {
     build: async () => {
         let icon = await PlayIcon.get();
+        icon = icon.asset;
 
         let element = 
         $(/* html */ `
-        <div id="StartButton" class="button">
-            ${icon}
-        </div>
+        <div id="StartButton" class="button"></div>
         ${StartTip.getTemplate()}
         `);
 
-        StartButton.events.bind(element);
+        btn = element.first();
+        btn.append(icon);
+        StartButton.events.bind();
         return element;
     },
 
     hide: async () => {
         $("#StartButton").addClass("hidden");
         await timeout(1000);
+        $("#StartButton").remove();
     },
 
     events: {
-        bind: (element) => {
-            element.click(StartButton.events.click);
-            element.hover(StartButton.events.hover);
+        bind: () => {
+            btn.click(StartButton.events.click);
+            btn.hover(StartButton.events.hover);
         },
         click: () => {
             $("#StartButton").unbind("click");
             begin();
         },
         hover: () => {
-            $("#StartButton").unbind("hover mouseenter mouseleave");
             StartTip.hide();
         }
     }

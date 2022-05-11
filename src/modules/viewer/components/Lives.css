@@ -7,6 +7,8 @@
     border-radius: 0 0 7px 7px;
 
     animation: showLives 0.5s ease-out;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
 
     display: flex;
     justify-content: center;
@@ -29,4 +31,8 @@
     to {
         top: 0;
     }
+}
+
+#Lives.hidden {
+    top: -90px;
 }

@@ -1,8 +1,10 @@
 import "./NextButton.css";
 import "src/assets/NextButton.svg";
-import { getSVG } from "src/modules/tools.js";
+import { getSVG, timeout } from "src/modules/tools.js";
 import UI, { activateComponent, deactivateComponent, getProperties } from "src/modules/common.js";
 import TaskManager from "../managers/TaskManager.js";
+
+let btn;
 
 const NextButton = {
     build: async () => {
@@ -16,22 +18,22 @@ const NextButton = {
         `);
         
         getProperties(NextButton, element);
-        NextButton.deactivate(element);
-
+        btn = element;
+        NextButton.deactivate();
         element.click(TaskManager.nextTask);
         return element;
     },
 
     deactivate: () => {
-        deactivateComponent($("#NextButton"), true);
+        deactivateComponent(btn, true);
     },
 
     activate: () => {
-        activateComponent  (NextButton, $("#NextButton"), true);
+        activateComponent  (NextButton, btn, true);
     },
 
     hide: () => {
-        $("#NextButton").remove();
+        btn.remove();
     }
 }
 

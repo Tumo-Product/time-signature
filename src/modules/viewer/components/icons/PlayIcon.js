@@ -3,18 +3,21 @@ import { getSVG } from "src/modules/tools.js";
 import UI from "src/modules/common.js";
 
 const PlayIcon = {
-    get: async () => {
-        if (PlayIcon.asset === undefined) {
-            PlayIcon.asset = await getSVG("Play.svg", "playIcon");
+    get: async (blue) => {
+        let icon = await getSVG("Play.svg", "playIcon", "BlueFilter");
+
+        if (blue) {
+            icon.asset = $(icon.asset);
+            icon.asset.find("filter:eq(0)").remove();
+            icon.asset.find("use:eq(0)").attr("filter", `url(#${icon.id})`);
         }
 
-        return PlayIcon.asset;
+        return icon;
     },
 
     changeColor: (element, color) => {
         UI.setFill  (element, `url(#${color}Gradient)`);
-        UI.setFilter(element, `url(#${color}Filter)`);
-    },
+    }
 }
 
 export default PlayIcon;

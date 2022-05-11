@@ -43,3 +43,12 @@
     font-family: FedraBook;
     pointer-events: none;
 }
+
+.button svg use:first-of-type {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.button:hover svg use:first-of-type {
+    opacity: 0;
+}

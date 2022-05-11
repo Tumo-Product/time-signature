@@ -1,4 +1,5 @@
 import UI from "src/modules/common.js";
+import { timeout } from "src/modules/tools.js";
 import TaskManager from "../managers/TaskManager.js";
 import "./Lives.css";
 import RadioButtons from "./RadioButtons.js";
@@ -41,7 +42,9 @@ const Lives = {
         }
     },
 
-    hide: () => {
+    hide: async() => {
+        $("#Lives").addClass("hidden");
+        await timeout(500);
         $("#Lives").remove();
     }
 }
