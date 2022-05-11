@@ -16,7 +16,6 @@ const Tasks = {
         let beatsLength = upperSignature * beatsCount;
         let progressDivider = bars / beatsCount;
         
-        let progressBar = await ProgressBar.build(index, progressDivider);
         let element =
         $(/* html */ `
         <div id="${id}" class="taskContainer">
@@ -27,7 +26,8 @@ const Tasks = {
             </div>
         </div>
         `);
-
+        
+        let progressBar = await ProgressBar.build(index, progressDivider, element);
         element.find(".taskContents").prepend(progressBar.element);
         
         let beats = [];

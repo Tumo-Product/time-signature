@@ -32,7 +32,7 @@ const TaskManager = {
                 task.addSignature();
             }
 
-            await timeout(500);
+            await timeout(700);
 
             for (let task of data.tasks.reverse()) {
                 $(`#${task.name}`).addClass(`${task.name}FinalPosition`);

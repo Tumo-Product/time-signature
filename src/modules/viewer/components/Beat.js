@@ -8,10 +8,6 @@ const Beat = {
         $(/* html */
         `<div class="beat">
             <div class="division"></div>
-            <div class="statusIndicator">
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-            </div>
         </div>`
         );
 

@@ -2,27 +2,25 @@ import PlaybackButton from "./PlaybackButton.js";
 import AudioManager from "../managers/AudioManager.js";
 import "./ProgressBar.css";
 import TaskManager from "../managers/TaskManager.js";
+import Slider from "./Slider.js";
 
 export const PROGRESS_WIDTH = 782;
 
 const ProgressBar = {
-    build: async (index, divider) => {
+    build: async (index, divider, taskContainer) => {
         let playbackButton = await PlaybackButton.build();
 
         let element =
         $(/* html */ `
         <div class="progressBar">
-            <div class="progress">
-                <div class="button slider">
-                    <div class="backdrop"></div>
-                    <div class="circle"></div>
-                </div>
-            </div>
+            <div class="progress"></div>
         </div>
         `);
 
+        let slider = Slider.build(taskContainer, element);
+        element.find(".progress").append(slider.element);
         element.append(playbackButton.element);
-
+        
         const progressBar = {
             element: element,
             playbackButton: playbackButton,
