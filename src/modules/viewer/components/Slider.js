@@ -1,7 +1,9 @@
 import "./Slider.css";
+import { PROGRESS_WIDTH } from "./ProgressBar.js";
+import AudioManager from "../managers/AudioManager.js";
 
 const Slider = {
-    build: (taskContainer, progressBar) => {
+    build: (index, taskContainer, progressBar) => {
         let element =
         $(/* html */ `
         <div class="button slider">
@@ -19,12 +21,24 @@ const Slider = {
                 taskContainer.mouseup(() => slider.holding = false);
                 taskContainer.mouseleave(() => slider.holding = false);
 
-                // console.log(progressBar);
-                // let progress = progressBar.find(".progress");
-                // progressBar.click((event) => {
-                //     console.log(event.target);
-                //     progress.css("width", event.clientX - 63);
-                // });
+                let progress = progressBar.element.find(".progress");
+
+                progressBar.element.click((event) => {
+                    let target = $(event.target);
+                    
+                    if (target.hasClass("progressBar") || target.hasClass("progress"))
+                    {
+                        let oldWidth = parseFloat(progress.css("width"));
+                        progress.css("width", event.clientX - 63);
+                        let newWidth = parseFloat(progress.css("width"));
+                        
+                        let diff = newWidth - oldWidth;
+                        let multiplier = diff / PROGRESS_WIDTH;
+                        let amount = (progressBar.duration || 0) * multiplier;
+
+                        AudioManager.rewind(index, amount);
+                    }
+                });
             }
         }
 

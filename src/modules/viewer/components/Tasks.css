@@ -50,7 +50,9 @@
     width: 782px;
     position: absolute;
     display: flex;
-    height: 105px;
+    height: 62px;
+    
+    bottom: 0;
 }
 
 .taskContainer.offScreen {

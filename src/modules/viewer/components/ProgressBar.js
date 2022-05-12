@@ -17,14 +17,15 @@ const ProgressBar = {
         </div>
         `);
 
-        let slider = Slider.build(taskContainer, element);
-        element.find(".progress").append(slider.element);
         element.append(playbackButton.element);
+
+        let audio = AudioManager.tracks[index];
         
         const progressBar = {
             element: element,
             playbackButton: playbackButton,
-            audio: AudioManager.tracks[index],
+            audio: audio,
+            duration: audio.duration / divider,
             divider: divider,
             playing: false,
 
@@ -44,6 +45,7 @@ const ProgressBar = {
 
                 progressBar.playing = true;
                 progressBar.audio = AudioManager.tracks[index];
+                progressBar.duration = progressBar.audio.duration / progressBar.divider;
                 playbackButton.play();
                 progressBar.update();
             },
@@ -64,14 +66,13 @@ const ProgressBar = {
 
             update: () => {
                 let currTime = progressBar.audio.currentTime;
-                let duration = progressBar.audio.duration / progressBar.divider;
-                let nthLap = Math.floor(currTime / duration);
+                let nthLap = Math.floor(currTime / progressBar.duration);
 
-                if (currTime >= duration) {
-                    currTime -= duration * nthLap;
+                if (currTime >= progressBar.duration) {
+                    currTime -= progressBar.duration * nthLap;
                 }
 
-                let width = PROGRESS_WIDTH * (currTime / duration);
+                let width = PROGRESS_WIDTH * (currTime / progressBar.duration);
                 
                 element.find(".progress").css("width", `${width}px`);
                 progressBar.animationId = requestAnimationFrame(progressBar.update);
@@ -97,6 +98,9 @@ const ProgressBar = {
                 progressBar.divider = divider;
             }
         }
+
+        let slider = Slider.build(index, taskContainer, progressBar);
+        element.find(".progress").append(slider.element);
 
         return progressBar;
     }

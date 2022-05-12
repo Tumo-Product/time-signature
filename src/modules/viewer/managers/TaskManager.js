@@ -15,7 +15,6 @@ const TaskManager = {
         view.mainSignature.turnOff();
         NextButton.deactivate();
         let task = TaskManager.tasks[TaskManager.current];
-        TaskManager.currTrack = 0;
 
         if (task !== undefined) {
             AudioManager.tracks[TaskManager.current].pause();
@@ -42,6 +41,8 @@ const TaskManager = {
         }
 
         let currTask = data.tasks[TaskManager.current];
+        TaskManager.currTrack = Math.floor(Math.random() * currTask.tracks.length);
+        console.log(TaskManager.currTrack);
         let track = currTask.tracks[TaskManager.currTrack];
 
         AudioManager.setSource(TaskManager.current, track.url);

@@ -46,9 +46,11 @@ const Tasks = {
             lowerSignature: lowerSignature,
 
             bindEvents: () => {
-                for (let i = 0; i < beats.length; i++) {
+                for (let i = 0; i < task.beats.length; i++) {
+                    task.beats[i].button.element.unbind("click");
+                    
                     task.beats[i].button.element.click(() => {
-                        for (let beat of beats) {
+                        for (let beat of task.beats) {
                             if (beat.state === "wrong") {
                                 beat.button.turnOff(true);
                             }
@@ -63,7 +65,7 @@ const Tasks = {
                             task.correctCount++;
 
                             if(task.correctCount === beatsCount) {
-                                for (let beat of beats) { UI.disable(beat.element) }
+                                for (let beat of task.beats) { UI.disable(beat.element) }
                                 NextButton.activate();
                                 view.mainSignature.set(task.upperSignature, task.lowerSignature);
                             }
@@ -107,6 +109,7 @@ const Tasks = {
 
                 element.find(".subContainer").css("gap", `${PROGRESS_WIDTH/beatsLength}px`);
                 progressBar.reset(task.beats, progressDivider);
+                task.bindEvents();
             },
 
             goOffScreen: () => {
@@ -123,7 +126,7 @@ const Tasks = {
         };
 
         task.bindEvents();
-        progressBar.bindEvents(beats);
+        progressBar.bindEvents(task.beats);
         return task;
     },
 
