@@ -1,21 +1,20 @@
 import "./Beat.css";
-import RadioButtons from "./RadioButtons.js";
+import CircleButtons from "./CircleButtons.js";
 import StatusIndicator from "./StatusIndicator.js";
 
 const Beat = {
     build: async () => {
         let element =
-        $(/* html */
-        `<div class="beat">
-            <div class="division"></div>
-        </div>`
-        );
+        $(/* html */ `
+            <div class="beat">
+                <div class="division"></div>
+            </div>
+        `);
 
-        let button = await RadioButtons.build("beatButton");
+        let button = await CircleButtons.build("beatButton");
         let statusIndicator = await StatusIndicator.build();
         element.append(button.element);
         element.append(statusIndicator.element);
-        button.turnOff(true);
 
         let beat = {
             element: element,
@@ -24,11 +23,11 @@ const Beat = {
 
             state: "off",
 
-            changeState: (state) => {
+            changeLook: (state) => {
                 beat.state = state;
                 
                 button.changeColor(state === "correct" ? "Green" : "Red");
-                statusIndicator.changeState(state);
+                statusIndicator.changeLook(state);
             }
         }
 

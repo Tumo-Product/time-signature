@@ -6,16 +6,16 @@ const StatusIndicator = {
     build: async () => {
         let element =
         $(/* html */ `
-        <div class="statusIndicator off">
-            <div class="indicator"></div>
-            <div class="indicator"></div>
-        </div>
+            <div class="statusIndicator off">
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
         `);
 
         let statusIndicator = {
             element: element,
 
-            changeState: (state) => {
+            changeLook: (state) => {
                 statusIndicator.state = state;
                 
                 for (let style of persistentStyles) {

@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BundleAnalyzerPlugin =
@@ -48,10 +50,9 @@ module.exports = {
       filename: 'viewer.html',
       template: 'src/viewer.html'
     }),
-    new HtmlWebpackPlugin({
-      title: 'Webpack App',
-      filename: 'editor.html',
-      template: 'src/editor.html'
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
     }),
     new BundleAnalyzerPlugin(),
   ],

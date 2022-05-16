@@ -10,8 +10,8 @@ const Headphones = {
 
         let template = /* html */
         `
-        ${HeadphonesTip.getTemplate()}
-        <div id="Headphones">${icon}</div>
+            ${HeadphonesTip.getTemplate()}
+            <div id="Headphones">${icon}</div>
         `;
 
         return template;

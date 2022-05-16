@@ -13,9 +13,9 @@ const PlaybackButton = {
         
         let element =
         $(/* html */ `
-        <div class="button playback">
-            ${pauseIcon}
-        </div>
+            <div class="button playback">
+                ${pauseIcon}
+            </div>
         `);
 
         PlayIcon.changeColor(playIcon, "Blue");

@@ -14,8 +14,8 @@ const StartButton = {
 
         let element = 
         $(/* html */ `
-        <div id="StartButton" class="button"></div>
-        ${StartTip.getTemplate()}
+            <div id="StartButton" class="button"></div>
+            ${StartTip.getTemplate()}
         `);
 
         btn = element.first();
@@ -32,11 +32,11 @@ const StartButton = {
 
     events: {
         bind: () => {
-            btn.click(StartButton.events.click);
+            btn.on("click", StartButton.events.click);
             btn.hover(StartButton.events.hover);
         },
         click: () => {
-            $("#StartButton").unbind("click");
+            $("#StartButton").off("click");
             begin();
         },
         hover: () => {

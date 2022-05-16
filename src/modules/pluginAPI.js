@@ -8,21 +8,8 @@ const pluginAPI = {
                     return;
                 }
                 
-                const { data } = event.data;
-                if (data === undefined) {
-                    resolve();
-                    return false;
-                }
-            
-                if (data.message !== undefined) {
-                    switch(data.message) {
-                        case 'init-response':
-                            resolve();
-                            break;
-                    }
-
-                    return true;
-                }
+                resolve();
+                return;
             });
         });
     },

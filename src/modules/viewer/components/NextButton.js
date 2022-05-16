@@ -1,8 +1,8 @@
 import "./NextButton.css";
 import "src/assets/NextButton.svg";
-import { getSVG, timeout } from "src/modules/tools.js";
-import UI, { activateComponent, deactivateComponent, getProperties } from "src/modules/common.js";
-import TaskManager from "../managers/TaskManager.js";
+import { getSVG } from "src/modules/tools.js";
+import { activateComponent, deactivateComponent, getSvgProperties } from "src/modules/common.js";
+import LevelManager from "../managers/LevelManager.js";
 
 let btn;
 
@@ -12,15 +12,15 @@ const NextButton = {
 
         let element = 
         $(/* html */ `
-        <div id="NextButton" class="button">
-            ${icon}
-        </div>
+            <div id="NextButton" class="button">
+                ${icon}
+            </div>
         `);
         
-        getProperties(NextButton, element);
+        getSvgProperties(NextButton, element);
         btn = element;
         NextButton.deactivate();
-        element.click(TaskManager.nextTask);
+        element.on("click", LevelManager.nextLevel);
         return element;
     },
 
@@ -29,7 +29,7 @@ const NextButton = {
     },
 
     activate: () => {
-        activateComponent  (NextButton, btn, true);
+        activateComponent(NextButton, btn, true);
     },
 
     hide: () => {

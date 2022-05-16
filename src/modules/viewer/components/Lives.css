@@ -16,7 +16,7 @@
     gap: 27px;
 
     z-index: 2;
-    background-color: #25292D;
+    background-color: var(--background-color);
 }
 
 #Lives .radio {

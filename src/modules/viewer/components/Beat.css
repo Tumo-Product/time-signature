@@ -13,7 +13,7 @@
 .division {
     height: 15px;
     width: 1px;
-    background: #25292d;
+    background-color: var(--background-color);
     opacity: 0.15;
 
     position: absolute;

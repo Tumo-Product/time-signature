@@ -1,9 +1,12 @@
-import "./DigitalNumber.css";
 import "src/assets/DigitalNumber.svg";
 import { getSVG } from "src/modules/tools.js";
 import UI from "src/modules/common.js";
 
 const DigitalNumber = {
+    /*
+    The digital number has differnet parts and each one has an index,
+    when we enable a number it lights up specific parts, laid out in this array.
+    */
     numberLayout: [
         [0, 1, 2, 4, 5, 6],
         [0, 5],
@@ -20,10 +23,7 @@ const DigitalNumber = {
     build: async (className) => {
         let icon = await getSVG("DigitalNumber.svg", className);
 
-        let element =
-        $(/* html */`
-        ${icon}
-        `);
+        let element = $(/* html */`${icon}`);
 
         let num = {
             element: element,

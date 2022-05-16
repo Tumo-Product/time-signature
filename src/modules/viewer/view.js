@@ -6,10 +6,13 @@ import Lives from "./components/Lives.js";
 import NextButton from "./components/NextButton.js";
 import Signature from "./components/Signature.js";
 
+import { timeout } from "src/modules/tools.js";
+let container = $(".container");
+
 const view = {
     start: {
         build: async () => {
-            $(".container").append([ await Headphones.build(), Header.build(), await StartButton.build() ]);
+            container.append([ await Headphones.build(), Header.build(), await StartButton.build() ]);
         },
 
         hide: async () => {
@@ -21,12 +24,14 @@ const view = {
 
     timeline: {
         build: async () => {
-            $(".container").append([ await Rails.build(), await Lives.build(), await NextButton.build() ]);
+            container.append(Rails.build());
+            container.append(await Lives.build());
+            container.append(await NextButton.build());
         },
 
         buildSignature: async () => {
             let signature = await Signature.build();
-            $(".container").append(signature.element);
+            container.append(signature.element);
             view.mainSignature = signature;
         },
 
@@ -34,6 +39,21 @@ const view = {
             Lives.hide();
             NextButton.hide();
             view.mainSignature.hide();
+        }
+    },
+
+    final: {
+        build: async (levels, levelsData) => {
+            for (let level of levels) {
+                level.addSignature();
+            }
+
+            await timeout(700);
+
+            for (let level of levelsData.reverse()) {
+                $(`#${level.name}`).addClass(`${level.name}FinalPosition`);
+                await timeout(300);
+            }
         }
     }
 }

@@ -1,15 +1,15 @@
-import "src/assets/Oval.svg";
+import "src/assets/Circle.svg";
 import { getSVG } from "./tools.js";
 
 const UI = {
     DEACTIVATED_COLOR: "#212427",
 
-    getOval: async () => {
-        if (UI.ovalIcon === undefined) {
-            UI.ovalIcon = await getSVG("Oval.svg");
+    getCircle: async () => {
+        if (!UI.circleIcon) {
+            UI.circleIcon = await getSVG("Circle.svg");
         }
         
-        return UI.ovalIcon;
+        return UI.circleIcon;
     },
 
     disable: (element) => {
@@ -18,6 +18,8 @@ const UI = {
     enable: (element) => {
         element.removeClass("disabled");
     },
+
+    // Use is the tag that contains the path(shape), filters(blur for example) and fills(gradient or solid color) of an svg.
     setFill: (icon, fill) => {
         icon.find("use:eq(1)").attr("fill", fill);
     },
@@ -40,14 +42,14 @@ export const deactivateComponent = (element, disable) => {
 }
 
 export const activateComponent = (component, element, enable) => {
-    if (component.fill !== undefined && component.filter !== undefined) {
+    if (component.fill && component.filter) {
         UI.setFill(element.find("svg"), component.fill);
         UI.setFilter(element.find("svg"), component.filter);
     }
     if (enable) UI.enable(element);
 }
 
-export const getProperties = (component, element) => {
+export const getSvgProperties = (component, element) => {
     component.fill = UI.getFill(element.find("svg"));
     component.filter = UI.getFilter(element.find("svg"));
 }

@@ -1,8 +1,8 @@
 import UI from "src/modules/common.js";
 import { timeout } from "src/modules/tools.js";
-import TaskManager from "../managers/TaskManager.js";
+import LevelManager from "../managers/LevelManager.js";
 import "./Lives.css";
-import RadioButtons from "./RadioButtons.js";
+import CircleButtons from "./CircleButtons.js";
 
 const Lives = {
     _count: 3,
@@ -10,12 +10,12 @@ const Lives = {
     get count() {
         return Lives._count;
     },
-    set count (value) {
+    set count(value) {
         Lives.buttons[Lives._count - 1].turnOff();
         Lives._count = value;
 
         if (Lives._count === 0) {
-            TaskManager.nextTrack();
+            LevelManager.nextTrack();
         }
     },
 
@@ -24,7 +24,7 @@ const Lives = {
         let template = $(/* html */ `<div id="Lives"></div>`);
 
         for (let i = 0; i < Lives.count; i++) {
-            let button = await RadioButtons.build();
+            let button = await CircleButtons.build();
             template.append(button.element);
             UI.disable(button.element);
             button.changeColor("Red");

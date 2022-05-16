@@ -1,20 +1,20 @@
 import PlaybackButton from "./PlaybackButton.js";
 import AudioManager from "../managers/AudioManager.js";
 import "./ProgressBar.css";
-import TaskManager from "../managers/TaskManager.js";
+import LevelManager from "../managers/LevelManager.js";
 import Slider from "./Slider.js";
 
 export const PROGRESS_WIDTH = 782;
 
 const ProgressBar = {
-    build: async (index, divider, taskContainer) => {
+    build: async (index, divider, levelContainer) => {
         let playbackButton = await PlaybackButton.build();
 
         let element =
         $(/* html */ `
-        <div class="progressBar">
-            <div class="progress"></div>
-        </div>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
         `);
 
         element.append(playbackButton.element);
@@ -36,10 +36,10 @@ const ProgressBar = {
             },
 
             play: () => {
-                for (let [i, task] of TaskManager.tasks.entries()) {
-                    if (task.progressBar.playing) {
+                for (let [i, level] of LevelManager.levels.entries()) {
+                    if (level.progressBar.playing) {
                         AudioManager.tracks[i].pause();
-                        task.progressBar.pause();
+                        level.progressBar.pause();
                     }
                 }
 
@@ -53,7 +53,7 @@ const ProgressBar = {
             bindEvents: (beats) => {
                 progressBar.beats = beats;
 
-                playbackButton.element.click(() => {
+                playbackButton.element.on("click", () => {
                     let paused = AudioManager.toggle(index);
 
                     if (paused) {
@@ -81,25 +81,25 @@ const ProgressBar = {
                 let index = Math.floor(width / (PROGRESS_WIDTH/beats.length));
                 
                 for (let i = 0; i < beats.length; i++) {
-                    let sid = beats[i].statusIndicator;
+                    let beatStatus = beats[i].statusIndicator;
 
                     if (i === index) {
-                        sid.changeState("near");
+                        beatStatus.changeLook("near");
                     } else {
-                        sid.changeState("off");
+                        beatStatus.changeLook("off");
                     }
                 }
             },
 
             reset: (beats, divider) => {
-                progressBar.audio = AudioManager.tracks[TaskManager.current];
+                progressBar.audio = AudioManager.tracks[LevelManager.current];
                 element.find(".progress").css("width", 0);
                 progressBar.beats = beats;
                 progressBar.divider = divider;
             }
         }
 
-        let slider = Slider.build(index, taskContainer, progressBar);
+        let slider = Slider.build(index, levelContainer, progressBar);
         element.find(".progress").append(slider.element);
 
         return progressBar;

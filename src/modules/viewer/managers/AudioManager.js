@@ -11,7 +11,6 @@ const AudioManager = {
         let mediaElement = AudioManager.ctx.createMediaElementSource(audio);
         mediaElement.connect(AudioManager.ctx.destination);
         AudioManager.tracks[index] = audio;
-        return audio;
     },
 
     toggle: (index) => {
@@ -27,7 +26,7 @@ const AudioManager = {
         return track.paused;
     },
 
-    rewind: (index, amount) => {
+    scrub: (index, amount) => {
         AudioManager.tracks[index].currentTime += amount;
     }
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>9F9A52F0-1FD5-40CF-99C8-3E1DB3B07C0A</title>
     <defs>
         <linearGradient x1="82.9106156%" y1="-6.023753%" x2="38.2700027%" y2="100%" id="GreenOvalGradient">
             <stop stop-color="#2B7076" offset="0%"></stop>
@@ -29,8 +28,8 @@
     <g id="Time-Signature" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Main-page-" transform="translate(-224.000000, -452.000000)" fill-rule="nonzero">
             <g id="Oval-Copy-41" transform="translate(242.500000, 470.500000) rotate(-180.000000) translate(-242.500000, -470.500000) translate(223.000000, 451.000000)">
-                <use fill="black" fill-opacity="1" filter="url(#GreenOvalFilter)" xlink:href="#Oval"></use>
-                <use fill="url(#GreenOvalGradient)" xlink:href="#Oval"></use>
+                <use fill="black" fill-opacity="1" filter="" xlink:href="#Oval"></use>
+                <use fill="#212427" xlink:href="#Oval"></use>
             </g>
         </g>
     </g>

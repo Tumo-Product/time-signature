@@ -4,13 +4,17 @@ export const timeout = (ms) => {
 
 export const getSVG = async (path, className, hashId) => {
 	let svg = await $.ajax({url: path}, true);
-	if (className !== undefined) {
+	if (className) {
 		svg.documentElement.classList.add(className);
 	}
 
 	let string = new XMLSerializer().serializeToString(svg.documentElement);
 
-	if (hashId !== undefined) {
+	/* 
+	Hash Id is used to randomize filter Ids when we're adding the same icon multiple times.
+	It allows us to select a specific filter's ID if we want to do any advanced animations.
+	*/
+	if (hashId) {
 		let newId = `${hashId}_${(Math.random() + 1).toString(36).substring(7)}`;
 		string = string.replaceAll(hashId, newId);
 		return { asset: string, id: newId };

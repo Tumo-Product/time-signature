@@ -1,20 +1,20 @@
 import UI, { deactivateComponent } from "src/modules/common.js";
 
-const RadioButtons = {
+const CircleButtons = {
     build: async (className) => {
-        let icon = await UI.getOval();
-        className = className !== undefined ? className : "";
+        let icon = await UI.getCircle();
+        className = className ? className : "";
 
         let element = 
         $(/* html */ `
-        <div class="button ${className}">
-            ${icon}
-        </div>
+            <div class="button ${className}">
+                ${icon}
+            </div>
         `);
 
         let radioButton = {
             element: element,
-            state: "Green",
+            state: "off",
 
             changeColor: (color) => {
                 element.addClass("disabled");
@@ -34,4 +34,4 @@ const RadioButtons = {
     },
 }
 
-export default RadioButtons;
+export default CircleButtons;
