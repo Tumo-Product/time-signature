@@ -1,0 +1,9 @@
+#StartButton {
+    position: absolute;
+    bottom: 64px;
+    transition: 1s;
+}
+
+#StartButton.hidden {
+    bottom: -50px;
+}

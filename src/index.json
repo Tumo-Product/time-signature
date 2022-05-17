@@ -1,0 +1,67 @@
+{
+    "levels": [
+        {
+            "name": "easy",
+            "tracks": [
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/easy/4_4-4.wav",
+                    "upperSignature": 4,
+                    "lowerSignature": 4,
+                    "bars": 8
+                }
+            ]
+        },
+        {
+            "name": "medium",
+            "tracks": [
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/5_4-9.wav",
+                    "upperSignature": 5,
+                    "lowerSignature": 4,
+                    "bars": 9
+                },
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/4_4-8+1.wav",
+                    "upperSignature": 4,
+                    "lowerSignature": 4,
+                    "bars": 8
+                },
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/4_4-8+2.wav",
+                    "upperSignature": 4,
+                    "lowerSignature": 4,
+                    "bars": 8
+                },
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/7_8-8.wav",
+                    "upperSignature": 7,
+                    "lowerSignature": 8,
+                    "bars": 8
+                }
+            ]
+        },
+        {
+            "name": "hard",
+            "tracks": [
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/hard/5_4-9.wav",
+                    "upperSignature": 5,
+                    "lowerSignature": 4,
+                    "bars": 9
+                },
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/hard/4_4-8.wav",
+                    "upperSignature": 4,
+                    "lowerSignature": 4,
+                    "bars": 8
+                },
+                {
+                    "url": "https://content-tools.tumo.world/FileSystem/data/TimeSignature/hard/7_8-8.wav",
+                    "upperSignature": 7,
+                    "lowerSignature": 8,
+                    "bars": 8
+                }
+            ]
+        }
+    ]
+}

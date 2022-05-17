@@ -1,0 +1,101 @@
+.levelContainer {
+    width: 846px;
+    height: 128px;
+
+    position: absolute;
+    top: 267px;
+
+    animation: centerTransition 0.5s ease;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+}
+
+.level {
+    z-index: 1;
+    background-color: var(--background-color);
+    width: 846px;
+    height: 128px;
+    border-radius: 7px;
+    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+@keyframes centerTransition {
+    from {
+        top: 600px;
+    }
+
+    to {
+        top: 267px;
+    }
+}
+
+.levelContents {
+    position: absolute;
+    height: 105px;
+    width: 794px;
+    margin-left: 9px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.subContainer {
+    width: 782px;
+    position: absolute;
+    display: flex;
+    height: 62px;
+    
+    bottom: 0;
+}
+
+.levelContainer.offScreen {
+    animation: offScreenTransition 0.5s ease;
+    top: -140px;
+}
+
+@keyframes offScreenTransition {
+    from {
+        top: 267px;
+    }
+
+    to {
+        top: -140px;
+    }
+}
+
+.levelContainer.easyFinalPosition {
+    top: 63px;
+}
+
+.levelContainer.mediumFinalPosition {
+    top: 254px;
+}
+
+.levelContainer.hardFinalPosition {
+    top: 445px;
+}
+
+.levelContainer .signatureContainer {
+    position: absolute;
+    height: 43px;
+    width: 102px;
+    box-shadow: -1px -1px 2px 0 rgba(67,67,69,0.5), 2px 2px 2px 0 #171C21;
+    top: -43px;
+    background-color: var(--background-color);
+
+    border-radius: 7px 7px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.levelContainer .signature {
+    transform: scale(0.64835);
+    top: 2px;
+}

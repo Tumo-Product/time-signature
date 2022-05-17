@@ -1,0 +1,38 @@
+#Lives {
+    width: 246px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;
+    border-radius: 0 0 7px 7px;
+
+    animation: showLives 0.5s ease-out;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+
+    z-index: 2;
+    background-color: var(--background-color);
+}
+
+#Lives .radio {
+    pointer-events: none;
+}
+
+@keyframes showLives {
+    from {
+        top: -90px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+#Lives.hidden {
+    top: -90px;
+}

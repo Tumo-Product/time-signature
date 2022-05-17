@@ -1,0 +1,46 @@
+.statusIndicator {
+    position: absolute;
+    bottom: 45px;
+    height: 17px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.indicator {
+    background-color: #212427;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+}
+
+.statusIndicator.off .indicator {
+    background-color: #212427;
+}
+
+.statusIndicator.near .indicator {
+    /* background-color: #3B3F42; */
+    animation: near 0.4s ease-in;
+}
+
+@keyframes near {
+    0% {
+        background-color: #3B3F42;
+    }
+
+    100% {
+        background-color: #212427;
+    }
+}
+
+.statusIndicator.correct .indicator {
+    background-color: #67BE6A;
+    box-shadow: 0 0 5px 1px rgba(63,139,114,0.59);
+}
+
+.statusIndicator.wrong .indicator {
+    background-color: #BE6776;
+    box-shadow: 0 0 5px 1px rgba(200,73,172,0.5);
+}

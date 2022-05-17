@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="47px" viewBox="0 0 21 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="-216.494196%" y1="215.725394%" x2="-216.494196%" y2="-14.9414316%" id="BarGradient">
+            <stop stop-color="#2B7076" offset="0%"></stop>
+            <stop stop-color="#68BF6A" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="BarPath" points="1673.72353 648.714529 1671.56865 650.549298 1673.72353 652.162812 1709.43879 652.162812 1711.5925 650.549298 1709.43879 648.714529"></polygon>
+        <filter x="-16.5%" y="-174.0%" width="133.0%" height="448.0%" filterUnits="objectBoundingBox" id="BarFilter">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.247058824   0 0 0 0 0.545098039   0 0 0 0 0.447058824  0 0 0 0.201195777 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Bar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Walk-trough-step-2/6" transform="translate(-1681.000000, -627.000000)">
+            <g id="Fill" transform="translate(1691.580575, 650.438671) rotate(-75.000000) translate(-1691.580575, -650.438671) ">
+                <use fill="black" fill-opacity="1" filter="url(#BarFilter)" xlink:href="#BarPath"></use>
+                <use fill="url(#BarGradient)" fill-rule="evenodd" xlink:href="#BarPath"></use>
+            </g>
+        </g>
+    </g>
+</svg>

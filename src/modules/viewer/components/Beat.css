@@ -1,0 +1,21 @@
+.beat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beatButton {
+    position: absolute;
+    bottom: 0;
+}
+
+.division {
+    height: 15px;
+    width: 1px;
+    background-color: var(--background-color);
+    opacity: 0.15;
+
+    position: absolute;
+    top: -32px;
+}
