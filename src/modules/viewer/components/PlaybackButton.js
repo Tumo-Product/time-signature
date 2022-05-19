@@ -24,7 +24,9 @@ const PlaybackButton = {
         let btn = {
             element: element,
             play    : () => { element.addClass("paused"); },
-            pause   : () => { element.removeClass("paused"); }
+            pause   : () => { element.removeClass("paused"); },
+            onClick: (handler) => element.on("click", handler),
+            offClick: (handler) => element.off("click", handler)
         }
 
         return btn;

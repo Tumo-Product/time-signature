@@ -7,7 +7,7 @@
     border-radius: 0 0 7px 7px;
 
     animation: showLives 0.5s ease-out;
-    transition: 0.5s;
+    transition: top 0.5s;
     transition-timing-function: ease-out;
 
     display: flex;
@@ -15,7 +15,7 @@
     align-items: center;
     gap: 27px;
 
-    z-index: 2;
+    z-index: 1;
     background-color: var(--background-color);
 }
 

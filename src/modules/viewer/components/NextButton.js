@@ -3,6 +3,7 @@ import "src/assets/NextButton.svg";
 import { getSVG } from "src/modules/tools.js";
 import { activateComponent, deactivateComponent, getSvgProperties } from "src/modules/common.js";
 import LevelManager from "../managers/LevelManager.js";
+import WalkthroughManager from "../managers/WalkthroughManager.js";
 
 let btn;
 
@@ -20,7 +21,10 @@ const NextButton = {
         getSvgProperties(NextButton, element);
         btn = element;
         NextButton.deactivate();
-        element.on("click", LevelManager.nextLevel);
+        element.on("click", () => {
+            if (LevelManager.current === 0) WalkthroughManager.end();
+            LevelManager.nextLevel();
+        });
         return element;
     },
 

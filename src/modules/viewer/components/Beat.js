@@ -1,3 +1,4 @@
+import UI from "src/modules/common.js";
 import "./Beat.css";
 import CircleButtons from "./CircleButtons.js";
 import StatusIndicator from "./StatusIndicator.js";
@@ -28,7 +29,13 @@ const Beat = {
                 
                 button.changeColor(state === "correct" ? "Green" : "Red");
                 statusIndicator.changeLook(state);
-            }
+            },
+
+            highlight: () => {
+                UI.addPulse(button.element);
+                button.element.on("click", beat.resetHighlight);
+            },
+            resetHighlight: () => UI.removePulse(button.element)
         }
 
         return beat;

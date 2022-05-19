@@ -1,0 +1,98 @@
+{
+    "header": "Here we start a walkthrough",
+    "steps": [
+        {
+            "inFocus": "Lives",
+            "title": "Lives (tries)",
+            "description": "Here you can see your three available lives,<br>which will go down by one in case you make a<br>mistake.<br><br>But do not worry, if you run out of lives the track<br>will simply change and you will have your lives<br>refilled.",
+            "position": {
+                "x": 590,
+                "y": 33
+            },
+            "showBlur": true
+        },
+        {
+            "inFocus": "Signature",
+            "title": "Time signature number",
+            "description": "After you successfully complete the task, the time<br>signature of the song will appear in this window.",
+            "position": {
+                "x": 549,
+                "y": 140
+            },
+            "showBlur": true
+        },
+        {
+            "inFocus": "ProgressBar",
+            "title": "Music progress bar",
+            "description": "This is the music progress bar. You can drag the playhead<br>to the play the soundtrack from the specific part you want.",
+            "position": {
+                "x": 34,
+                "y": 403
+            },
+            "showBlur": true
+        },
+        {
+            "inFocus": "Level",
+            "title": "Play/pause button",
+            "description": "Click this button to start the soundtrack/music, and stop it<br>whenever needed. Now let's click it and start playing.",
+            "position": {
+                "x": 34,
+                "y": 144
+            },
+            "showBlur": true,
+            "hideNext": true
+        },
+        {
+            "inFocus": "Beat",
+            "title": "First correct dot",
+            "description": "It seems like the time signature for this track is 4,<br>which is the number of beats in one bar. This means<br>ou will need to choose the very first beat of each bar.<br>Now let's click on this dot and see what happens.",
+            "position": {
+                "x": 219,
+                "y": 408
+            },
+            "hideBlur": true
+        },
+        {
+            "description": "Good job! The green means you are right, now go<br>ahead and click on all the correct beats remaining.",
+            "position": {
+                "x": 219,
+                "y": 408
+            },
+            "staticCircles": true,
+            "initCallForAction": true
+        },
+        {
+            "description": "Good job! The green means you are right, now go<br>ahead and click on all the correct beats remaining.",
+            "position": {
+                "x": 289,
+                "y": 408
+            },
+            "staticCircles": true,
+            "initCallForAction": true
+        },
+        {
+            "description": "Great job! Done",
+            "position": {
+                "x": 289,
+                "y": 439
+            }
+        }
+    ],
+    "callForAction": {
+        "inFocus": "Beat",
+        "description": "For example this one.",
+        "position": {
+            "x": 289,
+            "y": 408
+        },
+        "staticCircles": true
+    },
+    "firstFail": {
+        "header": "You pressed the wrong button, every time you press the wrong button your lives will subtract.",
+        "inFocus": "Lives"
+    },
+    "trackFailed": {
+        "header": "You failed 3 times, try again on another track.",
+        "inFocus": "Lives"
+    }
+}

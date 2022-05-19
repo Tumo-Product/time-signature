@@ -7,9 +7,27 @@ import NextButton from "./components/NextButton.js";
 import Signature from "./components/Signature.js";
 
 import { timeout } from "src/modules/tools.js";
+import Popup from "./components/Popup.js";
 let container = $(".container");
 
 const view = {
+    popup: Popup.build(),
+
+    highlight: (element) => {
+        if (element instanceof $) {
+            element.addClass("highlighted");
+        } else {
+            element.highlight();
+        }
+    },
+    resetHighlight: (element) => {
+        if (element instanceof $) {
+            element.removeClass("highlighted");
+        } else {
+            element.resetHighlight();
+        }
+    },
+
     start: {
         build: async () => {
             container.append([ await Headphones.build(), Header.build(), await StartButton.build() ]);
@@ -24,6 +42,8 @@ const view = {
 
     timeline: {
         build: async () => {
+            container.append(view.popup.element);
+
             container.append(Rails.build());
             container.append(await Lives.build());
             container.append(await NextButton.build());

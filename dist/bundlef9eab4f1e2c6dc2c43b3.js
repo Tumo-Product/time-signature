@@ -28,6 +28,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".beat {\n  height: 100%;\n  display: f
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Circles.css":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Circles.css ***!
+  \********************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "#Circles {\n  display: flex;\n}\n\n.walkthroughCircle {\n  margin-right: 5px;\n  opacity: 1;\n  transition: 0.2s;\n}\n\n.walkthroughCircle.deactivated {\n  opacity: 0.3;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/Circles.css"],"names":[],"mappings":"AAAA;EACI,aAAA;AACJ;;AAEA;EACI,iBAAA;EACA,UAAA;EACA,gBAAA;AACJ;;AAEA;EACI,YAAA;AACJ","sourcesContent":["#Circles {\n    display: flex;\n}\n\n.walkthroughCircle {\n    margin-right: 5px;\n    opacity: 1;\n    transition: 0.2s;\n}\n\n.walkthroughCircle.deactivated {\n    opacity: 0.3;\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Header.css":
 /*!*******************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Header.css ***!
@@ -102,7 +129,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".levelContainer {\n  width: 846px;\n  height: 128px;\n  position: absolute;\n  top: 267px;\n  animation: centerTransition 0.5s ease;\n  transition: 0.5s;\n  display: flex;\n  justify-content: center;\n}\n\n.level {\n  z-index: 1;\n  background-color: var(--background-color);\n  width: 846px;\n  height: 128px;\n  border-radius: 7px;\n  box-shadow: -2px -2px 4px 0 rgba(67, 67, 69, 0.5), 2px 2px 3px 0 #171C21;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n}\n\n@keyframes centerTransition {\n  from {\n    top: 600px;\n  }\n  to {\n    top: 267px;\n  }\n}\n.levelContents {\n  position: absolute;\n  height: 105px;\n  width: 794px;\n  margin-left: 9px;\n  display: flex;\n  justify-content: center;\n}\n\n.subContainer {\n  width: 782px;\n  position: absolute;\n  display: flex;\n  height: 62px;\n  bottom: 0;\n}\n\n.levelContainer.offScreen {\n  animation: offScreenTransition 0.5s ease;\n  top: -140px;\n}\n\n@keyframes offScreenTransition {\n  from {\n    top: 267px;\n  }\n  to {\n    top: -140px;\n  }\n}\n.levelContainer.easyFinalPosition {\n  top: 63px;\n}\n\n.levelContainer.mediumFinalPosition {\n  top: 254px;\n}\n\n.levelContainer.hardFinalPosition {\n  top: 445px;\n}\n\n.levelContainer .signatureContainer {\n  position: absolute;\n  height: 43px;\n  width: 102px;\n  box-shadow: -1px -1px 2px 0 rgba(67, 67, 69, 0.5), 2px 2px 2px 0 #171C21;\n  top: -43px;\n  background-color: var(--background-color);\n  border-radius: 7px 7px 0px 0px;\n  display: flex;\n  justify-content: center;\n}\n\n.levelContainer .signature {\n  transform: scale(0.64835);\n  top: 2px;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/Levels.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EAEA,kBAAA;EACA,UAAA;EAEA,qCAAA;EACA,gBAAA;EAEA,aAAA;EACA,uBAAA;AAFJ;;AAKA;EACI,UAAA;EACA,yCAAA;EACA,YAAA;EACA,aAAA;EACA,kBAAA;EACA,wEAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;AAHJ;;AAMA;EACI;IACI,UAAA;EAHN;EAME;IACI,UAAA;EAJN;AACF;AAOA;EACI,kBAAA;EACA,aAAA;EACA,YAAA;EACA,gBAAA;EAEA,aAAA;EACA,uBAAA;AANJ;;AASA;EACI,YAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EAEA,SAAA;AAPJ;;AAUA;EACI,wCAAA;EACA,WAAA;AAPJ;;AAUA;EACI;IACI,UAAA;EAPN;EAUE;IACI,WAAA;EARN;AACF;AAWA;EACI,SAAA;AATJ;;AAYA;EACI,UAAA;AATJ;;AAYA;EACI,UAAA;AATJ;;AAYA;EACI,kBAAA;EACA,YAAA;EACA,YAAA;EACA,wEAAA;EACA,UAAA;EACA,yCAAA;EAEA,8BAAA;EACA,aAAA;EACA,uBAAA;AAVJ;;AAaA;EACI,yBAAA;EACA,QAAA;AAVJ","sourcesContent":[".levelContainer {\n    width: 846px;\n    height: 128px;\n\n    position: absolute;\n    top: 267px;\n\n    animation: centerTransition 0.5s ease;\n    transition: 0.5s;\n\n    display: flex;\n    justify-content: center;\n}\n\n.level {\n    z-index: 1;\n    background-color: var(--background-color);\n    width: 846px;\n    height: 128px;\n    border-radius: 7px;\n    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: absolute;\n}\n\n@keyframes centerTransition {\n    from {\n        top: 600px;\n    }\n\n    to {\n        top: 267px;\n    }\n}\n\n.levelContents {\n    position: absolute;\n    height: 105px;\n    width: 794px;\n    margin-left: 9px;\n    \n    display: flex;\n    justify-content: center;\n}\n\n.subContainer {\n    width: 782px;\n    position: absolute;\n    display: flex;\n    height: 62px;\n    \n    bottom: 0;\n}\n\n.levelContainer.offScreen {\n    animation: offScreenTransition 0.5s ease;\n    top: -140px;\n}\n\n@keyframes offScreenTransition {\n    from {\n        top: 267px;\n    }\n\n    to {\n        top: -140px;\n    }\n}\n\n.levelContainer.easyFinalPosition {\n    top: 63px;\n}\n\n.levelContainer.mediumFinalPosition {\n    top: 254px;\n}\n\n.levelContainer.hardFinalPosition {\n    top: 445px;\n}\n\n.levelContainer .signatureContainer {\n    position: absolute;\n    height: 43px;\n    width: 102px;\n    box-shadow: -1px -1px 2px 0 rgba(67,67,69,0.5), 2px 2px 2px 0 #171C21;\n    top: -43px;\n    background-color: var(--background-color);\n\n    border-radius: 7px 7px 0px 0px;\n    display: flex;\n    justify-content: center;\n}\n\n.levelContainer .signature {\n    transform: scale(0.64835);\n    top: 2px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".levelContainer {\n  width: 846px;\n  height: 128px;\n  position: absolute;\n  top: 267px;\n  animation: centerTransition 0.5s ease;\n  transition-timing-function: ease-in;\n  transition: 0.5s;\n  display: flex;\n  justify-content: center;\n}\n\n.level {\n  background-color: var(--background-color);\n  width: 846px;\n  height: 128px;\n  border-radius: 7px;\n  box-shadow: -2px -2px 4px 0 rgba(67, 67, 69, 0.5), 2px 2px 3px 0 #171C21;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n}\n\n@keyframes centerTransition {\n  from {\n    top: 600px;\n  }\n  to {\n    top: 267px;\n  }\n}\n.levelContents {\n  position: absolute;\n  height: 105px;\n  width: 794px;\n  margin-left: 9px;\n  display: flex;\n  justify-content: center;\n}\n\n.subContainer {\n  width: 782px;\n  position: absolute;\n  display: flex;\n  height: 62px;\n  bottom: 0;\n}\n\n.levelContainer.offScreen {\n  animation: offScreenTransition 0.5s ease;\n  top: -140px;\n}\n\n@keyframes offScreenTransition {\n  from {\n    top: 267px;\n  }\n  to {\n    top: -140px;\n  }\n}\n.levelContainer.easyFinalPosition {\n  top: 63px;\n}\n\n.levelContainer.mediumFinalPosition {\n  top: 254px;\n}\n\n.levelContainer.hardFinalPosition {\n  top: 445px;\n}\n\n.levelContainer .signatureContainer {\n  position: absolute;\n  height: 43px;\n  width: 102px;\n  box-shadow: -1px -1px 2px 0 rgba(67, 67, 69, 0.5), 2px 2px 2px 0 #171C21;\n  top: -43px;\n  background-color: var(--background-color);\n  border-radius: 7px 7px 0px 0px;\n  display: flex;\n  justify-content: center;\n}\n\n.levelContainer .signature {\n  transform: scale(0.64835);\n  top: 2px;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/Levels.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EAEA,kBAAA;EACA,UAAA;EAEA,qCAAA;EACA,mCAAA;EACA,gBAAA;EAEA,aAAA;EACA,uBAAA;AAFJ;;AAKA;EACI,yCAAA;EACA,YAAA;EACA,aAAA;EACA,kBAAA;EACA,wEAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;AAHJ;;AAMA;EACI;IACI,UAAA;EAHN;EAME;IACI,UAAA;EAJN;AACF;AAOA;EACI,kBAAA;EACA,aAAA;EACA,YAAA;EACA,gBAAA;EAEA,aAAA;EACA,uBAAA;AANJ;;AASA;EACI,YAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EAEA,SAAA;AAPJ;;AAUA;EACI,wCAAA;EACA,WAAA;AAPJ;;AAUA;EACI;IACI,UAAA;EAPN;EAUE;IACI,WAAA;EARN;AACF;AAWA;EACI,SAAA;AATJ;;AAYA;EACI,UAAA;AATJ;;AAYA;EACI,UAAA;AATJ;;AAYA;EACI,kBAAA;EACA,YAAA;EACA,YAAA;EACA,wEAAA;EACA,UAAA;EACA,yCAAA;EAEA,8BAAA;EACA,aAAA;EACA,uBAAA;AAVJ;;AAaA;EACI,yBAAA;EACA,QAAA;AAVJ","sourcesContent":[".levelContainer {\n    width: 846px;\n    height: 128px;\n\n    position: absolute;\n    top: 267px;\n\n    animation: centerTransition 0.5s ease;\n    transition-timing-function: ease-in;\n    transition: 0.5s;\n\n    display: flex;\n    justify-content: center;\n}\n\n.level {\n    background-color: var(--background-color);\n    width: 846px;\n    height: 128px;\n    border-radius: 7px;\n    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: absolute;\n}\n\n@keyframes centerTransition {\n    from {\n        top: 600px;\n    }\n\n    to {\n        top: 267px;\n    }\n}\n\n.levelContents {\n    position: absolute;\n    height: 105px;\n    width: 794px;\n    margin-left: 9px;\n    \n    display: flex;\n    justify-content: center;\n}\n\n.subContainer {\n    width: 782px;\n    position: absolute;\n    display: flex;\n    height: 62px;\n    \n    bottom: 0;\n}\n\n.levelContainer.offScreen {\n    animation: offScreenTransition 0.5s ease;\n    top: -140px;\n}\n\n@keyframes offScreenTransition {\n    from {\n        top: 267px;\n    }\n\n    to {\n        top: -140px;\n    }\n}\n\n.levelContainer.easyFinalPosition {\n    top: 63px;\n}\n\n.levelContainer.mediumFinalPosition {\n    top: 254px;\n}\n\n.levelContainer.hardFinalPosition {\n    top: 445px;\n}\n\n.levelContainer .signatureContainer {\n    position: absolute;\n    height: 43px;\n    width: 102px;\n    box-shadow: -1px -1px 2px 0 rgba(67,67,69,0.5), 2px 2px 2px 0 #171C21;\n    top: -43px;\n    background-color: var(--background-color);\n\n    border-radius: 7px 7px 0px 0px;\n    display: flex;\n    justify-content: center;\n}\n\n.levelContainer .signature {\n    transform: scale(0.64835);\n    top: 2px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -129,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#Lives {\n  width: 246px;\n  height: 84px;\n  position: absolute;\n  top: 0;\n  box-shadow: -2px -2px 4px 0 rgba(67, 67, 69, 0.5), 2px 2px 3px 0 #171C21;\n  border-radius: 0 0 7px 7px;\n  animation: showLives 0.5s ease-out;\n  transition: 0.5s;\n  transition-timing-function: ease-out;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 27px;\n  z-index: 2;\n  background-color: var(--background-color);\n}\n\n#Lives .radio {\n  pointer-events: none;\n}\n\n@keyframes showLives {\n  from {\n    top: -90px;\n  }\n  to {\n    top: 0;\n  }\n}\n#Lives.hidden {\n  top: -90px;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/Lives.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,wEAAA;EACA,0BAAA;EAEA,kCAAA;EACA,gBAAA;EACA,oCAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EAEA,UAAA;EACA,yCAAA;AAFJ;;AAKA;EACI,oBAAA;AAFJ;;AAKA;EACI;IACI,UAAA;EAFN;EAKE;IACI,MAAA;EAHN;AACF;AAMA;EACI,UAAA;AAJJ","sourcesContent":["#Lives {\n    width: 246px;\n    height: 84px;\n    position: absolute;\n    top: 0;\n    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;\n    border-radius: 0 0 7px 7px;\n\n    animation: showLives 0.5s ease-out;\n    transition: 0.5s;\n    transition-timing-function: ease-out;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 27px;\n\n    z-index: 2;\n    background-color: var(--background-color);\n}\n\n#Lives .radio {\n    pointer-events: none;\n}\n\n@keyframes showLives {\n    from {\n        top: -90px;\n    }\n\n    to {\n        top: 0;\n    }\n}\n\n#Lives.hidden {\n    top: -90px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "#Lives {\n  width: 246px;\n  height: 84px;\n  position: absolute;\n  top: 0;\n  box-shadow: -2px -2px 4px 0 rgba(67, 67, 69, 0.5), 2px 2px 3px 0 #171C21;\n  border-radius: 0 0 7px 7px;\n  animation: showLives 0.5s ease-out;\n  transition: top 0.5s;\n  transition-timing-function: ease-out;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 27px;\n  z-index: 1;\n  background-color: var(--background-color);\n}\n\n#Lives .radio {\n  pointer-events: none;\n}\n\n@keyframes showLives {\n  from {\n    top: -90px;\n  }\n  to {\n    top: 0;\n  }\n}\n#Lives.hidden {\n  top: -90px;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/Lives.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,wEAAA;EACA,0BAAA;EAEA,kCAAA;EACA,oBAAA;EACA,oCAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EAEA,UAAA;EACA,yCAAA;AAFJ;;AAKA;EACI,oBAAA;AAFJ;;AAKA;EACI;IACI,UAAA;EAFN;EAKE;IACI,MAAA;EAHN;AACF;AAMA;EACI,UAAA;AAJJ","sourcesContent":["#Lives {\n    width: 246px;\n    height: 84px;\n    position: absolute;\n    top: 0;\n    box-shadow: -2px -2px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;\n    border-radius: 0 0 7px 7px;\n\n    animation: showLives 0.5s ease-out;\n    transition: top 0.5s;\n    transition-timing-function: ease-out;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 27px;\n\n    z-index: 1;\n    background-color: var(--background-color);\n}\n\n#Lives .radio {\n    pointer-events: none;\n}\n\n@keyframes showLives {\n    from {\n        top: -90px;\n    }\n\n    to {\n        top: 0;\n    }\n}\n\n#Lives.hidden {\n    top: -90px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -190,6 +217,38 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".playback {\n  position: absolute;\n  
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Popup.css":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Popup.css ***!
+  \******************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/texture.png */ "./src/assets/texture.png"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "#Popup {\n  z-index: 2;\n  transition: 0.3s;\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#Popup #WalkthroughInfo, #Popup .minus {\n  pointer-events: auto;\n}\n\n#Blur {\n  transition: 0.3s;\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  background: linear-gradient(180deg, rgba(20, 29, 38, 0) 0%, #141617 100%);\n  backdrop-filter: blur(2px);\n  pointer-events: auto;\n}\n\n#Blur.disabled {\n  pointer-events: none;\n  opacity: 0;\n}\n\n#Blur .texture {\n  position: absolute;\n  opacity: 0.02;\n  width: 100%;\n  height: 100%;\n  background-repeat: repeat;\n  background-size: 276px 276px;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\n.header, .minus {\n  z-index: 2;\n}\n\n.header {\n  position: absolute;\n  color: var(--walkthrough-text-color);\n  font-family: FedraBook;\n  font-size: 17px;\n}\n\n.minus {\n  position: absolute;\n  bottom: 253px;\n  width: 15px;\n  height: 5px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n}\n\n.minus div {\n  width: 12px;\n  height: 2px;\n  border-radius: 10px;\n  background-color: var(--next-color);\n}\n\n.header.failState {\n  bottom: 144px;\n}\n\n.minus.failState {\n  bottom: 122px;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/Popup.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,aAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,oBAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,aAAA;EACA,yEAAA;EACA,0BAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,oBAAA;EACA,UAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,4BAAA;EACA,yDAAA;AAAJ;;AAGA;EACI,UAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,oCAAA;EACA,sBAAA;EACA,eAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;EACA,WAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;AAAJ;;AAGA;EACI,WAAA;EACA,WAAA;EACA,mBAAA;EACA,mCAAA;AAAJ;;AAGA;EAAoB,aAAA;AACpB;;AAAA;EAAoB,aAAA;AAIpB","sourcesContent":["#Popup {\n    z-index: 2;\n    transition: 0.3s;\n    position: absolute;\n    width: 900px;\n    height: 600px;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n#Popup #WalkthroughInfo, #Popup .minus {\n    pointer-events: auto;\n}\n\n#Blur {\n    transition: 0.3s;\n    position: absolute;\n    width: 900px;\n    height: 600px;\n    background: linear-gradient(180deg, rgba(20,29,38,0) 0%, #141617 100%);\n    backdrop-filter: blur(2px);\n    pointer-events: auto;\n}\n\n#Blur.disabled {\n    pointer-events: none;\n    opacity: 0;\n}\n\n#Blur .texture {\n    position: absolute;\n    opacity: 0.02;\n    width: 100%;\n    height: 100%;\n    background-repeat: repeat;\n    background-size: 276px 276px;\n    background-image: url(\"../../../assets/texture.png\");\n}\n\n.header, .minus {\n    z-index: 2;\n}\n\n.header {\n    position: absolute;\n    color: var(--walkthrough-text-color);\n    font-family: FedraBook;\n    font-size: 17px;\n}\n\n.minus {\n    position: absolute;\n    bottom: 253px;\n    width: 15px;\n    height: 5px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n}\n\n.minus div {\n    width: 12px;\n    height: 2px;\n    border-radius: 10px;\n    background-color: var(--next-color);\n}\n\n.header.failState { bottom: 144px; }\n.minus.failState  { bottom: 122px; }"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/ProgressBar.css":
 /*!************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/ProgressBar.css ***!
@@ -210,7 +269,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".progressBar {\n  position: absolute;\n  width: 100%;\n  height: 25px;\n  border-radius: 12.5px;\n  box-shadow: inset 3px 3px 3px 0 #1F2327, inset -2px -2px 3px 0 rgba(67, 67, 69, 0.5);\n  margin-top: 6px;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  padding-left: 6px;\n}\n\n.progress {\n  position: absolute;\n  width: 0px;\n  height: 15px;\n  background: linear-gradient(90deg, #68BF6A 0%, #2B7076 100%);\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/ProgressBar.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,WAAA;EACA,YAAA;EACA,qBAAA;EACA,oFAAA;EACA,eAAA;EAEA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,iBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,UAAA;EACA,YAAA;EACA,4DAAA;EACA,mBAAA;EAEA,aAAA;EACA,mBAAA;AADJ","sourcesContent":[".progressBar {\n    position: absolute;\n    width: 100%;\n    height: 25px;\n    border-radius: 12.5px;\n    box-shadow: inset 3px 3px 3px 0 #1F2327, inset -2px -2px 3px 0 rgba(67,67,69,0.5);\n    margin-top: 6px;\n\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 6px;\n}\n\n.progress {\n    position: absolute;\n    width: 0px;\n    height: 15px;\n    background: linear-gradient(90deg, #68BF6A 0%, #2B7076 100%);\n    border-radius: 10px;\n\n    display: flex;\n    align-items: center;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".progressBar {\n  position: absolute;\n  width: 100%;\n  height: 25px;\n  border-radius: 12.5px;\n  box-shadow: inset 3px 3px 3px 0 #1F2327, inset -2px -2px 3px 0 rgba(67, 67, 69, 0.5);\n  margin-top: 6px;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  padding-left: 6px;\n  background-color: var(--background-color);\n}\n\n.progress {\n  position: absolute;\n  width: 0px;\n  height: 15px;\n  background: linear-gradient(90deg, #68BF6A 0%, #2B7076 100%);\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/ProgressBar.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,WAAA;EACA,YAAA;EACA,qBAAA;EACA,oFAAA;EACA,eAAA;EAEA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,iBAAA;EAEA,yCAAA;AADJ;;AAIA;EACI,kBAAA;EACA,UAAA;EACA,YAAA;EACA,4DAAA;EACA,mBAAA;EAEA,aAAA;EACA,mBAAA;AAFJ","sourcesContent":[".progressBar {\n    position: absolute;\n    width: 100%;\n    height: 25px;\n    border-radius: 12.5px;\n    box-shadow: inset 3px 3px 3px 0 #1F2327, inset -2px -2px 3px 0 rgba(67,67,69,0.5);\n    margin-top: 6px;\n\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 6px;\n\n    background-color: var(--background-color);\n}\n\n.progress {\n    position: absolute;\n    width: 0px;\n    height: 15px;\n    background: linear-gradient(90deg, #68BF6A 0%, #2B7076 100%);\n    border-radius: 10px;\n\n    display: flex;\n    align-items: center;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -352,6 +411,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".statusIndicator {\n  position: absolu
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/WalkthroughInfo.css":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/WalkthroughInfo.css ***!
+  \****************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "#WalkthroughInfo {\n  position: absolute;\n  transition: opacity 0.3s;\n  pointer-events: auto;\n}\n\n.textContainer {\n  pointer-events: none;\n}\n\n.title {\n  color: var(--walkthrough-text-color);\n  width: 100%;\n  font-size: 18px;\n  font-family: FedraDemi;\n  margin-bottom: 16px;\n}\n\n.description {\n  color: var(--walkthrough-text-color);\n  line-height: 16px;\n  font-size: 13px;\n  font-family: FedraLight;\n  margin-bottom: 12px;\n}\n\n.controls {\n  display: flex;\n  justify-content: space-between;\n}\n\n#next {\n  font-family: FedraLight;\n  font-size: 12px;\n  color: var(--next-color);\n  position: relative;\n  bottom: 1px;\n  cursor: pointer;\n  transition: 0.2s;\n}\n\n#next:hover {\n  opacity: 0.8;\n}\n\n#next:active {\n  opacity: 0.6;\n}", "",{"version":3,"sources":["webpack://./src/modules/viewer/components/WalkthroughInfo.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,oBAAA;AACJ;;AAEA;EACI,oBAAA;AACJ;;AAEA;EACI,oCAAA;EACA,WAAA;EACA,eAAA;EACA,sBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,oCAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,aAAA;EACA,8BAAA;AACJ;;AAEA;EACI,uBAAA;EACA,eAAA;EACA,wBAAA;EAEA,kBAAA;EACA,WAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EAAc,YAAA;AACd;;AAAA;EAAe,YAAA;AAIf","sourcesContent":["#WalkthroughInfo {\n    position: absolute;\n    transition: opacity 0.3s;\n    pointer-events: auto;\n}\n\n.textContainer {\n    pointer-events: none;\n}\n\n.title {\n    color: var(--walkthrough-text-color);\n    width: 100%;\n    font-size: 18px;\n    font-family: FedraDemi;\n    margin-bottom: 16px;\n}\n\n.description {\n    color: var(--walkthrough-text-color);\n    line-height: 16px;\n    font-size: 13px;\n    font-family: FedraLight;\n    margin-bottom: 12px;\n}\n\n.controls {\n    display: flex;\n    justify-content: space-between;\n}\n\n#next {\n    font-family: FedraLight;\n    font-size: 12px;\n    color: var(--next-color);\n    \n    position: relative;\n    bottom: 1px;\n    cursor: pointer;\n    transition: 0.2s;\n}\n\n#next:hover { opacity: 0.8; }\n#next:active { opacity: 0.6; }"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/tips/HeadphonesTip.css":
 /*!*******************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/tips/HeadphonesTip.css ***!
@@ -426,7 +512,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --background-color: #25292D;\n}", "",{"version":3,"sources":["webpack://./src/styles/colors.css"],"names":[],"mappings":"AAAA;EACI,2BAAA;AACJ","sourcesContent":[":root {\n    --background-color: #25292D;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --background-color: #25292D;\n  --walkthrough-text-color: #B9BCBF;\n  --next-color: #3F8B72;\n}", "",{"version":3,"sources":["webpack://./src/styles/colors.css"],"names":[],"mappings":"AAAA;EACI,2BAAA;EACA,iCAAA;EACA,qBAAA;AACJ","sourcesContent":[":root {\n    --background-color: #25292D;\n    --walkthrough-text-color: #B9BCBF;\n    --next-color: #3F8B72;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -458,13 +544,15 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/FedraSansAltPro/FedraSansAltPro-Book.otf */ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Book.otf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/FedraSansAltPro/FedraSansAltPro-Demi.otf */ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Demi.otf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf */ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/FedraSansAltPro/FedraSansAltPro-Light.otf */ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Light.otf"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: Fedra;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n@font-face {\n  font-family: FedraBook;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n@font-face {\n  font-family: FedraDemi;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}\n@font-face {\n  font-family: FedraBold;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n}", "",{"version":3,"sources":["webpack://./src/styles/fonts.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,4CAAA;AACJ;AAEA;EACI,sBAAA;EACA,4CAAA;AAAJ;AAGA;EACI,sBAAA;EACA,4CAAA;AADJ;AAIA;EACI,sBAAA;EACA,4CAAA;AAFJ","sourcesContent":["@font-face{\n    font-family: Fedra;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Medium.otf');\n}\n\n@font-face{\n    font-family: FedraBook;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Book.otf');\n}\n\n@font-face{\n    font-family: FedraDemi;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Demi.otf');\n}\n\n@font-face {\n    font-family: FedraBold;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf');\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: Fedra;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n@font-face {\n  font-family: FedraBook;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n@font-face {\n  font-family: FedraDemi;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}\n@font-face {\n  font-family: FedraBold;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n}\n@font-face {\n  font-family: FedraLight;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n}", "",{"version":3,"sources":["webpack://./src/styles/fonts.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,4CAAA;AACJ;AAEA;EACI,sBAAA;EACA,4CAAA;AAAJ;AAGA;EACI,sBAAA;EACA,4CAAA;AADJ;AAIA;EACI,sBAAA;EACA,4CAAA;AAFJ;AAKA;EACI,uBAAA;EACA,4CAAA;AAHJ","sourcesContent":["@font-face{\n    font-family: Fedra;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Medium.otf');\n}\n\n@font-face{\n    font-family: FedraBook;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Book.otf');\n}\n\n@font-face{\n    font-family: FedraDemi;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Demi.otf');\n}\n\n@font-face {\n    font-family: FedraBold;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf');\n}\n\n@font-face {\n    font-family: FedraLight;\n    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Light.otf');\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -491,7 +579,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n::-webkit-scrollbar {\n  display: none;\n}\n\n.container {\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  background-color: var(--background-color);\n  overflow: hidden;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.button {\n  border-radius: 100%;\n  box-shadow: -1px -1px 4px 0 rgba(67, 67, 69, 0.5), 2px 2px 3px 0 #171C21;\n  background-color: var(--background-color);\n  border: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  width: 38px;\n  height: 38px;\n}\n\n.startTip {\n  transition: 0.5s;\n  color: #6E7174;\n  font-size: 13px;\n  font-family: FedraBook;\n  pointer-events: none;\n}\n\n.button svg use:first-of-type {\n  opacity: 1;\n  transition: 0.2s;\n}\n\n.button:hover svg use:first-of-type {\n  opacity: 0;\n}", "",{"version":3,"sources":["webpack://./src/styles/global.css"],"names":[],"mappings":"AAAA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;AACJ;;AAEA;EACI,kBAAA;EACA,YAAA;EACA,aAAA;EACA,yCAAA;EACA,gBAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,wEAAA;EACA,yCAAA;EACA,YAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EAEA,WAAA;EACA,YAAA;AAFJ;;AAKA;EACI,gBAAA;EAEA,cAAA;EACA,eAAA;EACA,sBAAA;EACA,oBAAA;AAHJ;;AAMA;EACI,UAAA;EACA,gBAAA;AAHJ;;AAMA;EACI,UAAA;AAHJ","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\n::-webkit-scrollbar {\n    display: none;\n}\n\n.container {\n    position: absolute;\n    width: 900px;\n    height: 600px;\n    background-color: var(--background-color);\n    overflow: hidden;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.button {\n    border-radius: 100%;\n    box-shadow: -1px -1px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;\n    background-color: var(--background-color);\n    border: none;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n\n    width: 38px;\n    height: 38px;\n}\n\n.startTip {\n    transition: 0.5s;\n    \n    color: #6E7174;\n    font-size: 13px;\n    font-family: FedraBook;\n    pointer-events: none;\n}\n\n.button svg use:first-of-type {\n    opacity: 1;\n    transition: 0.2s;\n}\n\n.button:hover svg use:first-of-type {\n    opacity: 0;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n::-webkit-scrollbar {\n  display: none;\n}\n\n.container {\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  background-color: var(--background-color);\n  overflow: hidden;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.button {\n  border-radius: 100%;\n  box-shadow: -1px -1px 4px 0 rgba(67, 67, 69, 0.5), 2px 2px 3px 0 #171C21;\n  background-color: var(--background-color);\n  border: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  width: 38px;\n  height: 38px;\n}\n\n.startTip {\n  transition: 0.5s;\n  color: #6E7174;\n  font-size: 13px;\n  font-family: FedraBook;\n  pointer-events: none;\n}\n\n.button svg use:first-of-type {\n  opacity: 1;\n  transition: 0.2s;\n}\n\n.button:hover svg use:first-of-type {\n  opacity: 0;\n}\n\n.highlighted {\n  z-index: 5 !important;\n}\n\n.pulsing::before, .pulsing::after {\n  z-index: 1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  border-radius: 100%;\n  animation: pulse 1.7s infinite ease;\n}\n\n.pulsing::after {\n  animation-delay: 0.35s;\n}\n\n@keyframes pulse {\n  0% {\n    border: 2px solid rgba(255, 255, 255, 0);\n  }\n  30% {\n    border: 2px solid rgba(255, 255, 255, 0.1);\n  }\n  80% {\n    border: 2px solid rgba(255, 255, 255, 0);\n  }\n  100% {\n    width: 170%;\n    height: 170%;\n    border: 2px solid rgba(255, 255, 255, 0);\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/global.css"],"names":[],"mappings":"AAAA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;AACJ;;AAEA;EACI,kBAAA;EACA,YAAA;EACA,aAAA;EACA,yCAAA;EACA,gBAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,wEAAA;EACA,yCAAA;EACA,YAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EAEA,WAAA;EACA,YAAA;AAFJ;;AAKA;EACI,gBAAA;EAEA,cAAA;EACA,eAAA;EACA,sBAAA;EACA,oBAAA;AAHJ;;AAMA;EACI,UAAA;EACA,gBAAA;AAHJ;;AAMA;EACI,UAAA;AAHJ;;AAMA;EACI,qBAAA;AAHJ;;AAMA;EACI,UAAA;EACA,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EAEA,mCAAA;AAJJ;;AAOA;EAAkB,sBAAA;AAHlB;;AAKA;EACI;IACI,wCAAA;EAFN;EAKE;IACI,0CAAA;EAHN;EAME;IACI,wCAAA;EAJN;EAOE;IACI,WAAA;IACA,YAAA;IACA,wCAAA;EALN;AACF","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\n::-webkit-scrollbar {\n    display: none;\n}\n\n.container {\n    position: absolute;\n    width: 900px;\n    height: 600px;\n    background-color: var(--background-color);\n    overflow: hidden;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.button {\n    border-radius: 100%;\n    box-shadow: -1px -1px 4px 0 rgba(67,67,69,0.5), 2px 2px 3px 0 #171C21;\n    background-color: var(--background-color);\n    border: none;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n\n    width: 38px;\n    height: 38px;\n}\n\n.startTip {\n    transition: 0.5s;\n    \n    color: #6E7174;\n    font-size: 13px;\n    font-family: FedraBook;\n    pointer-events: none;\n}\n\n.button svg use:first-of-type {\n    opacity: 1;\n    transition: 0.2s;\n}\n\n.button:hover svg use:first-of-type {\n    opacity: 0;\n}\n\n.highlighted {\n    z-index: 5 !important;\n}\n\n.pulsing::before, .pulsing::after {\n    z-index: 1;\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    border-radius: 100%;\n\n    animation: pulse 1.7s infinite ease;\n}\n\n.pulsing::after { animation-delay: 0.35s; }\n\n@keyframes pulse {\n    0% {\n        border: 2px solid rgba(255, 255, 255, 0);\n    }\n\n    30% {\n        border: 2px solid rgba(255, 255, 255, 0.1);\n    }\n\n    80% {\n        border: 2px solid rgba(255, 255, 255, 0);\n    }\n\n    100% {\n        width: 170%;\n        height: 170%;\n        border: 2px solid rgba(255, 255, 255, 0);\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11655,6 +11743,61 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/modules/viewer/components/Circles.css":
+/*!***************************************************!*\
+  !*** ./src/modules/viewer/components/Circles.css ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Circles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./Circles.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Circles.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Circles_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Circles_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Circles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Circles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/modules/viewer/components/Header.css":
 /*!**************************************************!*\
   !*** ./src/modules/viewer/components/Header.css ***!
@@ -11985,6 +12128,61 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/modules/viewer/components/Popup.css":
+/*!*************************************************!*\
+  !*** ./src/modules/viewer/components/Popup.css ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Popup_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./Popup.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/Popup.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Popup_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Popup_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Popup_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Popup_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/modules/viewer/components/ProgressBar.css":
 /*!*******************************************************!*\
   !*** ./src/modules/viewer/components/ProgressBar.css ***!
@@ -12311,6 +12509,61 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_StatusIndicator_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_StatusIndicator_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_StatusIndicator_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/modules/viewer/components/WalkthroughInfo.css":
+/*!***********************************************************!*\
+  !*** ./src/modules/viewer/components/WalkthroughInfo.css ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_WalkthroughInfo_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./WalkthroughInfo.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/viewer/components/WalkthroughInfo.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_WalkthroughInfo_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_WalkthroughInfo_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_WalkthroughInfo_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_WalkthroughInfo_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -12987,27 +13240,17 @@ const UI = {
         return UI.circleIcon;
     },
 
-    disable: (element) => {
-        element.addClass("disabled");
-    },
-    enable: (element) => {
-        element.removeClass("disabled");
-    },
+    addPulse: (element) => element.addClass("pulsing"),
+    removePulse: (element) => element.removeClass("pulsing"),
 
+    disable: (element) => element.addClass("disabled"),
+    enable: (element) => element.removeClass("disabled"),
+    
     // Use is the tag that contains the path(shape), filters(blur for example) and fills(gradient or solid color) of an svg.
-    setFill: (icon, fill) => {
-        icon.find("use:eq(1)").attr("fill", fill);
-    },
-    setFilter: (icon, filter) => {
-        icon.find("use:eq(0)").attr("filter", filter);
-    },
-
-    getFill: (icon) => {
-        return icon.find("use:eq(1)").attr("fill");
-    },
-    getFilter: (icon) => {
-        return icon.find("use:eq(0)").attr("filter");
-    }
+    setFill: (icon, fill) => icon.find("use:eq(1)").attr("fill", fill),
+    setFilter: (icon, filter) => icon.find("use:eq(0)").attr("filter", filter),
+    getFill: (icon) => icon.find("use:eq(1)").attr("fill"),
+    getFilter: (icon) => icon.find("use:eq(0)").attr("filter")
 }
 
 const deactivateComponent = (element, disable) => {
@@ -13159,10 +13402,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Beat_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Beat.css */ "./src/modules/viewer/components/Beat.css");
-/* harmony import */ var _CircleButtons_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CircleButtons.js */ "./src/modules/viewer/components/CircleButtons.js");
-/* harmony import */ var _StatusIndicator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StatusIndicator.js */ "./src/modules/viewer/components/StatusIndicator.js");
+/* harmony import */ var src_modules_common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/modules/common.js */ "./src/modules/common.js");
+/* harmony import */ var _Beat_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Beat.css */ "./src/modules/viewer/components/Beat.css");
+/* harmony import */ var _CircleButtons_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CircleButtons.js */ "./src/modules/viewer/components/CircleButtons.js");
+/* harmony import */ var _StatusIndicator_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StatusIndicator.js */ "./src/modules/viewer/components/StatusIndicator.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -13176,8 +13421,8 @@ const Beat = {
             </div>
         `);
 
-        let button = await _CircleButtons_js__WEBPACK_IMPORTED_MODULE_1__["default"].build("beatButton");
-        let statusIndicator = await _StatusIndicator_js__WEBPACK_IMPORTED_MODULE_2__["default"].build();
+        let button = await _CircleButtons_js__WEBPACK_IMPORTED_MODULE_2__["default"].build("beatButton");
+        let statusIndicator = await _StatusIndicator_js__WEBPACK_IMPORTED_MODULE_3__["default"].build();
         element.append(button.element);
         element.append(statusIndicator.element);
 
@@ -13193,7 +13438,13 @@ const Beat = {
                 
                 button.changeColor(state === "correct" ? "Green" : "Red");
                 statusIndicator.changeLook(state);
-            }
+            },
+
+            highlight: () => {
+                src_modules_common_js__WEBPACK_IMPORTED_MODULE_0__["default"].addPulse(button.element);
+                button.element.on("click", beat.resetHighlight);
+            },
+            resetHighlight: () => src_modules_common_js__WEBPACK_IMPORTED_MODULE_0__["default"].removePulse(button.element)
         }
 
         return beat;
@@ -13254,6 +13505,51 @@ const CircleButtons = {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CircleButtons);
+
+/***/ }),
+
+/***/ "./src/modules/viewer/components/Circles.js":
+/*!**************************************************!*\
+  !*** ./src/modules/viewer/components/Circles.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Circles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Circles.css */ "./src/modules/viewer/components/Circles.css");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+
+const Circles = {
+    build: (count) => {
+        let parent = $(/* html */ `<div id="Circles" class="disabled"></div>`);
+
+        let elements = [];
+        for (let i = 0; i < count; i++) {
+            let circleElement = $(/* html */ `
+                <svg class="walkthroughCircle deactivated" width="8px" height="8px">
+                    <circle stroke="var(--walkthrough-text-color)" fill="transparent" stroke-width="1" cx="4" cy="4" r="3" fill="transparent"/>
+                </svg>
+            `);
+
+            elements.push(circleElement);
+            parent.append(circleElement);
+        }
+
+        const circles = {
+            element: parent,
+            turnOn: (i) => elements[i].removeClass("deactivated"),
+            turnOff: (i) => elements[i].addClass("deactivated")
+        }
+
+        return circles;
+    }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Circles);
 
 /***/ }),
 
@@ -13421,7 +13717,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../view.js */ "./src/modules/viewer/view.js");
 /* harmony import */ var src_modules_common_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/modules/common.js */ "./src/modules/common.js");
 /* harmony import */ var _Signature_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Signature.js */ "./src/modules/viewer/components/Signature.js");
+/* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/viewer/managers/WalkthroughManager.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -13484,8 +13782,10 @@ const Levels = {
 
                         if (!correct) {
                             _Lives_js__WEBPACK_IMPORTED_MODULE_4__["default"].count--;
+                            _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__["default"].popupFirstFailMsg();
                         } else {
                             level.correctCount++;
+                            if (index === 0) _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__["default"].nextStep();
 
                             if(level.correctCount === beatsCount) {
                                 for (let beat of level.beats) { src_modules_common_js__WEBPACK_IMPORTED_MODULE_7__["default"].disable(beat.element) }
@@ -13545,6 +13845,32 @@ const Levels = {
                 signature.set(level.upperSignature, level.lowerSignature);
                 signatureContainer.append(signature.element);
                 element.append(signatureContainer);
+            },
+
+            highlight: () => {
+                element.find(".beat").css("pointer-events", "none");
+
+                element.addClass("highlighted");
+                src_modules_common_js__WEBPACK_IMPORTED_MODULE_7__["default"].addPulse(progressBar.playbackButton.element);
+                progressBar.playbackButton.onClick(_managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__["default"].nextStep);
+            },
+
+            resetHighlight: () => {
+                element.find(".beat").css("pointer-events", "all");
+
+                element.removeClass("highlighted");
+                src_modules_common_js__WEBPACK_IMPORTED_MODULE_7__["default"].removePulse(progressBar.playbackButton.element);
+                progressBar.playbackButton.offClick(_managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__["default"].nextStep);
+            },
+
+            getCorrectBeat: (nth) => {
+                if (nth) return beats[upperSignature * nth];
+
+                for (const [index, beat] of beats.entries()) {
+                    if (beat.state === "off" && index % upperSignature === 0) {
+                        return beat;
+                    }
+                }
             }
         };
 
@@ -13580,7 +13906,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../managers/LevelManager.js */ "./src/modules/viewer/managers/LevelManager.js");
 /* harmony import */ var _Lives_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Lives.css */ "./src/modules/viewer/components/Lives.css");
 /* harmony import */ var _CircleButtons_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CircleButtons.js */ "./src/modules/viewer/components/CircleButtons.js");
+/* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/viewer/managers/WalkthroughManager.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -13593,12 +13921,13 @@ const Lives = {
     get count() {
         return Lives._count;
     },
-    set count (value) {
+    set count(value) {
         Lives.buttons[Lives._count - 1].turnOff();
         Lives._count = value;
 
         if (Lives._count === 0) {
             _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].nextTrack();
+            _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_5__["default"].popupFailMsg();
         }
     },
 
@@ -13652,7 +13981,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_modules_tools_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/modules/tools.js */ "./src/modules/tools.js");
 /* harmony import */ var src_modules_common_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/modules/common.js */ "./src/modules/common.js");
 /* harmony import */ var _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../managers/LevelManager.js */ "./src/modules/viewer/managers/LevelManager.js");
+/* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/viewer/managers/WalkthroughManager.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -13675,7 +14006,10 @@ const NextButton = {
         (0,src_modules_common_js__WEBPACK_IMPORTED_MODULE_3__.getSvgProperties)(NextButton, element);
         btn = element;
         NextButton.deactivate();
-        element.on("click", _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_4__["default"].nextLevel);
+        element.on("click", () => {
+            if (_managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_4__["default"].current === 0) _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_5__["default"].end();
+            _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_4__["default"].nextLevel();
+        });
         return element;
     },
 
@@ -13738,7 +14072,9 @@ const PlaybackButton = {
         let btn = {
             element: element,
             play    : () => { element.addClass("paused"); },
-            pause   : () => { element.removeClass("paused"); }
+            pause   : () => { element.removeClass("paused"); },
+            onClick: (handler) => element.on("click", handler),
+            offClick: (handler) => element.off("click", handler)
         }
 
         return btn;
@@ -13746,6 +14082,96 @@ const PlaybackButton = {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PlaybackButton);
+
+/***/ }),
+
+/***/ "./src/modules/viewer/components/Popup.js":
+/*!************************************************!*\
+  !*** ./src/modules/viewer/components/Popup.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var src_assets_texture_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/assets/texture.png */ "./src/assets/texture.png");
+/* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/viewer/managers/WalkthroughManager.js");
+/* harmony import */ var _Popup_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Popup.css */ "./src/modules/viewer/components/Popup.css");
+/* harmony import */ var _WalkthroughInfo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./WalkthroughInfo.js */ "./src/modules/viewer/components/WalkthroughInfo.js");
+/* harmony import */ var src_walkthrough_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/walkthrough.json */ "./src/walkthrough.json");
+/* harmony import */ var _view_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../view.js */ "./src/modules/viewer/view.js");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+
+
+
+
+
+
+
+const Popup = {
+    build: () => {
+        let element =
+        $(/* html */ `
+            <div id="Popup" class="invisible disabled">
+                <p class="header"></p>
+                <div class="minus"><div></div></div>
+
+                <div id="Blur" class="disabled">
+                    <div class="texture"></div>
+                </div>
+            </div>
+        `);
+
+        let blur = element.find("#Blur");
+        let header = element.find(".header");
+        let minus = element.find(".minus");
+
+        const popup = {
+            element: element,
+            info: _WalkthroughInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].build(_managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__.STEPS_COUNT),
+            
+            show: () => element.removeClass("invisible"),
+            hide: () => element.addClass("invisible"),
+            showBlur: () => blur.removeClass("disabled"),
+            hideBlur: () => blur.addClass("disabled"),
+            setHeader: (text) => header.html(text),
+
+            initFailState: () => {
+                header.hide().addClass("failState");
+                minus.hide().addClass("failState");
+                minus.off("click", _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__["default"].nextStep);
+                minus.on("click", popup.hideFailPopup);
+            },
+
+            hideFailPopup: () => {
+                popup.hideBlur();
+                header.hide();
+                minus.hide();
+                blur.css("z-index", 0);
+
+                _view_js__WEBPACK_IMPORTED_MODULE_5__["default"].resetHighlight(_managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__.focusElements[src_walkthrough_json__WEBPACK_IMPORTED_MODULE_4__.firstFail.inFocus]);
+            },
+
+            showFailPopup: (text) => {
+                popup.show();
+                blur.css("z-index", 1);
+                popup.showBlur();
+                popup.setHeader(text);
+                header.show();
+                minus.show();
+            }
+        }
+        
+        element.append(popup.info.element);
+        minus.on("click", _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__["default"].nextStep);
+        return popup;
+    }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popup);
 
 /***/ }),
 
@@ -13865,7 +14291,10 @@ const ProgressBar = {
                 element.find(".progress").css("width", 0);
                 progressBar.beats = beats;
                 progressBar.divider = divider;
-            }
+            },
+
+            highlight: () => element.addClass("highlighted").css("pointer-events", "none"),
+            resetHighlight: () => element.removeClass("highlighted").css("pointer-events", "all")
         }
 
         let slider = _Slider_js__WEBPACK_IMPORTED_MODULE_4__["default"].build(index, levelContainer, progressBar);
@@ -13962,6 +14391,16 @@ const Signature = {
 
             hide: () => {
                 element.remove();
+            },
+
+            highlight: () => {
+                element.addClass("highlighted");
+                signature.set(5, 4);
+            },
+
+            resetHighlight: () => {
+                signature.turnOff();
+                element.addClass("highlighted");
             }
         }
 
@@ -14185,6 +14624,92 @@ const StatusIndicator = {
 
 /***/ }),
 
+/***/ "./src/modules/viewer/components/WalkthroughInfo.js":
+/*!**********************************************************!*\
+  !*** ./src/modules/viewer/components/WalkthroughInfo.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _WalkthroughInfo_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WalkthroughInfo.css */ "./src/modules/viewer/components/WalkthroughInfo.css");
+/* harmony import */ var src_modules_tools_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/modules/tools.js */ "./src/modules/tools.js");
+/* harmony import */ var _Circles_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Circles.js */ "./src/modules/viewer/components/Circles.js");
+/* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/viewer/managers/WalkthroughManager.js");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+
+
+
+
+let currCircle = -1;
+
+const WalkthroughInfo = {
+    build: (circlesCount) => {
+        let element =
+        $(/* html */ `
+            <div id="WalkthroughInfo" class="invisible">
+                <div class="textContainer">
+                    <p class="title"></p>
+                    <p class="description"></p>
+                </div>
+
+                <div class="controls">
+                    <p id="next">Next</p>
+                </div>
+            </div>
+        `);
+
+        let circles = _Circles_js__WEBPACK_IMPORTED_MODULE_2__["default"].build(circlesCount);
+        element.find(".controls").prepend(circles.element);
+        element.find("#next").on("click", _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_3__["default"].nextStep);
+
+        let title = element.find(".title");
+
+        const info = {
+            element: element,
+
+            hideNext: () => element.find("#next").hide(),
+            changeVisibility: async (show) => {
+                if (show) {
+                    element.removeClass("invisible");
+                } else {
+                    element.addClass("invisible");
+                }
+
+                await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_1__.timeout)(300);
+            },
+
+            setPosition: (pos) => element.css({ left: pos.x, top: pos.y }),
+            setTitle: (text) => {
+                if (!text) {
+                    title.hide();
+                    return;
+                }
+
+                title.show();
+                title.html(text);
+            },
+            setDescription: (text) => element.find(".description").html(text),
+
+            updateCircles: (amount) => {
+                if (currCircle > -1) circles.turnOff(currCircle || 0)
+                currCircle += amount;
+                circles.turnOn(currCircle);
+            }
+        }
+
+        return info;
+    }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WalkthroughInfo);
+
+/***/ }),
+
 /***/ "./src/modules/viewer/components/icons/PlayIcon.js":
 /*!*********************************************************!*\
   !*** ./src/modules/viewer/components/icons/PlayIcon.js ***!
@@ -14288,6 +14813,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _view_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./view.js */ "./src/modules/viewer/view.js");
 /* harmony import */ var _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./managers/LevelManager.js */ "./src/modules/viewer/managers/LevelManager.js");
+/* harmony import */ var _tools_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tools.js */ "./src/modules/tools.js");
+/* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./managers/WalkthroughManager.js */ "./src/modules/viewer/managers/WalkthroughManager.js");
+
+
 
 
 
@@ -14297,9 +14826,15 @@ const onLoad = async () => {
 
 const begin = async () => {
     await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].start.hide();
-    await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].timeline.build("easy", 4);
+    await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].timeline.build();
     await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].timeline.buildSignature();
-    _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_1__["default"].nextLevel();
+
+    _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].mainSignature.turnOff();
+    await (0,_tools_js__WEBPACK_IMPORTED_MODULE_2__.timeout)(200);
+    await _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_1__["default"].nextLevel();
+
+    await (0,_tools_js__WEBPACK_IMPORTED_MODULE_2__.timeout)(400);
+    _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_3__["default"].setup();
 }
 
 /***/ }),
@@ -14363,8 +14898,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_Levels_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Levels.js */ "./src/modules/viewer/components/Levels.js");
-/* harmony import */ var src_index_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/index.json */ "./src/index.json");
+/* harmony import */ var src_levels_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/levels.json */ "./src/levels.json");
+/* harmony import */ var _components_Levels_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Levels.js */ "./src/modules/viewer/components/Levels.js");
 /* harmony import */ var _AudioManager_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AudioManager.js */ "./src/modules/viewer/managers/AudioManager.js");
 /* harmony import */ var _components_Lives_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Lives.js */ "./src/modules/viewer/components/Lives.js");
 /* harmony import */ var _components_NextButton_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NextButton.js */ "./src/modules/viewer/components/NextButton.js");
@@ -14379,7 +14914,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-for (const level of src_index_json__WEBPACK_IMPORTED_MODULE_1__.levels) (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_6__.shuffle)(level.tracks);
+for (const level of src_levels_json__WEBPACK_IMPORTED_MODULE_0__.levels) (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_6__.shuffle)(level.tracks);
 
 const LevelManager = {
     current: -1,
@@ -14394,18 +14929,19 @@ const LevelManager = {
         if (level) LevelManager.hideLevel(level);
         LevelManager.current++;
 
-        if (LevelManager.current === src_index_json__WEBPACK_IMPORTED_MODULE_1__.levels.length) {
+        if (LevelManager.current === src_levels_json__WEBPACK_IMPORTED_MODULE_0__.levels.length) {
             _view_js__WEBPACK_IMPORTED_MODULE_5__["default"].timeline.hide();
-            _view_js__WEBPACK_IMPORTED_MODULE_5__["default"].final.build(LevelManager.levels, src_index_json__WEBPACK_IMPORTED_MODULE_1__.levels);
+            _view_js__WEBPACK_IMPORTED_MODULE_5__["default"].final.build(LevelManager.levels, src_levels_json__WEBPACK_IMPORTED_MODULE_0__.levels);
             return;
         }
 
-        let currLevel = src_index_json__WEBPACK_IMPORTED_MODULE_1__.levels[LevelManager.current];
+        let currLevel = src_levels_json__WEBPACK_IMPORTED_MODULE_0__.levels[LevelManager.current];
         LevelManager.currTrack = 0;
         let track = currLevel.tracks[LevelManager.currTrack];
 
         _AudioManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].setSource(LevelManager.current, track.url);
-        let levelObj = await _components_Levels_js__WEBPACK_IMPORTED_MODULE_0__["default"].build(LevelManager.current, currLevel.name, track.upperSignature, track.lowerSignature, track.bars);
+        let levelObj = await _components_Levels_js__WEBPACK_IMPORTED_MODULE_1__["default"].build(LevelManager.current, currLevel.name,
+            track.upperSignature, track.lowerSignature, track.bars);
         LevelManager.levels.push(levelObj);
         
         _components_Lives_js__WEBPACK_IMPORTED_MODULE_3__["default"].reset();
@@ -14422,7 +14958,7 @@ const LevelManager = {
     nextTrack: () => {
         _view_js__WEBPACK_IMPORTED_MODULE_5__["default"].mainSignature.turnOff();
         _components_NextButton_js__WEBPACK_IMPORTED_MODULE_4__["default"].deactivate();
-        let currLevel = src_index_json__WEBPACK_IMPORTED_MODULE_1__.levels[LevelManager.current];
+        let currLevel = src_levels_json__WEBPACK_IMPORTED_MODULE_0__.levels[LevelManager.current];
         let track;
 
         if (currLevel.tracks[LevelManager.currTrack + 1]) {
@@ -14446,6 +14982,135 @@ const LevelManager = {
 
 /***/ }),
 
+/***/ "./src/modules/viewer/managers/WalkthroughManager.js":
+/*!***********************************************************!*\
+  !*** ./src/modules/viewer/managers/WalkthroughManager.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "STEPS_COUNT": () => (/* binding */ STEPS_COUNT),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "focusElements": () => (/* binding */ focusElements)
+/* harmony export */ });
+/* harmony import */ var _view_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../view.js */ "./src/modules/viewer/view.js");
+/* harmony import */ var src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/walkthrough.json */ "./src/walkthrough.json");
+/* harmony import */ var _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LevelManager.js */ "./src/modules/viewer/managers/LevelManager.js");
+/* harmony import */ var src_modules_tools_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/modules/tools.js */ "./src/modules/tools.js");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+
+
+
+
+const CALL_FOR_ACTION_AWAIT_MS = 5000;
+const STEPS_COUNT = 6;
+
+let firstBeatStep = 4;
+
+let focusElements = {};
+let firstFail = true;
+let ended = false;
+let inFocus;
+
+const WalkthroughManager = {
+    currStep: -1,
+
+    setup: () =>  {
+        focusElements["Lives"] = $("#Lives");
+        focusElements["Signature"] = _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].mainSignature;
+        focusElements["ProgressBar"] = _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].levels[0].progressBar;
+        focusElements["Level"] = _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].levels[0];
+        focusElements["Beat"] = _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].levels[0].getCorrectBeat();
+
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.show();
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.showBlur();
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.setHeader(src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.header);
+    },
+
+    popupFirstFailMsg: () => {
+        if (!firstFail) return;
+        firstFail = false;
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.showFailPopup(src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.firstFail.header);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].highlight(focusElements[src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.firstFail.inFocus]);
+    },
+
+    popupFailMsg: () => {
+        src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.steps[firstBeatStep].hideBlur = false;
+        
+        focusElements["Beat"] = _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].levels[0].getCorrectBeat(1);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.showFailPopup(src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.trackFailed.header);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].highlight(focusElements[src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.trackFailed.inFocus]);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.updateCircles(-1);
+
+        if (!ended) WalkthroughManager.nextStep(firstBeatStep);
+    },
+
+    callForAction: async () => {
+        await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_3__.timeout)(CALL_FOR_ACTION_AWAIT_MS);
+        focusElements["Beat"] = _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].levels[0].getCorrectBeat();
+        if (!focusElements["Beat"]) return;
+        
+        let currStep = src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.callForAction;
+        if (inFocus) _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].resetHighlight(inFocus);
+
+        let infoAnimationDelay = _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.changeVisibility(false);
+        WalkthroughManager.handleParameters(currStep);
+
+        await infoAnimationDelay;
+        WalkthroughManager.changeInfo(currStep);
+    },
+
+    nextStep: async (goBackTo) => {
+        if (inFocus) _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].resetHighlight(inFocus);
+        let infoAnimationDelay;
+
+        if (WalkthroughManager.currStep === -1) _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.initFailState();
+        else infoAnimationDelay = _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.changeVisibility(false);
+        
+        if (parseInt(goBackTo)) WalkthroughManager.currStep = goBackTo;
+        else WalkthroughManager.currStep++;
+        let currStep = src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.steps[WalkthroughManager.currStep];
+        if (WalkthroughManager.handleParameters(currStep)) WalkthroughManager.callForAction();
+        
+        await infoAnimationDelay;
+        WalkthroughManager.changeInfo(currStep);
+    },
+
+    handleParameters: (currStep) => {
+        if (!currStep) return;
+        if (currStep.inFocus) {
+            inFocus = focusElements[currStep.inFocus];
+            _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].highlight(focusElements[currStep.inFocus]);
+        }
+        if (currStep.showBlur) _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.showBlur();
+        if (currStep.hideBlur) _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.hideBlur();
+        if (currStep.hideNext) _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.hideNext();
+        if (currStep.initCallForAction) return true;
+    },
+
+    changeInfo: (currStep) => {
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.setPosition(currStep.position);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.setTitle(currStep.title);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.setDescription(currStep.description);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.changeVisibility(true);
+        if (currStep.staticCircles) return;
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.updateCircles(1);
+    },
+
+    end: () => {
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.changeVisibility(false);
+        _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.hide();
+        ended = true;
+    }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WalkthroughManager);
+
+/***/ }),
+
 /***/ "./src/modules/viewer/view.js":
 /*!************************************!*\
   !*** ./src/modules/viewer/view.js ***!
@@ -14465,7 +15130,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_NextButton_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/NextButton.js */ "./src/modules/viewer/components/NextButton.js");
 /* harmony import */ var _components_Signature_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Signature.js */ "./src/modules/viewer/components/Signature.js");
 /* harmony import */ var src_modules_tools_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/modules/tools.js */ "./src/modules/tools.js");
+/* harmony import */ var _components_Popup_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Popup.js */ "./src/modules/viewer/components/Popup.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -14478,6 +15145,23 @@ __webpack_require__.r(__webpack_exports__);
 let container = $(".container");
 
 const view = {
+    popup: _components_Popup_js__WEBPACK_IMPORTED_MODULE_8__["default"].build(),
+
+    highlight: (element) => {
+        if (element instanceof $) {
+            element.addClass("highlighted");
+        } else {
+            element.highlight();
+        }
+    },
+    resetHighlight: (element) => {
+        if (element instanceof $) {
+            element.removeClass("highlighted");
+        } else {
+            element.resetHighlight();
+        }
+    },
+
     start: {
         build: async () => {
             container.append([ await _components_Headphones_js__WEBPACK_IMPORTED_MODULE_1__["default"].build(), _components_Header_js__WEBPACK_IMPORTED_MODULE_2__["default"].build(), await _components_StartButton_js__WEBPACK_IMPORTED_MODULE_0__["default"].build() ]);
@@ -14492,6 +15176,8 @@ const view = {
 
     timeline: {
         build: async () => {
+            container.append(view.popup.element);
+
             container.append(_components_Rails_js__WEBPACK_IMPORTED_MODULE_3__["default"].build());
             container.append(await _components_Lives_js__WEBPACK_IMPORTED_MODULE_4__["default"].build());
             container.append(await _components_NextButton_js__WEBPACK_IMPORTED_MODULE_5__["default"].build());
@@ -14608,6 +15294,17 @@ module.exports = __webpack_require__.p + "Play.svg";
 
 /***/ }),
 
+/***/ "./src/assets/texture.png":
+/*!********************************!*\
+  !*** ./src/assets/texture.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "texture.png";
+
+/***/ }),
+
 /***/ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf":
 /*!************************************************************!*\
   !*** ./src/fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf ***!
@@ -14641,6 +15338,17 @@ module.exports = __webpack_require__.p + "FedraSansAltPro-Demi.otf";
 
 /***/ }),
 
+/***/ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Light.otf":
+/*!*************************************************************!*\
+  !*** ./src/fonts/FedraSansAltPro/FedraSansAltPro-Light.otf ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "FedraSansAltPro-Light.otf";
+
+/***/ }),
+
 /***/ "./src/fonts/FedraSansAltPro/FedraSansAltPro-Medium.otf":
 /*!**************************************************************!*\
   !*** ./src/fonts/FedraSansAltPro/FedraSansAltPro-Medium.otf ***!
@@ -14652,14 +15360,25 @@ module.exports = __webpack_require__.p + "FedraSansAltPro-Medium.otf";
 
 /***/ }),
 
-/***/ "./src/index.json":
-/*!************************!*\
-  !*** ./src/index.json ***!
-  \************************/
+/***/ "./src/levels.json":
+/*!*************************!*\
+  !*** ./src/levels.json ***!
+  \*************************/
 /***/ ((module) => {
 
 "use strict";
 module.exports = JSON.parse('{"levels":[{"name":"easy","tracks":[{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/easy/4_4-4.wav","upperSignature":4,"lowerSignature":4,"bars":8}]},{"name":"medium","tracks":[{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/5_4-9.wav","upperSignature":5,"lowerSignature":4,"bars":9},{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/4_4-8+1.wav","upperSignature":4,"lowerSignature":4,"bars":8},{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/4_4-8+2.wav","upperSignature":4,"lowerSignature":4,"bars":8},{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/medium/7_8-8.wav","upperSignature":7,"lowerSignature":8,"bars":8}]},{"name":"hard","tracks":[{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/hard/5_4-9.wav","upperSignature":5,"lowerSignature":4,"bars":9},{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/hard/4_4-8.wav","upperSignature":4,"lowerSignature":4,"bars":8},{"url":"https://content-tools.tumo.world/FileSystem/data/TimeSignature/hard/7_8-8.wav","upperSignature":7,"lowerSignature":8,"bars":8}]}]}');
+
+/***/ }),
+
+/***/ "./src/walkthrough.json":
+/*!******************************!*\
+  !*** ./src/walkthrough.json ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"header":"Here we start a walkthrough","steps":[{"inFocus":"Lives","title":"Lives (tries)","description":"Here you can see your three available lives,<br>which will go down by one in case you make a<br>mistake.<br><br>But do not worry, if you run out of lives the track<br>will simply change and you will have your lives<br>refilled.","position":{"x":590,"y":33},"showBlur":true},{"inFocus":"Signature","title":"Time signature number","description":"After you successfully complete the task, the time<br>signature of the song will appear in this window.","position":{"x":549,"y":140},"showBlur":true},{"inFocus":"ProgressBar","title":"Music progress bar","description":"This is the music progress bar. You can drag the playhead<br>to the play the soundtrack from the specific part you want.","position":{"x":34,"y":403},"showBlur":true},{"inFocus":"Level","title":"Play/pause button","description":"Click this button to start the soundtrack/music, and stop it<br>whenever needed. Now let\'s click it and start playing.","position":{"x":34,"y":144},"showBlur":true,"hideNext":true},{"inFocus":"Beat","title":"First correct dot","description":"It seems like the time signature for this track is 4,<br>which is the number of beats in one bar. This means<br>ou will need to choose the very first beat of each bar.<br>Now let\'s click on this dot and see what happens.","position":{"x":219,"y":408},"hideBlur":true},{"description":"Good job! The green means you are right, now go<br>ahead and click on all the correct beats remaining.","position":{"x":219,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Good job! The green means you are right, now go<br>ahead and click on all the correct beats remaining.","position":{"x":289,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Great job! Done","position":{"x":289,"y":439}}],"callForAction":{"inFocus":"Beat","description":"For example this one.","position":{"x":289,"y":408},"staticCircles":true},"firstFail":{"header":"You pressed the wrong button, every time you press the wrong button your lives will subtract.","inFocus":"Lives"},"trackFailed":{"header":"You failed 3 times, try again on another track.","inFocus":"Lives"}}');
 
 /***/ })
 
@@ -14834,4 +15553,4 @@ $(onLoad);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle85812b2e4fb4ea64b5bd.js.map
+//# sourceMappingURL=bundlef9eab4f1e2c6dc2c43b3.js.map

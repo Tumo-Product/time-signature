@@ -10,6 +10,8 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 6px;
+
+    background-color: var(--background-color);
 }
 
 .progress {

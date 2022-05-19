@@ -7,6 +7,7 @@ import NextButton from "./NextButton.js";
 import view from "../view.js";
 import UI from "src/modules/common.js";
 import Signature from "./Signature.js";
+import WalkthroughManager from "../managers/WalkthroughManager.js";
 
 const MAX_BEATS = 16;
 
@@ -60,8 +61,10 @@ const Levels = {
 
                         if (!correct) {
                             Lives.count--;
+                            WalkthroughManager.popupFirstFailMsg();
                         } else {
                             level.correctCount++;
+                            if (index === 0) WalkthroughManager.nextStep();
 
                             if(level.correctCount === beatsCount) {
                                 for (let beat of level.beats) { UI.disable(beat.element) }
@@ -83,19 +86,19 @@ const Levels = {
                 beatsLength = upperSignature * beatsCount;
                 progressDivider = bars / beatsCount;
 
-                let modificationCount = beatsLength - level.beats.length;
+                let beatsChangeCount = beatsLength - level.beats.length;
 
-                if (modificationCount !== 0) {
-                    if (Math.sign(modificationCount) === 1) {
-                        for (let i = 0; i < modificationCount; i++) {
+                if (beatsChangeCount !== 0) {
+                    if (Math.sign(beatsChangeCount) === 1) {
+                        for (let i = 0; i < beatsChangeCount; i++) {
                             level.beats.push(await Levels.buildBeat(element));
                         }
                     } else {
-                        for (let i = level.beats.length + modificationCount; i < level.beats.length; i++) {
+                        for (let i = level.beats.length + beatsChangeCount; i < level.beats.length; i++) {
                             level.beats[i].element.remove();
                         }
 
-                        level.beats = level.beats.slice(0, modificationCount);
+                        level.beats = level.beats.slice(0, beatsChangeCount);
                     }
                 }
 
@@ -121,6 +124,32 @@ const Levels = {
                 signature.set(level.upperSignature, level.lowerSignature);
                 signatureContainer.append(signature.element);
                 element.append(signatureContainer);
+            },
+
+            highlight: () => {
+                element.find(".beat").css("pointer-events", "none");
+
+                element.addClass("highlighted");
+                UI.addPulse(progressBar.playbackButton.element);
+                progressBar.playbackButton.onClick(WalkthroughManager.nextStep);
+            },
+
+            resetHighlight: () => {
+                element.find(".beat").css("pointer-events", "all");
+
+                element.removeClass("highlighted");
+                UI.removePulse(progressBar.playbackButton.element);
+                progressBar.playbackButton.offClick(WalkthroughManager.nextStep);
+            },
+
+            getCorrectBeat: (nth) => {
+                if (nth) return beats[upperSignature * nth];
+
+                for (const [index, beat] of beats.entries()) {
+                    if (beat.state === "off" && index % upperSignature === 0) {
+                        return beat;
+                    }
+                }
             }
         };
 

@@ -3,6 +3,7 @@ import { timeout } from "src/modules/tools.js";
 import LevelManager from "../managers/LevelManager.js";
 import "./Lives.css";
 import CircleButtons from "./CircleButtons.js";
+import WalkthroughManager from "../managers/WalkthroughManager.js";
 
 const Lives = {
     _count: 3,
@@ -16,6 +17,7 @@ const Lives = {
 
         if (Lives._count === 0) {
             LevelManager.nextTrack();
+            WalkthroughManager.popupFailMsg();
         }
     },
 

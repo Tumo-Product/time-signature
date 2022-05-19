@@ -12,27 +12,17 @@ const UI = {
         return UI.circleIcon;
     },
 
-    disable: (element) => {
-        element.addClass("disabled");
-    },
-    enable: (element) => {
-        element.removeClass("disabled");
-    },
+    addPulse: (element) => element.addClass("pulsing"),
+    removePulse: (element) => element.removeClass("pulsing"),
 
+    disable: (element) => element.addClass("disabled"),
+    enable: (element) => element.removeClass("disabled"),
+    
     // Use is the tag that contains the path(shape), filters(blur for example) and fills(gradient or solid color) of an svg.
-    setFill: (icon, fill) => {
-        icon.find("use:eq(1)").attr("fill", fill);
-    },
-    setFilter: (icon, filter) => {
-        icon.find("use:eq(0)").attr("filter", filter);
-    },
-
-    getFill: (icon) => {
-        return icon.find("use:eq(1)").attr("fill");
-    },
-    getFilter: (icon) => {
-        return icon.find("use:eq(0)").attr("filter");
-    }
+    setFill: (icon, fill) => icon.find("use:eq(1)").attr("fill", fill),
+    setFilter: (icon, filter) => icon.find("use:eq(0)").attr("filter", filter),
+    getFill: (icon) => icon.find("use:eq(1)").attr("fill"),
+    getFilter: (icon) => icon.find("use:eq(0)").attr("filter")
 }
 
 export const deactivateComponent = (element, disable) => {

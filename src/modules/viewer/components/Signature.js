@@ -32,6 +32,16 @@ const Signature = {
 
             hide: () => {
                 element.remove();
+            },
+
+            highlight: () => {
+                element.addClass("highlighted");
+                signature.set(5, 4);
+            },
+
+            resetHighlight: () => {
+                signature.turnOff();
+                element.addClass("highlighted");
             }
         }
 

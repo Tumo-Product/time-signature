@@ -1,5 +1,5 @@
+import data from "src/levels.json";
 import Levels from "../components/Levels.js";
-import data from "src/index.json";
 import AudioManager from "./AudioManager.js";
 import Lives from "../components/Lives.js";
 import NextButton from "../components/NextButton.js";
@@ -32,7 +32,8 @@ const LevelManager = {
         let track = currLevel.tracks[LevelManager.currTrack];
 
         AudioManager.setSource(LevelManager.current, track.url);
-        let levelObj = await Levels.build(LevelManager.current, currLevel.name, track.upperSignature, track.lowerSignature, track.bars);
+        let levelObj = await Levels.build(LevelManager.current, currLevel.name,
+            track.upperSignature, track.lowerSignature, track.bars);
         LevelManager.levels.push(levelObj);
         
         Lives.reset();
