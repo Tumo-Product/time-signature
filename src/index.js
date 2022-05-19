@@ -5,14 +5,23 @@ import "./styles/colors.css";
 
 import pluginAPI from "./modules/pluginAPI.js";
 import { onLoad as viewerLoader } from "./modules/viewer/main.js";
+import { onLoad as examinerLoader } from "./modules/examiner/main.js";
 
 const HEIGHT = 600;
 
 const onLoad = async () => {
     pluginAPI.setHeight(HEIGHT);
-    await pluginAPI.initialize();
-    // TODO: Implement all views.
-    viewerLoader();
+    let role = getRole();
+
+    switch(role) {
+        case "viewer":
+            viewerLoader();
+            break;
+        case "examiner":
+            let answer = await pluginAPI.initialize();
+            examinerLoader(answer);
+            break;
+    }
 }
 
 const getRole = () => {

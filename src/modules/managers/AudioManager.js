@@ -28,6 +28,16 @@ const AudioManager = {
 
     scrub: (index, amount) => {
         AudioManager.tracks[index].currentTime += amount;
+    },
+
+    getTrackSources: () => {
+        let sources = [];
+
+        for (const track of AudioManager.tracks) {
+            sources.push(track.src);
+        }
+
+        return sources;
     }
 }
 

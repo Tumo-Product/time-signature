@@ -2,8 +2,8 @@ import "./StartButton.css";
 import PlayIcon from "./icons/PlayIcon";
 
 import StartTip from "./tips/StartTip.js";
-import { begin } from "./../main.js";
-import { timeout, getSVG } from "../../tools.js";
+import { begin } from "../viewer/main.js";
+import { timeout, getSVG } from "../tools.js";
 
 let btn;
 

@@ -4,7 +4,7 @@ import "./Popup.css";
 import WalkthroughInfo from "./WalkthroughInfo.js";
 
 import walkthrough from "src/walkthrough.json";
-import view from "../view.js";
+import view from "../viewer/view.js";
 
 const Popup = {
     build: () => {

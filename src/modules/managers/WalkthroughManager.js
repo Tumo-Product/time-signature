@@ -1,4 +1,4 @@
-import view from "../view.js";
+import view from "../viewer/view.js";
 import walkthrough from "src/walkthrough.json";
 import LevelManager from "./LevelManager.js";
 import { timeout } from "src/modules/tools.js";

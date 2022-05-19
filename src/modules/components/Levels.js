@@ -4,7 +4,7 @@ import Beat from "./Beat.js";
 import ProgressBar, { PROGRESS_WIDTH } from "./ProgressBar.js";
 import Lives from "./Lives.js";
 import NextButton from "./NextButton.js";
-import view from "../view.js";
+import view from "../viewer/view.js";
 import UI from "src/modules/common.js";
 import Signature from "./Signature.js";
 import WalkthroughManager from "../managers/WalkthroughManager.js";
@@ -42,9 +42,13 @@ const Levels = {
             progressBar: progressBar,
             beats: beats,
             correctCount: 1,
+            wrongIndicators: [],
 
+            id: id,
+            index: index,
             upperSignature: upperSignature,
             lowerSignature: lowerSignature,
+            bars: bars,
 
             bindEvents: () => {
                 for (let i = 0; i < level.beats.length; i++) {
@@ -61,6 +65,7 @@ const Levels = {
 
                         if (!correct) {
                             Lives.count--;
+                            level.wrongIndicators.push(i);
                             WalkthroughManager.popupFirstFailMsg();
                         } else {
                             level.correctCount++;
@@ -77,6 +82,7 @@ const Levels = {
             },
 
             reset: async (upperSignature, lowerSignature, bars) => {
+                level.wrongIndicators = [];
                 progressBar.pause();
                 level.upperSignature = upperSignature;
                 level.lowerSignature = lowerSignature;
@@ -127,7 +133,7 @@ const Levels = {
             },
 
             highlight: () => {
-                element.find(".beat").css("pointer-events", "none");
+                element.find(".subContainer").addClass("disabled");
 
                 element.addClass("highlighted");
                 UI.addPulse(progressBar.playbackButton.element);
@@ -135,7 +141,7 @@ const Levels = {
             },
 
             resetHighlight: () => {
-                element.find(".beat").css("pointer-events", "all");
+                element.find(".subContainer").removeClass("disabled");
 
                 element.removeClass("highlighted");
                 UI.removePulse(progressBar.playbackButton.element);
@@ -148,6 +154,21 @@ const Levels = {
                 for (const [index, beat] of beats.entries()) {
                     if (beat.state === "off" && index % upperSignature === 0) {
                         return beat;
+                    }
+                }
+            },
+
+            finalize: (wrongIndicators) => {
+                level.element.find(".subContainer").addClass("disabled");
+
+                for (let i = 0; i < beatsCount; i++) {
+                    let correctBeat = level.getCorrectBeat(i);
+                    correctBeat.changeLook("correct");
+                }
+
+                for (let [index, beat] of beats.entries()) {
+                    if (wrongIndicators.includes(index)) {
+                        beat.statusIndicator.changeLook("wrong");
                     }
                 }
             }

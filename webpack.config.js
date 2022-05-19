@@ -50,6 +50,11 @@ module.exports = {
       filename: 'viewer.html',
       template: 'src/viewer.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      filename: 'examiner.html',
+      template: 'src/viewer.html'
+    }),
     new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery"

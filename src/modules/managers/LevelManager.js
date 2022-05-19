@@ -3,8 +3,9 @@ import Levels from "../components/Levels.js";
 import AudioManager from "./AudioManager.js";
 import Lives from "../components/Lives.js";
 import NextButton from "../components/NextButton.js";
-import view from "../view.js";
+import view from "../viewer/view.js";
 import { shuffle } from "src/modules/tools.js";
+import pluginAPI from "../pluginAPI.js";
 
 for (const level of data.levels) shuffle(level.tracks);
 
@@ -23,7 +24,10 @@ const LevelManager = {
 
         if (LevelManager.current === data.levels.length) {
             view.timeline.hide();
-            view.final.build(LevelManager.levels, data.levels);
+            view.final.build(LevelManager.levels);
+            
+            let answer = LevelManager.saveData();
+            pluginAPI.setAnswers(answer);
             return;
         }
 
@@ -39,6 +43,23 @@ const LevelManager = {
         Lives.reset();
         $(".container").append(levelObj.element);
         return levelObj;
+    },
+
+    saveData: () => {
+        let templates = [];
+
+        for (const level of LevelManager.levels) {
+            templates.push({
+                id: level.id,
+                upperSignature: level.upperSignature,
+                lowerSignature: level.lowerSignature,
+                wrongIndicators: level.wrongIndicators,
+                bars: level.bars
+            });
+        }
+
+        let sources = AudioManager.getTrackSources();
+        return { templates: templates, sources: sources };
     },
 
     hideLevel: (level) => {

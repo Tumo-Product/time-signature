@@ -1,13 +1,13 @@
-import StartButton from "./components/StartButton.js";
-import Headphones from "./components/Headphones.js";
-import Header from "./components/Header.js";
-import Rails from "./components/Rails.js";
-import Lives from "./components/Lives.js";
-import NextButton from "./components/NextButton.js";
-import Signature from "./components/Signature.js";
+import StartButton from "../components/StartButton.js";
+import Headphones from "../components/Headphones.js";
+import Header from "../components/Header.js";
+import Rails from "../components/Rails.js";
+import Lives from "../components/Lives.js";
+import NextButton from "../components/NextButton.js";
+import Signature from "../components/Signature.js";
 
 import { timeout } from "src/modules/tools.js";
-import Popup from "./components/Popup.js";
+import Popup from "../components/Popup.js";
 let container = $(".container");
 
 const view = {
@@ -63,15 +63,15 @@ const view = {
     },
 
     final: {
-        build: async (levels, levelsData) => {
+        build: async (levels) => {
             for (let level of levels) {
                 level.addSignature();
             }
 
             await timeout(700);
 
-            for (let level of levelsData.reverse()) {
-                $(`#${level.name}`).addClass(`${level.name}FinalPosition`);
+            for (let i = levels.length - 1; i >= 0; i--) {
+                $(`#${levels[i].id}`).addClass(`${levels[i].id}FinalPosition`);
                 await timeout(300);
             }
         }
