@@ -24,7 +24,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 1;
 }
 
 @keyframes centerTransition {
@@ -48,6 +47,7 @@
 }
 
 .subContainer {
+    transition: 0.3s;
     width: 782px;
     position: absolute;
     display: flex;

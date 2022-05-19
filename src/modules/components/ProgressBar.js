@@ -55,12 +55,8 @@ const ProgressBar = {
 
                 playbackButton.element.on("click", () => {
                     let paused = AudioManager.toggle(index);
-
-                    if (paused) {
-                        progressBar.pause();
-                    } else {
-                        progressBar.play();
-                    }
+                    if (paused) progressBar.pause();
+                    else progressBar.play();
                 });
             },
 

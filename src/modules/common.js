@@ -6,7 +6,7 @@ const UI = {
 
     getCircle: async () => {
         if (!UI.circleIcon) {
-            UI.circleIcon = await getSVG("Circle.svg");
+            UI.circleIcon = await getSVG("Circle.svg", "circleSvg");
         }
         
         return UI.circleIcon;

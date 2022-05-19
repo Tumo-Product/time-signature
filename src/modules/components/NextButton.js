@@ -9,7 +9,7 @@ let btn;
 
 const NextButton = {
     build: async () => {
-        let icon = await getSVG("NextButton.svg");
+        let icon = await getSVG("NextButton.svg", "nextBtn");
 
         let element = 
         $(/* html */ `
@@ -30,14 +30,16 @@ const NextButton = {
 
     deactivate: () => {
         deactivateComponent(btn, true);
+        btn.removeClass("enabled");
     },
 
     activate: () => {
         activateComponent(NextButton, btn, true);
+        btn.addClass("enabled");
     },
 
     hide: () => {
-        btn.remove();
+        btn.addClass("hidden");
     }
 }
 

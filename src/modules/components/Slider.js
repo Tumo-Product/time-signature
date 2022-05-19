@@ -12,33 +12,57 @@ const Slider = {
             </div>
         `);
 
+        let progress = progressBar.element.find(".progress");
+
         const slider = {
             element: element,
             pressedDown: false,
+            oldWidth: 0,
 
             bindEvents: () => {
-                element.on("mousedown", () => slider.pressedDown = true);
-                levelContainer.on("mouseup", () => slider.pressedDown = false);
-                levelContainer.on("mouseleave", () => slider.pressedDown = false);
+                element.on("mousedown", (event) => {
+                    progressBar.pause();
+                    slider.pressedDown = true;
+                    AudioManager.tracks[index].pause();
 
-                let progress = progressBar.element.find(".progress");
+                    slider.oldWidth = parseFloat(progress.css("width"));
+                });
+
+                const endMove = (event) => {
+                    if (!slider.pressedDown) return;
+                    slider.scrub(event);
+                }
+
+                levelContainer.on("mouseup", endMove);
+                levelContainer.on("mouseleave", endMove);
+                levelContainer.on("mousemove", (event) => {
+                    let width = event.clientX - 63;
+                    if (width > PROGRESS_WIDTH) width = PROGRESS_WIDTH;
+                    if (slider.pressedDown) progress.css("width", width);
+                });
 
                 progressBar.element.on("click", (event) => {
                     let target = $(event.target);
                     
-                    if (target.hasClass("progressBar") || target.hasClass("progress"))
-                    {
-                        let oldWidth = parseFloat(progress.css("width"));
-                        progress.css("width", event.clientX - 63);
-                        let newWidth = parseFloat(progress.css("width"));
-                        
-                        let diff = newWidth - oldWidth;
-                        let multiplier = diff / PROGRESS_WIDTH;
-                        let amount = (progressBar.duration || 0) * multiplier;
-
-                        AudioManager.scrub(index, amount);
+                    if (target.hasClass("progressBar") || target.hasClass("progress")) {
+                        slider.oldWidth = parseFloat(progress.css("width"));
+                        slider.scrub(event);
                     }
                 });
+            },
+
+            scrub: (event) => {
+                slider.pressedDown = false;
+                let width = event.clientX - 63;
+                if (width > PROGRESS_WIDTH) width = PROGRESS_WIDTH;
+                progress.css("width", width);
+                let newWidth = parseFloat(progress.css("width"));
+                
+                let diff = newWidth - slider.oldWidth;
+                let multiplier = diff / PROGRESS_WIDTH;
+                let amount = (progressBar.duration || 0) * multiplier;
+
+                AudioManager.scrub(index, amount);
             }
         }
 

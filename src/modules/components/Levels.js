@@ -129,7 +129,7 @@ const Levels = {
                 let signatureContainer = $(/* html */ `<div class="signatureContainer"></div>`);
                 signature.set(level.upperSignature, level.lowerSignature);
                 signatureContainer.append(signature.element);
-                element.append(signatureContainer);
+                element.prepend(signatureContainer);
             },
 
             highlight: () => {

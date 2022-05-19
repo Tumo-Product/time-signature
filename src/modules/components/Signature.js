@@ -2,7 +2,7 @@ import { getSVG } from "src/modules/tools.js";
 import DigitalNumber from "./DigitalNumber.js";
 import "src/assets/Bar.svg";
 import "./Signature.css";
-import UI, { deactivateComponent } from "src/modules/common.js";
+import UI from "src/modules/common.js";
 
 const Signature = {
     build: async () => {
@@ -18,7 +18,9 @@ const Signature = {
         const signature = {
             element: element,
 
-            set: (upperSignature, lowerSignature) => {
+            set: async (upperSignature, lowerSignature) => {
+                let waitTime = upperElement.animate(); lowerElement.animate();
+                await waitTime;
                 upperElement.setNumber(upperSignature);
                 lowerElement.setNumber(lowerSignature);
                 bar.enable();
@@ -41,7 +43,7 @@ const Signature = {
 
             resetHighlight: () => {
                 signature.turnOff();
-                element.addClass("highlighted");
+                element.removeClass("highlighted");
             }
         }
 

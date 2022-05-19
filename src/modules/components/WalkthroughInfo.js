@@ -38,7 +38,7 @@ const WalkthroughInfo = {
                     element.addClass("invisible");
                 }
 
-                await timeout(300);
+                await timeout(200);
             },
 
             setPosition: (pos) => element.css({ left: pos.x, top: pos.y }),
