@@ -4,6 +4,7 @@ import LevelManager from "../managers/LevelManager.js";
 import "./Lives.css";
 import CircleButtons from "./CircleButtons.js";
 import WalkthroughManager from "../managers/WalkthroughManager.js";
+import AudioManager from "../managers/AudioManager.js";
 
 const Lives = {
     _count: 3,
@@ -16,6 +17,7 @@ const Lives = {
         Lives._count = value;
 
         if (Lives._count === 0) {
+            AudioManager.playSoundFX("trackFailed");
             LevelManager.nextTrack();
             WalkthroughManager.popupFailMsg();
         }

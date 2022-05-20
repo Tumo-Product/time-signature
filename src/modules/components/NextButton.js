@@ -4,6 +4,7 @@ import { getSVG } from "src/modules/tools.js";
 import { activateComponent, deactivateComponent, getSvgProperties } from "src/modules/common.js";
 import LevelManager from "../managers/LevelManager.js";
 import WalkthroughManager from "../managers/WalkthroughManager.js";
+import AudioManager from "../managers/AudioManager.js";
 
 let btn;
 
@@ -22,6 +23,8 @@ const NextButton = {
         btn = element;
         NextButton.deactivate();
         element.on("click", () => {
+            AudioManager.playSoundFX("nextButtonClick");
+
             if (LevelManager.current === 0) WalkthroughManager.end();
             LevelManager.nextLevel();
         });
@@ -34,6 +37,7 @@ const NextButton = {
     },
 
     activate: () => {
+        AudioManager.playSoundFX("nextLevel");
         activateComponent(NextButton, btn, true);
         btn.addClass("enabled");
     },

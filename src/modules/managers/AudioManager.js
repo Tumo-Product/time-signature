@@ -1,3 +1,8 @@
+import "src/sounds/nextButtonClick.wav";
+import "src/sounds/trackFailed.wav";
+import "src/sounds/startSound.wav";
+import "src/sounds/nextLevel.wav";
+
 const AudioManager = {
     ctx: new AudioContext(),
     tracks: [],
@@ -38,6 +43,11 @@ const AudioManager = {
         }
 
         return sources;
+    },
+    
+    playSoundFX: (name) => {
+        AudioManager.soundFX = new Audio(`${name}.wav`);
+        AudioManager.soundFX.play();
     }
 }
 

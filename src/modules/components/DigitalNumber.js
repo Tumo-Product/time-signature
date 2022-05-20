@@ -49,11 +49,15 @@ const DigitalNumber = {
                 }
             },
 
-            animate: async () => {
+            animate: async (signature) => {
                 for (let cycle = 0; cycle < 2; cycle++) {
                     for (let [index, segmentIndex] of DigitalNumber.animationOrder.entries()) {
+                        if (signature && !signature.enabled) {
+                            signature.turnOff();
+                            return;
+                        }
+                        
                         num.turnOff();
-
                         UI.setFill(element.find(`#Fill${segmentIndex}`), "url(#Gradient)");
                         UI.setFilter(element.find(`#Fill${segmentIndex}`), `url(#Filter${segmentIndex})`);
                         await timeout(100);

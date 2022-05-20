@@ -17,16 +17,20 @@ const Signature = {
         
         const signature = {
             element: element,
+            enabled: false,
 
             set: async (upperSignature, lowerSignature) => {
-                let waitTime = upperElement.animate(); lowerElement.animate();
+                signature.enabled = true;
+                let waitTime = upperElement.animate(signature); lowerElement.animate(signature);
                 await waitTime;
+                if (!signature.enabled) return; // If state changed while animating then don't activate number.                
                 upperElement.setNumber(upperSignature);
                 lowerElement.setNumber(lowerSignature);
                 bar.enable();
             },
 
             turnOff: () => {
+                signature.enabled = false;
                 upperElement.turnOff();
                 lowerElement.turnOff();
                 bar.disable();

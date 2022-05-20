@@ -32,6 +32,7 @@ const Beat = {
             },
 
             highlight: () => {
+                
                 UI.addPulse(button.element);
                 button.element.on("click", beat.resetHighlight);
             },
