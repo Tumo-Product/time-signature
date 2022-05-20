@@ -21,9 +21,8 @@ const Signature = {
 
             set: async (upperSignature, lowerSignature) => {
                 signature.enabled = true;
-                let waitTime = upperElement.animate(signature); lowerElement.animate(signature);
-                await waitTime;
-                if (!signature.enabled) return; // If state changed while animating then don't activate number.                
+                upperElement.animate(signature); await lowerElement.animate(signature);
+                if (!signature.enabled) return; // If state changed while animating then don't activate number.
                 upperElement.setNumber(upperSignature);
                 lowerElement.setNumber(lowerSignature);
                 bar.enable();

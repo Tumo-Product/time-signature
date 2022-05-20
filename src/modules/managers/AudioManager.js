@@ -35,20 +35,8 @@ const AudioManager = {
         AudioManager.tracks[index].currentTime += amount;
     },
 
-    getTrackSources: () => {
-        let sources = [];
-
-        for (const track of AudioManager.tracks) {
-            sources.push(track.src);
-        }
-
-        return sources;
-    },
-    
-    playSoundFX: (name) => {
-        AudioManager.soundFX = new Audio(`${name}.wav`);
-        AudioManager.soundFX.play();
-    }
+    getTrackSources: () => AudioManager.tracks.map(track => track.src),
+    playSoundFX: (name) => AudioManager.soundFX = new Audio(`${name}.wav`).play()
 }
 
 export default AudioManager;
