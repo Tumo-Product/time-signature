@@ -1,3 +1,4 @@
+import "./CircleButtons.css";
 import UI, { deactivateComponent } from "src/modules/common.js";
 
 const CircleButtons = {
@@ -12,6 +13,8 @@ const CircleButtons = {
             </div>
         `);
 
+        let circleSvg = element.find(".circleSvg");
+
         let radioButton = {
             element: element,
             state: "off",
@@ -19,13 +22,24 @@ const CircleButtons = {
             changeColor: (color) => {
                 element.addClass("disabled");
                 radioButton.state = color;
-                UI.setFill  (element.find("svg"), `url(#${color}OvalGradient)`);
-                UI.setFilter(element.find("svg"), `url(#${color}OvalFilter)`);
+
+                circleSvg.addClass("flip");
+                setTimeout(() => circleSvg.removeClass("flip"), 500);
+
+                circleSvg.find("use").removeClass("current");
+                circleSvg.find(`.${color}`).addClass("current");
+                UI.setFilter(circleSvg, `url(#${color}OvalFilter)`);
             },
 
             turnOff: (enable) => {
                 radioButton.state = "Off";
-                deactivateComponent(element);
+
+                circleSvg.addClass("flip");
+                setTimeout(() => circleSvg.removeClass("flip"), 500);
+
+                circleSvg.find("use").removeClass("current");
+                circleSvg.find(`.Off`).addClass("current");
+                UI.setFilter(circleSvg, "");
                 if (enable) element.removeClass("disabled");
             },
         }

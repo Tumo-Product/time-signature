@@ -55,12 +55,8 @@ const ProgressBar = {
 
                 playbackButton.element.on("click", () => {
                     let paused = AudioManager.toggle(index);
-
-                    if (paused) {
-                        progressBar.pause();
-                    } else {
-                        progressBar.play();
-                    }
+                    if (paused) progressBar.pause();
+                    else progressBar.play();
                 });
             },
 
@@ -96,7 +92,10 @@ const ProgressBar = {
                 element.find(".progress").css("width", 0);
                 progressBar.beats = beats;
                 progressBar.divider = divider;
-            }
+            },
+
+            highlight: () => element.addClass("highlighted").css("pointer-events", "none"),
+            resetHighlight: () => element.removeClass("highlighted").css("pointer-events", "all")
         }
 
         let slider = Slider.build(index, levelContainer, progressBar);

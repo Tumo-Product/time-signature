@@ -1,3 +1,8 @@
+import "src/sounds/nextButtonClick.wav";
+import "src/sounds/trackFailed.wav";
+import "src/sounds/startSound.wav";
+import "src/sounds/nextLevel.wav";
+
 const AudioManager = {
     ctx: new AudioContext(),
     tracks: [],
@@ -28,7 +33,10 @@ const AudioManager = {
 
     scrub: (index, amount) => {
         AudioManager.tracks[index].currentTime += amount;
-    }
+    },
+
+    getTrackSources: () => AudioManager.tracks.map(track => track.src),
+    playSoundFX: (name) => AudioManager.soundFX = new Audio(`${name}.wav`).play()
 }
 
 export default AudioManager;

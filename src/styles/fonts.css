@@ -17,3 +17,8 @@
     font-family: FedraBold;
     src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf');
 }
+
+@font-face {
+    font-family: FedraLight;
+    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Light.otf');
+}

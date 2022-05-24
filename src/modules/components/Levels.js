@@ -4,9 +4,10 @@ import Beat from "./Beat.js";
 import ProgressBar, { PROGRESS_WIDTH } from "./ProgressBar.js";
 import Lives from "./Lives.js";
 import NextButton from "./NextButton.js";
-import view from "../view.js";
+import view from "../viewer/view.js";
 import UI from "src/modules/common.js";
 import Signature from "./Signature.js";
+import WalkthroughManager from "../managers/WalkthroughManager.js";
 
 const MAX_BEATS = 16;
 
@@ -41,9 +42,13 @@ const Levels = {
             progressBar: progressBar,
             beats: beats,
             correctCount: 1,
+            wrongIndicators: [],
 
+            id: id,
+            index: index,
             upperSignature: upperSignature,
             lowerSignature: lowerSignature,
+            bars: bars,
 
             bindEvents: () => {
                 for (let i = 0; i < level.beats.length; i++) {
@@ -60,8 +65,11 @@ const Levels = {
 
                         if (!correct) {
                             Lives.count--;
+                            level.wrongIndicators.push(i);
+                            WalkthroughManager.popupFirstFailMsg();
                         } else {
                             level.correctCount++;
+                            if (index === 0) WalkthroughManager.nextStep();
 
                             if(level.correctCount === beatsCount) {
                                 for (let beat of level.beats) { UI.disable(beat.element) }
@@ -74,6 +82,7 @@ const Levels = {
             },
 
             reset: async (upperSignature, lowerSignature, bars) => {
+                level.wrongIndicators = [];
                 progressBar.pause();
                 level.upperSignature = upperSignature;
                 level.lowerSignature = lowerSignature;
@@ -83,19 +92,19 @@ const Levels = {
                 beatsLength = upperSignature * beatsCount;
                 progressDivider = bars / beatsCount;
 
-                let modificationCount = beatsLength - level.beats.length;
+                let beatsChangeCount = beatsLength - level.beats.length;
 
-                if (modificationCount !== 0) {
-                    if (Math.sign(modificationCount) === 1) {
-                        for (let i = 0; i < modificationCount; i++) {
+                if (beatsChangeCount !== 0) {
+                    if (Math.sign(beatsChangeCount) === 1) {
+                        for (let i = 0; i < beatsChangeCount; i++) {
                             level.beats.push(await Levels.buildBeat(element));
                         }
                     } else {
-                        for (let i = level.beats.length + modificationCount; i < level.beats.length; i++) {
+                        for (let i = level.beats.length + beatsChangeCount; i < level.beats.length; i++) {
                             level.beats[i].element.remove();
                         }
 
-                        level.beats = level.beats.slice(0, modificationCount);
+                        level.beats = level.beats.slice(0, beatsChangeCount);
                     }
                 }
 
@@ -120,7 +129,48 @@ const Levels = {
                 let signatureContainer = $(/* html */ `<div class="signatureContainer"></div>`);
                 signature.set(level.upperSignature, level.lowerSignature);
                 signatureContainer.append(signature.element);
-                element.append(signatureContainer);
+                element.prepend(signatureContainer);
+            },
+
+            highlight: () => {
+                element.find(".subContainer").addClass("disabled");
+
+                element.addClass("highlighted");
+                UI.addPulse(progressBar.playbackButton.element);
+                progressBar.playbackButton.onClick(WalkthroughManager.nextStep);
+            },
+
+            resetHighlight: () => {
+                element.find(".subContainer").removeClass("disabled");
+
+                element.removeClass("highlighted");
+                UI.removePulse(progressBar.playbackButton.element);
+                progressBar.playbackButton.offClick(WalkthroughManager.nextStep);
+            },
+
+            getCorrectBeat: (nth) => {
+                if (nth) return beats[upperSignature * nth];
+
+                for (const [index, beat] of beats.entries()) {
+                    if (beat.state === "off" && index % upperSignature === 0) {
+                        return beat;
+                    }
+                }
+            },
+
+            finalize: (wrongIndicators) => {
+                level.element.find(".subContainer").addClass("disabled");
+
+                for (let i = 0; i < beatsCount; i++) {
+                    let correctBeat = level.getCorrectBeat(i);
+                    correctBeat.changeLook("correct");
+                }
+
+                for (let [index, beat] of beats.entries()) {
+                    if (wrongIndicators.includes(index)) {
+                        beat.statusIndicator.changeLook("wrong");
+                    }
+                }
             }
         };
 

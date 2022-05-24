@@ -29,7 +29,9 @@
         <g id="Main-page-" transform="translate(-224.000000, -452.000000)" fill-rule="nonzero">
             <g id="Oval-Copy-41" transform="translate(242.500000, 470.500000) rotate(-180.000000) translate(-242.500000, -470.500000) translate(223.000000, 451.000000)">
                 <use fill="black" fill-opacity="1" filter="" xlink:href="#Oval"></use>
-                <use fill="#212427" xlink:href="#Oval"></use>
+                <use class="Off current" fill="#212427" xlink:href="#Oval"></use>
+                <use class="Green" fill="url(#GreenOvalGradient)" xlink:href="#Oval"></use>
+                <use class="Red" fill="url(#RedOvalGradient)" xlink:href="#Oval"></use>
             </g>
         </g>
     </g>

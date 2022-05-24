@@ -52,3 +52,40 @@
 .button:hover svg use:first-of-type {
     opacity: 0;
 }
+
+.highlighted {
+    z-index: 5 !important;
+}
+
+.pulsing::before, .pulsing::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+    animation: pulse 1.7s infinite ease;
+}
+
+.pulsing::after { animation-delay: 0.35s; }
+
+@keyframes pulse {
+    0% {
+        border: 2px solid rgba(255, 255, 255, 0);
+    }
+
+    30% {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    80% {
+        border: 2px solid rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        width: 170%;
+        height: 170%;
+        border: 2px solid rgba(255, 255, 255, 0);
+    }
+}

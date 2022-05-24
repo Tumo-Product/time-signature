@@ -2,7 +2,7 @@ import { getSVG } from "src/modules/tools.js";
 import DigitalNumber from "./DigitalNumber.js";
 import "src/assets/Bar.svg";
 import "./Signature.css";
-import UI, { deactivateComponent } from "src/modules/common.js";
+import UI from "src/modules/common.js";
 
 const Signature = {
     build: async () => {
@@ -17,14 +17,19 @@ const Signature = {
         
         const signature = {
             element: element,
+            enabled: false,
 
-            set: (upperSignature, lowerSignature) => {
+            set: async (upperSignature, lowerSignature) => {
+                signature.enabled = true;
+                upperElement.animate(signature); await lowerElement.animate(signature);
+                if (!signature.enabled) return; // If state changed while animating then don't activate number.
                 upperElement.setNumber(upperSignature);
                 lowerElement.setNumber(lowerSignature);
                 bar.enable();
             },
 
             turnOff: () => {
+                signature.enabled = false;
                 upperElement.turnOff();
                 lowerElement.turnOff();
                 bar.disable();
@@ -32,6 +37,16 @@ const Signature = {
 
             hide: () => {
                 element.remove();
+            },
+
+            highlight: () => {
+                element.addClass("highlighted");
+                signature.set(5, 4);
+            },
+
+            resetHighlight: () => {
+                signature.turnOff();
+                element.removeClass("highlighted");
             }
         }
 

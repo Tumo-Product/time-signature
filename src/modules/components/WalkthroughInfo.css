@@ -1,0 +1,44 @@
+#WalkthroughInfo {
+    position: absolute;
+    transition: opacity 0.3s;
+    pointer-events: auto;
+}
+
+.textContainer {
+    pointer-events: none;
+}
+
+.title {
+    color: var(--walkthrough-text-color);
+    width: 100%;
+    font-size: 18px;
+    font-family: FedraDemi;
+    margin-bottom: 16px;
+}
+
+.description {
+    color: var(--walkthrough-text-color);
+    line-height: 16px;
+    font-size: 13px;
+    font-family: FedraLight;
+    margin-bottom: 12px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+#next {
+    font-family: FedraLight;
+    font-size: 12px;
+    color: var(--next-color);
+    
+    position: relative;
+    bottom: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#next:hover { opacity: 0.8; }
+#next:active { opacity: 0.6; }

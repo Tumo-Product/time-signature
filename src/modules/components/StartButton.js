@@ -2,8 +2,9 @@ import "./StartButton.css";
 import PlayIcon from "./icons/PlayIcon";
 
 import StartTip from "./tips/StartTip.js";
-import { begin } from "./../main.js";
-import { timeout, getSVG } from "../../tools.js";
+import { begin } from "../viewer/main.js";
+import { timeout, getSVG } from "../tools.js";
+import AudioManager from "../managers/AudioManager.js";
 
 let btn;
 
@@ -36,6 +37,7 @@ const StartButton = {
             btn.hover(StartButton.events.hover);
         },
         click: () => {
+            AudioManager.playSoundFX("startSound");
             $("#StartButton").off("click");
             begin();
         },

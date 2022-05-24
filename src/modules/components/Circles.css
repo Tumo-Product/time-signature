@@ -1,0 +1,13 @@
+#Circles {
+    display: flex;
+}
+
+.walkthroughCircle {
+    margin-right: 5px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.walkthroughCircle.deactivated {
+    opacity: 0.3;
+}
