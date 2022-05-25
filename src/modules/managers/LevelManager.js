@@ -87,7 +87,7 @@ const LevelManager = {
         Lives.reset();
         AudioManager.tracks[LevelManager.current].pause();
         AudioManager.setSource(LevelManager.current, track.url);
-        level.reset(track.upperSignature, level.lowerSignature, track.bars);
+        level.reset(track.upperSignature, track.lowerSignature, track.bars);
     }
 }
 
