@@ -9,14 +9,14 @@ import AudioManager from "../managers/AudioManager.js";
 let btn;
 
 const StartButton = {
-    build: async () => {
+    build: async (text) => {
         let icon = await PlayIcon.get();
         icon = icon.asset;
 
         let element = 
         $(/* html */ `
             <div id="StartButton" class="button"></div>
-            ${StartTip.getTemplate()}
+            ${StartTip.getTemplate(text)}
         `);
 
         btn = element.first();

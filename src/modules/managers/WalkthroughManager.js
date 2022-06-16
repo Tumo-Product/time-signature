@@ -16,7 +16,8 @@ let inFocus;
 const WalkthroughManager = {
     currStep: -1,
 
-    setup: () =>  {
+    setup: (lang) =>  {
+        walkthrough = walkthrough[lang];
         focusElements["Lives"] = $("#Lives");
         focusElements["Signature"] = view.mainSignature;
         focusElements["ProgressBar"] = LevelManager.levels[0].progressBar;
@@ -28,6 +29,7 @@ const WalkthroughManager = {
         view.popup.setHeader(walkthrough.header);
     },
 
+    donePopup: () => view.popup.showFailPopup(walkthrough.done),
     popupFirstFailMsg: () => {
         if (!firstFail) return;
         firstFail = false;
@@ -65,7 +67,7 @@ const WalkthroughManager = {
         if (inFocus) view.resetHighlight(inFocus);
         let infoAnimationDelay;
 
-        if (WalkthroughManager.currStep === -1) view.popup.initFailState();
+        if (WalkthroughManager.currStep === -1) view.popup.initFailState(walkthrough.firstFail.inFocus);
         else infoAnimationDelay = view.popup.info.changeVisibility(false);
         
         if (parseInt(goBackTo)) WalkthroughManager.currStep = goBackTo;

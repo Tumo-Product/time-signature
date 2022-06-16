@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#Header {\n  transition: 0.5s;\n  color: #DBDBDB;\n  font-family: FedraBook;\n  font-size: 30px;\n  pointer-events: none;\n}", "",{"version":3,"sources":["webpack://./src/modules/components/Header.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,cAAA;EACA,sBAAA;EACA,eAAA;EACA,oBAAA;AACJ","sourcesContent":["#Header {\n    transition: 0.5s;\n    color: #DBDBDB;\n    font-family: FedraBook;\n    font-size: 30px;\n    pointer-events: none;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "#Header {\n  transition: 0.5s;\n  color: #DBDBDB;\n  font-family: FedraBook;\n  font-size: 30px;\n  pointer-events: none;\n  text-align: center;\n}", "",{"version":3,"sources":["webpack://./src/modules/components/Header.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,cAAA;EACA,sBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AACJ","sourcesContent":["#Header {\n    transition: 0.5s;\n    color: #DBDBDB;\n    font-family: FedraBook;\n    font-size: 30px;\n    pointer-events: none;\n    text-align: center;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -269,7 +269,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#Popup {\n  z-index: 2;\n  transition: 0.3s;\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#Popup #WalkthroughInfo, #Popup .minus {\n  pointer-events: auto;\n}\n\n#Blur {\n  transition: 0.3s;\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  background: linear-gradient(180deg, rgba(20, 29, 38, 0) 0%, #141617 100%);\n  backdrop-filter: blur(2px);\n  pointer-events: auto;\n}\n\n#Blur.disabled {\n  pointer-events: none;\n  opacity: 0;\n}\n\n#Blur .texture {\n  position: absolute;\n  opacity: 0.02;\n  width: 100%;\n  height: 100%;\n  background-repeat: repeat;\n  background-size: 276px 276px;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\n.header, .minus {\n  z-index: 2;\n}\n\n.header {\n  position: absolute;\n  color: var(--walkthrough-text-color);\n  font-family: FedraBook;\n  font-size: 17px;\n}\n\n.minus {\n  position: absolute;\n  bottom: 253px;\n  width: 15px;\n  height: 5px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: 0.2s;\n}\n\n.minus:hover {\n  opacity: 0.8;\n}\n\n.minus:active {\n  opacity: 0.6;\n}\n\n.minus div {\n  width: 12px;\n  height: 2px;\n  border-radius: 10px;\n  background-color: var(--next-color);\n}\n\n.header.failState {\n  bottom: 144px;\n}\n\n.minus.failState {\n  bottom: 122px;\n}", "",{"version":3,"sources":["webpack://./src/modules/components/Popup.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,aAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,oBAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,aAAA;EACA,yEAAA;EACA,0BAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,oBAAA;EACA,UAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,4BAAA;EACA,yDAAA;AAAJ;;AAGA;EACI,UAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,oCAAA;EACA,sBAAA;EACA,eAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;EACA,WAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EAAe,YAAA;AACf;;AAAA;EAAgB,YAAA;AAIhB;;AAFA;EACI,WAAA;EACA,WAAA;EACA,mBAAA;EACA,mCAAA;AAKJ;;AAFA;EAAoB,aAAA;AAMpB;;AALA;EAAoB,aAAA;AASpB","sourcesContent":["#Popup {\n    z-index: 2;\n    transition: 0.3s;\n    position: absolute;\n    width: 900px;\n    height: 600px;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n#Popup #WalkthroughInfo, #Popup .minus {\n    pointer-events: auto;\n}\n\n#Blur {\n    transition: 0.3s;\n    position: absolute;\n    width: 900px;\n    height: 600px;\n    background: linear-gradient(180deg, rgba(20,29,38,0) 0%, #141617 100%);\n    backdrop-filter: blur(2px);\n    pointer-events: auto;\n}\n\n#Blur.disabled {\n    pointer-events: none;\n    opacity: 0;\n}\n\n#Blur .texture {\n    position: absolute;\n    opacity: 0.02;\n    width: 100%;\n    height: 100%;\n    background-repeat: repeat;\n    background-size: 276px 276px;\n    background-image: url(\"../../assets/texture.png\");\n}\n\n.header, .minus {\n    z-index: 2;\n}\n\n.header {\n    position: absolute;\n    color: var(--walkthrough-text-color);\n    font-family: FedraBook;\n    font-size: 17px;\n}\n\n.minus {\n    position: absolute;\n    bottom: 253px;\n    width: 15px;\n    height: 5px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n    transition: 0.2s;\n}\n\n.minus:hover { opacity: 0.8; }\n.minus:active { opacity: 0.6; }\n\n.minus div {\n    width: 12px;\n    height: 2px;\n    border-radius: 10px;\n    background-color: var(--next-color);\n}\n\n.header.failState { bottom: 144px; }\n.minus.failState  { bottom: 122px; }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "#Popup {\n  z-index: 2;\n  transition: 0.3s;\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#Popup #WalkthroughInfo, #Popup .minus {\n  pointer-events: auto;\n}\n\n#Blur {\n  transition: 0.3s;\n  position: absolute;\n  width: 900px;\n  height: 600px;\n  background: linear-gradient(180deg, rgba(20, 29, 38, 0) 0%, #141617 100%);\n  backdrop-filter: blur(2px);\n  pointer-events: auto;\n}\n\n#Blur.disabled {\n  pointer-events: none;\n  opacity: 0;\n}\n\n#Blur .texture {\n  position: absolute;\n  opacity: 0.02;\n  width: 100%;\n  height: 100%;\n  background-repeat: repeat;\n  background-size: 276px 276px;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\n.header, .minus {\n  z-index: 2;\n}\n\n.header {\n  position: absolute;\n  text-align: center;\n  color: var(--walkthrough-text-color);\n  font-family: FedraBook;\n  font-size: 17px;\n}\n\n.minus {\n  position: absolute;\n  bottom: 253px;\n  width: 15px;\n  height: 5px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: 0.2s;\n}\n\n.minus:hover {\n  opacity: 0.8;\n}\n\n.minus:active {\n  opacity: 0.6;\n}\n\n.minus div {\n  width: 12px;\n  height: 2px;\n  border-radius: 10px;\n  background-color: var(--next-color);\n}\n\n.header.failState {\n  bottom: 144px;\n}\n\n.minus.failState {\n  bottom: 122px;\n}", "",{"version":3,"sources":["webpack://./src/modules/components/Popup.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,aAAA;EAEA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,oBAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,aAAA;EACA,yEAAA;EACA,0BAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,oBAAA;EACA,UAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,4BAAA;EACA,yDAAA;AAAJ;;AAGA;EACI,UAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,kBAAA;EACA,oCAAA;EACA,sBAAA;EACA,eAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;EACA,WAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EAAe,YAAA;AACf;;AAAA;EAAgB,YAAA;AAIhB;;AAFA;EACI,WAAA;EACA,WAAA;EACA,mBAAA;EACA,mCAAA;AAKJ;;AAFA;EAAoB,aAAA;AAMpB;;AALA;EAAoB,aAAA;AASpB","sourcesContent":["#Popup {\n    z-index: 2;\n    transition: 0.3s;\n    position: absolute;\n    width: 900px;\n    height: 600px;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n#Popup #WalkthroughInfo, #Popup .minus {\n    pointer-events: auto;\n}\n\n#Blur {\n    transition: 0.3s;\n    position: absolute;\n    width: 900px;\n    height: 600px;\n    background: linear-gradient(180deg, rgba(20,29,38,0) 0%, #141617 100%);\n    backdrop-filter: blur(2px);\n    pointer-events: auto;\n}\n\n#Blur.disabled {\n    pointer-events: none;\n    opacity: 0;\n}\n\n#Blur .texture {\n    position: absolute;\n    opacity: 0.02;\n    width: 100%;\n    height: 100%;\n    background-repeat: repeat;\n    background-size: 276px 276px;\n    background-image: url(\"../../assets/texture.png\");\n}\n\n.header, .minus {\n    z-index: 2;\n}\n\n.header {\n    position: absolute;\n    text-align: center;\n    color: var(--walkthrough-text-color);\n    font-family: FedraBook;\n    font-size: 17px;\n}\n\n.minus {\n    position: absolute;\n    bottom: 253px;\n    width: 15px;\n    height: 5px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n    transition: 0.2s;\n}\n\n.minus:hover { opacity: 0.8; }\n.minus:active { opacity: 0.6; }\n\n.minus div {\n    width: 12px;\n    height: 2px;\n    border-radius: 10px;\n    background-color: var(--next-color);\n}\n\n.header.failState { bottom: 144px; }\n.minus.failState  { bottom: 122px; }"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13647,7 +13647,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Header = {
-    build: () => /* html */ `<h1 id="Header">Welcome to Time Signature</h1>`,
+    build: (text) => /* html */ `<h1 id="Header">${text}</h1>`,
     hide: () => $("#Header").addClass("invisible")
 }
 
@@ -13678,12 +13678,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Headphones = {
-    build: async () => {
+    build: async (text) => {
         let icon = await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_3__.getSVG)("Headphones.svg");
 
         let template = /* html */
         `
-            ${_tips_HeadphonesTip_js__WEBPACK_IMPORTED_MODULE_2__["default"].getTemplate()}
+            ${_tips_HeadphonesTip_js__WEBPACK_IMPORTED_MODULE_2__["default"].getTemplate(text)}
             <div id="Headphones">${icon}</div>
         `;
 
@@ -13721,7 +13721,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_modules_common_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/modules/common.js */ "./src/modules/common.js");
 /* harmony import */ var _Signature_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Signature.js */ "./src/modules/components/Signature.js");
 /* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/managers/WalkthroughManager.js");
+/* harmony import */ var src_levels_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! src/levels.json */ "./src/levels.json");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -13799,6 +13801,7 @@ const Levels = {
                                 for (let beat of level.beats) { src_modules_common_js__WEBPACK_IMPORTED_MODULE_7__["default"].disable(beat.element) }
                                 _NextButton_js__WEBPACK_IMPORTED_MODULE_5__["default"].activate();
                                 _viewer_view_js__WEBPACK_IMPORTED_MODULE_6__["default"].mainSignature.set(level.upperSignature, level.lowerSignature);
+                                if (index === src_levels_json__WEBPACK_IMPORTED_MODULE_10__.levels.length - 1) _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_9__["default"].donePopup();
                             }
                         }
                     });
@@ -14134,11 +14137,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../managers/WalkthroughManager.js */ "./src/modules/managers/WalkthroughManager.js");
 /* harmony import */ var _Popup_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Popup.css */ "./src/modules/components/Popup.css");
 /* harmony import */ var _WalkthroughInfo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./WalkthroughInfo.js */ "./src/modules/components/WalkthroughInfo.js");
-/* harmony import */ var src_walkthrough_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/walkthrough.json */ "./src/walkthrough.json");
-/* harmony import */ var _viewer_view_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../viewer/view.js */ "./src/modules/viewer/view.js");
+/* harmony import */ var _viewer_view_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../viewer/view.js */ "./src/modules/viewer/view.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-
 
 
 
@@ -14173,20 +14173,20 @@ const Popup = {
             hideBlur: () => blur.addClass("disabled"),
             setHeader: (text) => header.html(text),
 
-            initFailState: () => {
+            initFailState: (inFocus) => {
                 header.hide().addClass("failState");
                 minus.hide().addClass("failState");
                 minus.off("click", _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__["default"].nextStep);
-                minus.on("click", popup.hideFailPopup);
+                minus.on("click", () => popup.hideFailPopup(inFocus));
             },
 
-            hideFailPopup: () => {
+            hideFailPopup: (inFocus) => {
                 popup.hideBlur();
                 header.hide();
                 minus.hide();
                 blur.css("z-index", 0);
 
-                _viewer_view_js__WEBPACK_IMPORTED_MODULE_5__["default"].resetHighlight(_managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__.focusElements[src_walkthrough_json__WEBPACK_IMPORTED_MODULE_4__.firstFail.inFocus]);
+                _viewer_view_js__WEBPACK_IMPORTED_MODULE_4__["default"].resetHighlight(_managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_1__.focusElements[inFocus]);
             },
 
             showFailPopup: (text) => {
@@ -14588,14 +14588,14 @@ __webpack_require__.r(__webpack_exports__);
 let btn;
 
 const StartButton = {
-    build: async () => {
+    build: async (text) => {
         let icon = await _icons_PlayIcon__WEBPACK_IMPORTED_MODULE_1__["default"].get();
         icon = icon.asset;
 
         let element = 
         $(/* html */ `
             <div id="StartButton" class="button"></div>
-            ${_tips_StartTip_js__WEBPACK_IMPORTED_MODULE_2__["default"].getTemplate()}
+            ${_tips_StartTip_js__WEBPACK_IMPORTED_MODULE_2__["default"].getTemplate(text)}
         `);
 
         btn = element.first();
@@ -14829,7 +14829,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const HeadphonesTip = {
-    getTemplate: () => /* html */ `<p id="HeadphonesTip" class="startTip">Use your headphones for the best experience</p>`,
+    getTemplate: (text) => /* html */ `<p id="HeadphonesTip" class="startTip">${text}</p>`,
     hide: () => $("#HeadphonesTip").addClass("invisible")
 }
 
@@ -14853,7 +14853,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const StartTip = {
-    getTemplate: () => /* html */ `<p id="StartTip" class="startTip">Press to start</p>`,
+    getTemplate: (text) => /* html */ `<p id="StartTip" class="startTip">${text}</p>`,
     hide: () => $("#StartTip").addClass("invisible")
 }
 
@@ -15082,7 +15082,7 @@ const LevelManager = {
         _components_Lives_js__WEBPACK_IMPORTED_MODULE_3__["default"].reset();
         _AudioManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].tracks[LevelManager.current].pause();
         _AudioManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].setSource(LevelManager.current, track.url);
-        level.reset(track.upperSignature, level.lowerSignature, track.bars);
+        level.reset(track.upperSignature, track.lowerSignature, track.bars);
     }
 }
 
@@ -15126,7 +15126,8 @@ let inFocus;
 const WalkthroughManager = {
     currStep: -1,
 
-    setup: () =>  {
+    setup: (lang) =>  {
+        src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__ = src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__[lang];
         focusElements["Lives"] = $("#Lives");
         focusElements["Signature"] = _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].mainSignature;
         focusElements["ProgressBar"] = _LevelManager_js__WEBPACK_IMPORTED_MODULE_2__["default"].levels[0].progressBar;
@@ -15138,6 +15139,7 @@ const WalkthroughManager = {
         _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.setHeader(src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.header);
     },
 
+    donePopup: () => _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.showFailPopup(src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.done),
     popupFirstFailMsg: () => {
         if (!firstFail) return;
         firstFail = false;
@@ -15175,7 +15177,7 @@ const WalkthroughManager = {
         if (inFocus) _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].resetHighlight(inFocus);
         let infoAnimationDelay;
 
-        if (WalkthroughManager.currStep === -1) _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.initFailState();
+        if (WalkthroughManager.currStep === -1) _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.initFailState(src_walkthrough_json__WEBPACK_IMPORTED_MODULE_1__.firstFail.inFocus);
         else infoAnimationDelay = _viewer_view_js__WEBPACK_IMPORTED_MODULE_0__["default"].popup.info.changeVisibility(false);
         
         if (parseInt(goBackTo)) WalkthroughManager.currStep = goBackTo;
@@ -15372,11 +15374,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const onLoad = async () => {
-    await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].start.build();
-}
+const lang = new URL(document.location.href).searchParams.get("lang") || "en";
 
-const begin = async () => {
+const onLoad = async () => await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].start.build(lang);
+const begin  = async () => {
     await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].start.hide();
     await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].timeline.build();
     await _view_js__WEBPACK_IMPORTED_MODULE_0__["default"].timeline.buildSignature();
@@ -15386,7 +15387,7 @@ const begin = async () => {
     await _managers_LevelManager_js__WEBPACK_IMPORTED_MODULE_1__["default"].nextLevel();
 
     await (0,_tools_js__WEBPACK_IMPORTED_MODULE_2__.timeout)(400);
-    _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_3__["default"].setup();
+    _managers_WalkthroughManager_js__WEBPACK_IMPORTED_MODULE_3__["default"].setup(lang);
 }
 
 /***/ }),
@@ -15409,8 +15410,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Lives_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Lives.js */ "./src/modules/components/Lives.js");
 /* harmony import */ var _components_NextButton_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/NextButton.js */ "./src/modules/components/NextButton.js");
 /* harmony import */ var _components_Signature_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Signature.js */ "./src/modules/components/Signature.js");
-/* harmony import */ var src_modules_tools_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/modules/tools.js */ "./src/modules/tools.js");
-/* harmony import */ var _components_Popup_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Popup.js */ "./src/modules/components/Popup.js");
+/* harmony import */ var src_texts_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/texts.json */ "./src/texts.json");
+/* harmony import */ var src_modules_tools_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/modules/tools.js */ "./src/modules/tools.js");
+/* harmony import */ var _components_Popup_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Popup.js */ "./src/modules/components/Popup.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
@@ -15425,7 +15427,7 @@ __webpack_require__.r(__webpack_exports__);
 let container = $(".container");
 
 const view = {
-    popup: _components_Popup_js__WEBPACK_IMPORTED_MODULE_8__["default"].build(),
+    popup: _components_Popup_js__WEBPACK_IMPORTED_MODULE_9__["default"].build(),
 
     highlight: (element) => {
         if (element instanceof $) {
@@ -15443,10 +15445,7 @@ const view = {
     },
 
     start: {
-        build: async () => {
-            container.append([ await _components_Headphones_js__WEBPACK_IMPORTED_MODULE_1__["default"].build(), _components_Header_js__WEBPACK_IMPORTED_MODULE_2__["default"].build(), await _components_StartButton_js__WEBPACK_IMPORTED_MODULE_0__["default"].build() ]);
-        },
-
+        build: async (lang) => container.append([ await _components_Headphones_js__WEBPACK_IMPORTED_MODULE_1__["default"].build(src_texts_json__WEBPACK_IMPORTED_MODULE_7__[lang].headphones), _components_Header_js__WEBPACK_IMPORTED_MODULE_2__["default"].build(src_texts_json__WEBPACK_IMPORTED_MODULE_7__[lang].header), await _components_StartButton_js__WEBPACK_IMPORTED_MODULE_0__["default"].build(src_texts_json__WEBPACK_IMPORTED_MODULE_7__[lang].startButton) ]),
         hide: async () => {
                     _components_Headphones_js__WEBPACK_IMPORTED_MODULE_1__["default"].hide();
                     _components_Header_js__WEBPACK_IMPORTED_MODULE_2__["default"].hide();
@@ -15482,11 +15481,11 @@ const view = {
                 level.addSignature();
             }
 
-            await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_7__.timeout)(700);
+            await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_8__.timeout)(700);
 
             for (let i = levels.length - 1; i >= 0; i--) {
                 $(`#${levels[i].id}`).addClass(`${levels[i].id}FinalPosition`);
-                await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_7__.timeout)(300);
+                await (0,src_modules_tools_js__WEBPACK_IMPORTED_MODULE_8__.timeout)(300);
             }
         }
     }
@@ -15695,6 +15694,17 @@ module.exports = JSON.parse('{"levels":[{"name":"easy","tracks":[{"url":"https:/
 
 /***/ }),
 
+/***/ "./src/texts.json":
+/*!************************!*\
+  !*** ./src/texts.json ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"en":{"headphones":"Use your headphones for a better experience","header":"Welcome to Time Signature Tool","startButton":"Click to start"},"fr":{"headphones":"Utilise tes écouteurs pour une meilleure pratique","header":"Bienvenue à l\'outil de la Mesure","startButton":"Clique ici pour démarrer"},"ru":{"headphones":"Надень наушники для оптимальной работы.","header":"Добро пожаловать в инструмент музыкального размера.","startButton":"Нажми, чтобы начать."},"am":{"headphones":"Օգտագործիր ականջակալներդ առաջադրանքն ավելի լավ անելու համար","header":"Բարի գալուստ երաժշտության<br> չափի գործիք","startButton":"Սկսելու համար սեղմիր կոճակը"}}');
+
+/***/ }),
+
 /***/ "./src/walkthrough.json":
 /*!******************************!*\
   !*** ./src/walkthrough.json ***!
@@ -15702,7 +15712,7 @@ module.exports = JSON.parse('{"levels":[{"name":"easy","tracks":[{"url":"https:/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":"Here we start a walkthrough","steps":[{"inFocus":"Lives","title":"Lives (tries)","description":"Here you can see your three available lives,<br>which will go down by one in case you make a<br>mistake.<br><br>But do not worry, if you run out of lives the track<br>will simply change and you will have your lives<br>refilled.","position":{"x":590,"y":33},"showBlur":true},{"inFocus":"Signature","title":"Time signature number","description":"After you successfully complete the task, the time<br>signature of the song will appear in this window.","position":{"x":549,"y":140},"showBlur":true},{"inFocus":"ProgressBar","title":"Music progress bar","description":"This is the music progress bar. You can drag the playhead<br>to the play the soundtrack from the specific part you want.","position":{"x":34,"y":403},"showBlur":true},{"inFocus":"Level","title":"Play/pause button","description":"Click this button to start the soundtrack/music, and stop it<br>whenever needed. Now let\'s click it and start playing.","position":{"x":34,"y":144},"showBlur":true,"hideNext":true},{"inFocus":"Beat","title":"First correct dot","description":"It seems like the time signature for this track is 4,<br>which is the number of beats in one bar. This means<br>ou will need to choose the very first beat of each bar.<br>Now let\'s click on this dot and see what happens.","position":{"x":219,"y":408},"hideBlur":true},{"description":"Good job! The green means you are right, now go<br>ahead and click on all the correct beats remaining.","position":{"x":219,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Good job! The green means you are right, now go<br>ahead and click on all the correct beats remaining.","position":{"x":289,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Great job! Done","position":{"x":289,"y":439}}],"callForAction":{"inFocus":"Beat","description":"For example this one.","position":{"x":289,"y":408},"staticCircles":true},"firstFail":{"header":"You pressed the wrong button, every time you press the wrong button your lives will subtract.","inFocus":"Lives"},"trackFailed":{"header":"You failed 3 times, try again on another track.","inFocus":"Lives"}}');
+module.exports = JSON.parse('{"en":{"header":"Let’s get started with the tool.<br> Be attentive and read the text to understand how each component works.","steps":[{"inFocus":"Lives","title":"Lives (tries)","description":"Here you can see your three lives,<br>which will go down by one if you make a mistake.<br><br>But do not worry, if you run out of lives, the track<br>will change and you will have your lives refilled.","position":{"x":590,"y":33},"showBlur":true},{"inFocus":"Signature","title":"Time signature","description":"After you successfully choose the right number<br> of beats in a bar for the track, the time signature of <br>the track will appear in this window.","position":{"x":549,"y":140},"showBlur":true},{"inFocus":"ProgressBar","title":"Music progress bar","description":"Here you can see the music progress bar.<br>It works just like any other one:<br>you can drag the playhead to the play<br>the track from the specific part you want.","position":{"x":34,"y":403},"showBlur":true},{"inFocus":"Level","title":"Play/pause button","description":"You can probably guess what this does, right?<br>This button is for playing and pausing the track whenever needed.<br>Now, let’s click on it to start the track and start playing.","position":{"x":34,"y":144},"showBlur":true,"hideNext":true},{"inFocus":"Beat","title":"First correct dot","description":"It seems like the time signature for this track is 4,<br>which means that there are X beats in one bar.<br>You will need to choose and click<br>on the first dot of each bar, like this one.<br>Click it to see what happens.","position":{"x":219,"y":408},"hideBlur":true},{"description":"Great job! Green means that you chose the beat correctly.<br> Now go on and choose all the remaining correct beats","position":{"x":219,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Cool! It’s correct just like the previous one.","position":{"x":289,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Great! You chose all the beats for this track and now you are ready for<br> the next level. Click the arrow to go to the next level, <br>where everything works the same way, but you will need to do it on your own. ","position":{"x":289,"y":439}}],"callForAction":{"inFocus":"Beat","description":"It seems like the next correct beat is this one. Let’s check by clicking.","position":{"x":289,"y":408},"staticCircles":true},"firstFail":{"header":"Oops. This one is not correct and you lost one of your lives. But try again!","inFocus":"Lives"},"trackFailed":{"header":"You made three mistakes, but do not worry. <br>You have your lives refilled and the track changed, so you can try again!","inFocus":"Lives"},"done":"Amazing! It seems like you can count the time signature of any track now.<br> Now click the arrow to review the tracks of all the levels you just did."},"fr":{"header":"Commençons à découvrir l\'outil. Sois attentif et lis les instructions<br> pour comprendre comment fonctionne chacun des composants.","steps":[{"inFocus":"Lives","title":"Vies (essais)","description":"Ici, tu vois tes trois vies. <br>Si tu ne fais pas le bon choix,<br> le nombre de vies diminuera progressivement.<br><br> Mais ne t\'inquiète pas,<br> si tu n\'as plus de vies,<br> la piste changera et tu les gagneras de nouveau.","position":{"x":590,"y":33},"showBlur":true},{"inFocus":"Signature","title":"La mesure","description":"Lorsque tu choisis le bon nombre de <br>beats dans la barre de piste, la mesure de la<br> piste apparaîtra dans cette fenêtre.","position":{"x":549,"y":140},"showBlur":true},{"inFocus":"ProgressBar","title":"Barre de progression de la musique","description":"Ici, tu vois la barre de progression de la musique.<br> Elle fonctionne comme toutes les autres :<br> fais glisser le lecteur pour lire <br>la piste sur toute partie spécifique de ton choix.","position":{"x":34,"y":403},"showBlur":true},{"inFocus":"Level","title":"Bouton lecture/pause","description":"Tu devines probablement à quoi ça sert, non ?<br> Ce bouton permet de lire et de mettre en pause la piste à tout moment.<br> Clique maintenant sur ce bouton pour commencer la lecture de la piste.","position":{"x":34,"y":144},"showBlur":true,"hideNext":true},{"inFocus":"Beat","title":"Premier point correct","description":"Il semble que la mesure de cette piste soit 4. Cela signifie qu\'il<br> y a X beats dans une mesure. Tu devras choisir et cliquer sur<br> le premier point de chaque mesure, comme celui-ci.<br> Clique dessus pour voir ce qui se passe.","position":{"x":219,"y":408},"hideBlur":true},{"description":"Bon travail ! Le feu vert signifie que tu as sélectionné le bon beat.<br> Vas-y et trouve tous les autres beats corrects.","position":{"x":219,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Génial ! C\'est correct, tout comme le précédent.","position":{"x":289,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Super ! Tu as choisi tous les beats pour cette piste et tu peux maintenant<br> passer au niveau suivant en cliquant sur la flèche.<br> Ici, tout fonctionne de la même manière, mais tu devras te débrouiller seul.","position":{"x":289,"y":439}}],"callForAction":{"inFocus":"Beat","description":"Il semble que le bon beat suivant soit celui-ci.<br> Vérifions-le en cliquant.","position":{"x":289,"y":408},"staticCircles":true},"firstFail":{"header":"Oups. Ce n\'est pas correct et tu as perdu une de tes vies. Mais vas-y, essaie encore !","inFocus":"Lives"},"trackFailed":{"header":"Tu n\'as pas choisi le bon beat trois fois, mais ne t\'inquiète pas.<br> Tes vies ont été renouvelées et la piste a été modifiée, alors tu peux réessayer !","inFocus":"Lives"},"done":"Génial ! Il semble que tu puisses compter la mesure de toute piste.<br> Clique maintenant sur la flèche pour revoir les pistes de tous les niveaux que tu viens de passer."},"ru":{"header":"Давай начнём работу. Будь внимателен и читай текст,<br> чтобы понять, как работает каждый из компонентов.","steps":[{"inFocus":"Lives","title":"Жизни (попытки)","description":"Вот три твоих жизни. Они будут <br>уменьшаться, если ты допустишь ошибку, <br>но не переживай - если потратишь все три,<br> то мы просто поменяем трек <br>и ты сможешь попробовать ещё раз.","position":{"x":590,"y":33},"showBlur":true},{"inFocus":"Signature","title":"Размер","description":"После того, как ты правильно укажешь<br> число долей в такте трека,<br> его размер появится в этом окне.","position":{"x":549,"y":140},"showBlur":true},{"inFocus":"ProgressBar","title":"Индикатор воспроизведения музыки","description":"Здесь находится полоса прогресса.<br> Она работает так же, как в любом<br> плеере - просто перетаскивай её<br> на нужный тебе отрезок трека. ","position":{"x":34,"y":403},"showBlur":true},{"inFocus":"Level","title":"Кнопка воспроизведения/паузы","description":"Что делает эта кнопка ты, вероятно,<br> уже догадался, да? Она запускает<br> и ставит трек на паузу. Давай нажмём<br> на ней и запустим воспроизведение.","position":{"x":34,"y":136},"showBlur":true,"hideNext":true},{"inFocus":"Beat","title":"Первая правильная точка","description":"Похоже, что размер этого трека - 4,<br> то есть, в одном его такте есть 4 долей.<br> Тебе нужно будет выбрать и нажать<br> на первую точку каждого такта, как этот.<br> Нажми на неё, чтобы проверить, что произойдёт.","position":{"x":219,"y":408},"hideBlur":true},{"description":"Отличная работа! Зелёный цвет означает,<br> что ты выбрал долю корректно.<br> Теперь правильно выбери все остальные.","position":{"x":219,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Круто! Она тоже правильная","position":{"x":289,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Отлично. Правильно выбери все доли трека<br> и ты готов к следующему уровню.<br> Нажми на стрелочку, чтобы к нему перейти.<br> Всё работает точно так же,<br> но этот уровень тебе уже предстоит пройти самостоятельно.","position":{"x":289,"y":414}}],"callForAction":{"inFocus":"Beat","description":"Похоже, что следующая правильная доля эта.<br> Давай проверим - нажимай на неё.","position":{"x":289,"y":408},"staticCircles":true},"firstFail":{"header":"Ой. А вот эту ты выбрал неправильно и потерял одну из своих жизней.<br> Но не унывай и попробуй снова!","inFocus":"Lives"},"trackFailed":{"header":"Ты допустил три ошибки, но не волнуйся.<br> Мы вернули тебе твои три жизни и поменяли трек,<br> чтобы ты мог попробовать ещё раз.","inFocus":"Lives"},"done":"Восхитительно! Похоже, что ты теперь умеешь определять размер любого трека.<br> Нажми на стрелочку, чтобы ещё раз прослушать все треки, с которыми ты только что работал. "},"am":{"header":"Սկզբում արի ծանոթանանք չափի գործիքին:<br> Ուշադի՛ր կարդա տեքստը, որը հասկանաս, թե ինչպես է աշխատում գործիքի յուրաքանչյուր մաս:","steps":[{"inFocus":"Lives","title":"Կյանքեր","description":"Այստեղ կարող ես տեսնել քո<br> երեք կյանքերը, որոնք ամեն սխալիդ<br> դեպքում կպակասեն մեկով:<br><br> Բայց մի՛ անհանգստացիր.<br> եթե բոլոր կյանքերդ կորցնես, կփոխվի<br> երաժշտությունն ու նորից կունենաս երեք կյանք:","position":{"x":590,"y":33},"showBlur":true},{"inFocus":"Signature","title":"Չափ","description":"Երաժշտության աուդիոգոտում<br> ճիշտ չափը գտնելուց հետո այս էջում<br> կհայտնվի երաժշտության չափը:","position":{"x":549,"y":140},"showBlur":true},{"inFocus":"ProgressBar","title":"Երաժշտության ընթացքի գոտի","description":"Հիմա քո առաջ երաժշտության ընթացքի գոտին է:<br> Այն աշխատում է ցանկացած այլ գոտու նման.<br> ընդամենը պետք է տեղաշարժես<br> նվագարկչի գլխիկը քո ուզած հատվածի վրա<br> ու երաժշտությունը կսկսի այդ հատվածից:","position":{"x":34,"y":403},"showBlur":true},{"inFocus":"Level","title":"Նվագարկելու/դադարեցնելու կոճակ","description":"Այս կոճակի կիրառությունը պարզ է.<br> դրանով կարող ես ցանկացած պահի նվագարկել կամ<br> դադարեցնել երաժշտությունը:<br> Հիմա արի սեղմենք նվագարկել կոճակն ու լսենք: ","position":{"x":34,"y":130},"showBlur":true,"hideNext":true},{"inFocus":"Beat","title":"Առաջին ճիշտ հարված","description":"Կարծես այս երաժշտության չափը 4 է.<br> նշանակում է, որ մեկ տակտում (bar) կան 4 հարվածներ (beats):<br> Դու պետք է ընտրես ու սեղմես յուրաքանչյուր տակտի<br> առաջի հարվածի շրջանակին, ինչպես այս օրինակում է:<br> Սեղմիր, որ տեսնես, թե ինչ տեղի կունենա: ","position":{"x":219,"y":408},"hideBlur":true},{"description":"Ապրե՛ս: Կանաչ գույնը նշանակում է,<br> որ հարվածը ճիշտ ես ընտրել: Շարունակիր նույն<br> կերպ ու ընտրիր մնացած բոլոր ճիշտ հարվածները:","position":{"x":219,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Գերազա՜նց: Այն, ինչպես նախորդը, ճիշտ ես ընտրել:","position":{"x":289,"y":408},"staticCircles":true,"initCallForAction":true},{"description":"Սեղմիր սլաքի վրա` հաջորդ մակարդակ<br> անցնելու համար: Հաջորդ մակարդակում ամեն<br> ինչ անելու ես նույն ձև, բայց հուշումներ չեն լինելու:","position":{"x":289,"y":439}}],"callForAction":{"inFocus":"Beat","description":"Կարծես թե հաջորդ ճիշտ հարվածն այս մեկն է:<br> Արի համոզվենք դրա վրա սեղմելով:","position":{"x":289,"y":408},"staticCircles":true},"firstFail":{"header":"Ուուփս. այս մեկը սխալ է, ու դու կորցրեցիր<br> քո կյանքերից մեկը: Բայց ոչինչ, կրկի՛ն փորձիր:","inFocus":"Lives"},"trackFailed":{"header":"Երեք սխալ ընտրություն ես արել,  բայց ոչինչ:<br> Նոր երաժշտության հետ ստացել ես երեք նոր կյանք ու կարող ես կրկին փորձել:","inFocus":"Lives"},"done":"Գերազա՜նց. կարծես, թե սրանից հետո ցանկացած երաժշտության չափ հաշվելը<br> քո համար հեշտ գործ է լինելու: Հիմա սեղմիր սլաքի վրա<br> ու կտեսնես բոլոր մակարդակների երաժշտություններդ: "}}');
 
 /***/ })
 
@@ -15887,4 +15897,4 @@ $(onLoad);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundled00c12adb2323f162159.js.map
+//# sourceMappingURL=bundlef94dc3c90db271336378.js.map

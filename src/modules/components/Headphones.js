@@ -5,12 +5,12 @@ import HeadphonesTip from "./tips/HeadphonesTip.js";
 import { getSVG } from "src/modules/tools.js";
 
 const Headphones = {
-    build: async () => {
+    build: async (text) => {
         let icon = await getSVG("Headphones.svg");
 
         let template = /* html */
         `
-            ${HeadphonesTip.getTemplate()}
+            ${HeadphonesTip.getTemplate(text)}
             <div id="Headphones">${icon}</div>
         `;
 

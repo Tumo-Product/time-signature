@@ -45,6 +45,7 @@
 
 .header {
     position: absolute;
+    text-align: center;
     color: var(--walkthrough-text-color);
     font-family: FedraBook;
     font-size: 17px;

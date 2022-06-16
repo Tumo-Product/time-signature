@@ -1,7 +1,7 @@
 import "./HeadphonesTip.css";
 
 const HeadphonesTip = {
-    getTemplate: () => /* html */ `<p id="HeadphonesTip" class="startTip">Use your headphones for the best experience</p>`,
+    getTemplate: (text) => /* html */ `<p id="HeadphonesTip" class="startTip">${text}</p>`,
     hide: () => $("#HeadphonesTip").addClass("invisible")
 }
 

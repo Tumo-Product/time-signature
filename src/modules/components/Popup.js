@@ -2,8 +2,6 @@ import "src/assets/texture.png";
 import WalkthroughManager, { focusElements, STEPS_COUNT } from "../managers/WalkthroughManager.js";
 import "./Popup.css";
 import WalkthroughInfo from "./WalkthroughInfo.js";
-
-import walkthrough from "src/walkthrough.json";
 import view from "../viewer/view.js";
 
 const Popup = {
@@ -34,20 +32,20 @@ const Popup = {
             hideBlur: () => blur.addClass("disabled"),
             setHeader: (text) => header.html(text),
 
-            initFailState: () => {
+            initFailState: (inFocus) => {
                 header.hide().addClass("failState");
                 minus.hide().addClass("failState");
                 minus.off("click", WalkthroughManager.nextStep);
-                minus.on("click", popup.hideFailPopup);
+                minus.on("click", () => popup.hideFailPopup(inFocus));
             },
 
-            hideFailPopup: () => {
+            hideFailPopup: (inFocus) => {
                 popup.hideBlur();
                 header.hide();
                 minus.hide();
                 blur.css("z-index", 0);
 
-                view.resetHighlight(focusElements[walkthrough.firstFail.inFocus]);
+                view.resetHighlight(focusElements[inFocus]);
             },
 
             showFailPopup: (text) => {

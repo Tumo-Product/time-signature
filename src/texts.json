@@ -1,0 +1,22 @@
+{
+    "en": {
+        "headphones": "Use your headphones for a better experience",
+        "header": "Welcome to Time Signature Tool",
+        "startButton": "Click to start"
+    },
+    "fr": {
+        "headphones": "Utilise tes écouteurs pour une meilleure pratique",
+        "header": "Bienvenue à l'outil de la Mesure",
+        "startButton": "Clique ici pour démarrer"
+    },
+    "ru": {
+        "headphones": "Надень наушники для оптимальной работы.",
+        "header": "Добро пожаловать в инструмент музыкального размера.",
+        "startButton": "Нажми, чтобы начать."
+    },
+    "am": {
+        "headphones": "Օգտագործիր ականջակալներդ առաջադրանքն ավելի լավ անելու համար",
+        "header": "Բարի գալուստ երաժշտության<br> չափի գործիք",
+        "startButton": "Սկսելու համար սեղմիր կոճակը"
+    }
+}

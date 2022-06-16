@@ -8,6 +8,7 @@ import view from "../viewer/view.js";
 import UI from "src/modules/common.js";
 import Signature from "./Signature.js";
 import WalkthroughManager from "../managers/WalkthroughManager.js";
+import data from "src/levels.json";
 
 const MAX_BEATS = 16;
 
@@ -75,6 +76,7 @@ const Levels = {
                                 for (let beat of level.beats) { UI.disable(beat.element) }
                                 NextButton.activate();
                                 view.mainSignature.set(level.upperSignature, level.lowerSignature);
+                                if (index === data.levels.length - 1) WalkthroughManager.donePopup();
                             }
                         }
                     });
