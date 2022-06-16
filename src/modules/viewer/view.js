@@ -5,7 +5,7 @@ import Rails from "../components/Rails.js";
 import Lives from "../components/Lives.js";
 import NextButton from "../components/NextButton.js";
 import Signature from "../components/Signature.js";
-
+import texts from "src/texts.json";
 import { timeout } from "src/modules/tools.js";
 import Popup from "../components/Popup.js";
 let container = $(".container");
@@ -29,10 +29,7 @@ const view = {
     },
 
     start: {
-        build: async () => {
-            container.append([ await Headphones.build(), Header.build(), await StartButton.build() ]);
-        },
-
+        build: async (lang) => container.append([ await Headphones.build(texts[lang].headphones), Header.build(texts[lang].header), await StartButton.build(texts[lang].startButton) ]),
         hide: async () => {
                     Headphones.hide();
                     Header.hide();
