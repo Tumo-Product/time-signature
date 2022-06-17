@@ -1,9 +1,8 @@
 import view from "./view.js";
 import LevelManager from "../managers/LevelManager.js";
 import { timeout } from "../tools.js";
+import { lang } from "src/index.js";
 import WalkthroughManager from "../managers/WalkthroughManager.js";
-
-const lang = new URL(document.location.href).searchParams.get("lang") || "en";
 
 export const onLoad = async () => await view.start.build(lang);
 export const begin  = async () => {
