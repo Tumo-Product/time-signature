@@ -39,8 +39,15 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|wav)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.(wav)$/i,
+        type: 'asset/inline',
+        generator: { // By default the URI says data:audio/wave, this gets the base64 string and adds the correct mime type for wav.
+          dataUrl: (content) => `data:audio/wav;base64,${content.toString('base64')}`,
+        },
       },
     ],
   },

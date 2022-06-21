@@ -1,0 +1,56 @@
+#loadingScreen {
+    width: 900px;
+    height: 600px;
+    background: var(--background-color);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#loadingScreen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, transparent 40%, #2B7076 80%, #68BF6A 100%);
+    animation: move 0.8s linear infinite;
+}
+
+#loader::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: var(--background-color);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#loader::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, transparent 40%, #2B7076 70%, #68BF6A 100%);
+    filter: blur(20px);
+}
+
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+}
