@@ -1,12 +1,15 @@
-import "src/sounds/nextButtonClick.wav";
-import "src/sounds/trackFailed.wav";
-import "src/sounds/startSound.wav";
-import "src/sounds/nextLevel.wav";
-
+const soundFX = {};
 const AudioManager = {
     ctx: new AudioContext(),
     tracks: [],
     currTrack: 0,
+
+    setup: async () => {
+        soundFX["nextButtonClick"]  = await import("src/sounds/nextButtonClick.wav");
+        soundFX["trackFailed"]      = await import("src/sounds/trackFailed.wav");
+        soundFX["startSound"]       = await import("src/sounds/startSound.wav");
+        soundFX["nextLevel"]        = await import("src/sounds/nextLevel.wav");
+    },
 
     setSource: (index, source) => {
         let audio = new Audio(source);
@@ -36,7 +39,7 @@ const AudioManager = {
     },
 
     getTrackSources: () => AudioManager.tracks.map(track => track.src),
-    playSoundFX: (name) => AudioManager.soundFX = new Audio(`${name}.wav`).play()
+    playSoundFX: (name) => AudioManager.soundFX = new Audio(soundFX[name].default).play()
 }
 
 export default AudioManager;
