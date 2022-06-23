@@ -394,5 +394,104 @@
             "inFocus": "Lives"
         },
         "done": "Գերազա՜նց. կարծես, թե սրանից հետո ցանկացած երաժշտության չափ հաշվելը<br> քո համար հեշտ գործ է լինելու: Հիմա սեղմիր սլաքի վրա<br> ու կտեսնես քո արդյունքները:"
+    },
+    "de": {
+        "header": "Beginnen wir mit dem Tool.<br> Sei aufmerksam und lies den Text, um zu verstehen, wie jede Komponente funktioniert.",
+        "steps": [
+            {
+                "inFocus": "Lives",
+                "title": "Leben (Versuchen)",
+                "description": "Hier siehst du deine drei Leben, die um eins sinken,<br> wenn du einen Fehler machst.<br><br> Aber keine Sorge - wenn dir die Leben ausgehen,<br> wechselt das Lied und deine<br> Leben werden wieder aufgefüllt.",
+                "position": {
+                    "x": 590,
+                    "y": 33
+                },
+                "showBlur": true
+            },
+            {
+                "inFocus": "Signature",
+                "title": "Taktangabe",
+                "description": "Nachdem du erfolgreich die richtige Anzahl von<br> Beats in einem Takt für den Track ausgewählt hast,<br> wird die Taktart des Tracks in diesem Fenster angezeigt.",
+                "position": {
+                    "x": 549,
+                    "y": 140
+                },
+                "showBlur": true
+            },
+            {
+                "inFocus": "ProgressBar",
+                "title": "Musik-Fortschrittsbalken",
+                "description": "Hier siehst du den Fortschrittsbalken der Musik.<br> Er funktioniert wie jeder andere:<br> Du kannst den Abspielkopf ziehen,<br> um den Track an der gewünschten Stelle abzuspielen.",
+                "position": {
+                    "x": 34,
+                    "y": 403
+                },
+                "showBlur": true
+            },
+            {
+                "inFocus": "Level",
+                "title": "Play/Pause Schaltfläche",
+                "description": "Du kannst dir wahrscheinlich denken,<br> was das bewirkt, oder?<br> Diese Taste dient zum Abspielen und Anhalten<br> des Titels, wann immer dies erforderlich ist.<br> Klicken wir jetzt darauf, um den Titel <br>zu starten und mit der Wiedergabe zu beginnen.",
+                "position": {
+                    "x": 34,
+                    "y": 105
+                },
+                "showBlur": true,
+                "hideNext": true
+            },
+            {
+                "inFocus": "Beat",
+                "title": "Der erste korrekte Punkt",
+                "description": "Es scheint, als ob die Taktart<br> für diesen Track X ist, was bedeutet,<br> dass es X Beats in einem Takt gibt.<br> Du musst den ersten Punkt jedes Balkens<br> auswählen und anklicken, wie diesen.<br> Klicke darauf, um zu sehen, was passiert.",
+                "position": {
+                    "x": 219,
+                    "y": 408
+                },
+                "hideBlur": true
+            },
+            {
+                "description": "Gut gemacht! Grün bedeutet,<br> dass du den Takt richtig gewählt hast.<br> Gehe nun weiter und wähle alle verbleibenden richtigen Beats aus.",
+                "position": {
+                    "x": 219,
+                    "y": 408
+                },
+                "staticCircles": true,
+                "initCallForAction": true
+            },
+            {
+                "description": "Cool! Es ist genau wie das vorherige richtig.",
+                "position": {
+                    "x": 289,
+                    "y": 408
+                },
+                "staticCircles": true,
+                "initCallForAction": true
+            },
+            {
+                "description": "Toll! Du hast alle Beats für diesen Track ausgewählt und bist jetzt bereit<br> für das nächste Level. Klicke auf den Pfeil, um zum nächsten Level zu gelangen,<br> wo alles auf die gleiche Weise funktioniert, aber du musst alles alleine machen. ",
+                "position": {
+                    "x": 289,
+                    "y": 439
+                }
+            }
+        ],
+        "callForAction": {
+            "inFocus": "Beat",
+            "description": "Es scheint, als wäre dies der nächste richtige Beat. Lass es uns durch Klicken überprüfen.",
+            "position": {
+                "x": 289,
+                "y": 408
+            },
+            "staticCircles": true
+        },
+        "firstFail": {
+            "header": "Hoppla. Dieser ist nicht korrekt und du hast eines deiner Leben verloren.<br> Aber versuche es einfach nochmal!",
+            "inFocus": "Lives"
+        },
+        "trackFailed": {
+            "header": "Du hast drei Fehler gemacht, aber keine Sorge.<br> Du hast deine Leben wieder aufgefüllt und den Track geändert, also kannst du es noch einmal versuchen!",
+            "inFocus": "Lives"
+        },
+        "done": "Toll! Es sieht so aus, als ob du jetzt die Taktart von jedem Track erkennen kannst.<br> Klicke nun auf den Pfeil, um die Tracks aller Level, die du gerade gemacht hast, zu überprüfen."
     }
 }

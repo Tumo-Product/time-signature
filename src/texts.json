@@ -18,5 +18,10 @@
         "headphones": "Օգտագործիր ականջակալներդ առաջադրանքն ավելի լավ անելու համար",
         "header": "Բարի գալուստ երաժշտության<br> չափի գործիք",
         "startButton": "Սկսելու համար սեղմիր կոճակը"
+    },
+    "de": {
+        "headphones": "Verwende deine Kopfhörer für ein besseres Erlebnis.",
+        "header": "Willkommen bei Time Signature Tool",
+        "startButton": "Zum Starten hier klicken"
     }
 }
