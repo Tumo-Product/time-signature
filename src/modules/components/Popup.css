@@ -67,11 +67,46 @@
 .minus:active { opacity: 0.6; }
 
 .minus div {
+    position: absolute;
     width: 12px;
     height: 2px;
     border-radius: 10px;
     background-color: var(--next-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header.failState { bottom: 144px; }
 .minus.failState  { bottom: 122px; }
+
+.minus div.pulsing::before, .minus div.pulsing::after {
+    border-radius: 10px;
+    animation: minusPulse 1.7s infinite ease;
+}
+.minus div.pulsing::after { animation-delay: 0.35s; }
+
+.minus:hover div.pulsing::before, .minus:hover div.pulsing:after { animation: none; }
+
+@keyframes minusPulse {
+    0% {
+        width: 10px;
+        height: 0px;
+        border: 2px solid #26a07700;
+    }
+
+    30% {
+        border: 2px solid #26a0773f;
+    }
+
+    80% {
+        border: 2px solid #26a07700;
+    }
+
+    100% {
+        width: 75px;
+        height: 33px;
+        border-radius: 20px;
+        border: 2px solid #26a07700;
+    }
+}

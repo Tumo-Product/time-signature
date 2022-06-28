@@ -100,3 +100,31 @@
     transform: scale(0.64835);
     top: 2px;
 }
+
+.attemptsContainer {
+    position: absolute;
+    min-width: 53px;
+    height: 43px;
+    right: 106px;
+    top: -43px;
+
+    box-shadow: -1px -1px 2px 0 rgba(67,67,69,0.5), 2px 2px 2px 0 #171C21;
+    background-color: var(--background-color);
+    border-radius: 7px 7px 0px 0px;
+    display: flex;
+    justify-content: center;
+
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+}
+
+.attemptsContainer p {
+    font-family: Fedra;
+    font-size: 25px;
+    
+    margin-top: 7.11px;
+    background: -webkit-linear-gradient(209.5deg, #6F47B9 0%, #BF6876 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

@@ -21,9 +21,10 @@ export const onLoad = async (answer) => {
             levels.push(level);
         }
 
+        levels.forEach(level => level.addAttempts());
         LevelManager.levels = levels;
         view.final.build(levels);
-        pluginAPI.examine(true);
+        pluginAPI.examine(levels.length === 3);
         return;
     }
 

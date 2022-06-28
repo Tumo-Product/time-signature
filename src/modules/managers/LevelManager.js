@@ -5,7 +5,6 @@ import Lives from "../components/Lives.js";
 import NextButton from "../components/NextButton.js";
 import view from "../viewer/view.js";
 import { shuffle } from "src/modules/tools.js";
-import pluginAPI from "../pluginAPI.js";
 
 for (const level of data.levels) shuffle(level.tracks);
 
@@ -21,13 +20,10 @@ const LevelManager = {
 
         if (level) LevelManager.hideLevel(level);
         LevelManager.current++;
-
+        
         if (LevelManager.current === data.levels.length) {
             view.timeline.hide();
             view.final.build(LevelManager.levels);
-            
-            let answer = LevelManager.saveData();
-            pluginAPI.setAnswers(answer);
             return;
         }
 
@@ -54,6 +50,7 @@ const LevelManager = {
                 upperSignature: level.upperSignature,
                 lowerSignature: level.lowerSignature,
                 wrongIndicators: level.wrongIndicators,
+                attempts: level.attempts,
                 bars: level.bars
             });
         }
