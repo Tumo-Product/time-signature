@@ -10,7 +10,7 @@ const Popup = {
         $(/* html */ `
             <div id="Popup" class="invisible disabled">
                 <p class="header"></p>
-                <div class="minus"><div></div></div>
+                <div class="minus"><div class="pulsing"></div></div>
 
                 <div id="Blur" class="disabled">
                     <div class="texture"></div>

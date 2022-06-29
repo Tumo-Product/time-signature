@@ -44,6 +44,7 @@ const Levels = {
             beats: beats,
             correctCount: 1,
             wrongIndicators: [],
+            attempts: 0,
 
             id: id,
             index: index,
@@ -84,6 +85,7 @@ const Levels = {
             },
 
             reset: async (upperSignature, lowerSignature, bars) => {
+                level.attempts++;
                 level.wrongIndicators = [];
                 progressBar.pause();
                 level.upperSignature = upperSignature;
@@ -134,6 +136,7 @@ const Levels = {
                 element.prepend(signatureContainer);
             },
 
+            addAttempts: () => element.prepend($(/* html */ `<div class="attemptsContainer"><p>${level.attempts ? `x${level.attempts}` : "0"}</p></div>`)),
             highlight: () => {
                 element.find(".subContainer").addClass("disabled");
 

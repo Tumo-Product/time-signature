@@ -5,6 +5,7 @@ import { activateComponent, deactivateComponent, getSvgProperties } from "src/mo
 import LevelManager from "../managers/LevelManager.js";
 import WalkthroughManager from "../managers/WalkthroughManager.js";
 import AudioManager from "../managers/AudioManager.js";
+import pluginAPI from "../pluginAPI.js";
 
 let btn;
 
@@ -37,6 +38,7 @@ const NextButton = {
     },
 
     activate: () => {
+        pluginAPI.setAnswers(LevelManager.saveData());
         AudioManager.playSoundFX("nextLevel");
         activateComponent(NextButton, btn, true);
         btn.addClass("enabled");

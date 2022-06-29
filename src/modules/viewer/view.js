@@ -61,10 +61,7 @@ const view = {
 
     final: {
         build: async (levels) => {
-            for (let level of levels) {
-                level.addSignature();
-            }
-
+            levels.forEach(level => level.addSignature());
             await timeout(700);
 
             for (let i = levels.length - 1; i >= 0; i--) {
