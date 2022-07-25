@@ -18,6 +18,7 @@ export const onLoad = async (answer) => {
             let level = await Levels.build(index, template.id, template.upperSignature, template.lowerSignature, template.bars);
             level.finalize(template.wrongIndicators);
             $(".container").append(level.element);
+            level.attempts = template.attempts;
             levels.push(level);
         }
 
