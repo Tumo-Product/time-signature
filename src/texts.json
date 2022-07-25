@@ -23,5 +23,10 @@
         "headphones": "Verwende deine Kopfhörer für ein besseres Erlebnis.",
         "header": "Willkommen bei Time Signature Tool",
         "startButton": "Zum Starten hier klicken"
+    },
+    "ua": {
+        "headphones": "Використовуй навушники для кращого досвіду",
+        "header": "Ласкаво просимо до Time Signature Tool",
+        "startButton": "Натисни, щоб почати"
     }
 }
