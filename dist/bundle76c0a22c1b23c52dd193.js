@@ -14985,6 +14985,7 @@ const onLoad = async (answer) => {
             let level = await _components_Levels_js__WEBPACK_IMPORTED_MODULE_0__["default"].build(index, template.id, template.upperSignature, template.lowerSignature, template.bars);
             level.finalize(template.wrongIndicators);
             $(".container").append(level.element);
+            level.attempts = template.attempts;
             levels.push(level);
         }
 
@@ -16040,4 +16041,4 @@ module.exports = JSON.parse('{"en":{"header":"Let’s get started with the tool.
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=bundle317ee40a1262a25c18d7.js.map
+//# sourceMappingURL=bundle76c0a22c1b23c52dd193.js.map
